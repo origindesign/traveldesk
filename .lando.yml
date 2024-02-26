@@ -1,0 +1,35 @@
+name: trd
+recipe: pantheon
+config:
+  framework: wordpress
+  site: traveldesk
+  id: 4778c942-ee6f-41f6-b66f-c17926261023
+  edge: false
+  #cache: false
+services:
+  pma:
+    type: phpmyadmin
+    hosts:
+      - database
+proxy:
+  pma:
+    - pma-trd.lndo.site
+tooling:
+  push:
+    description: Push only database to dev
+    options:
+      code:
+        default: none
+      files:
+        default: none
+      database:
+        default: dev
+  pull:
+    description: Pull only database
+    options:
+      code:
+        default: none
+      files:
+        default: none
+      database:
+        default: live
