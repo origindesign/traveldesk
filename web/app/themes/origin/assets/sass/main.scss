@@ -1,5 +1,15 @@
+@import "base/settings";
 @import "base/base";
+@import "base/animation";
+@import "base/headings";
+@import "base/elements";
+@import "base/grid";
+
 @import "blocks/block";
+
 @import "components/header";
+@import "components/hero-cover";
+@import "components/single-column-copy";
+
 @import "helpers/variables";
 @import "vendor/vendor";

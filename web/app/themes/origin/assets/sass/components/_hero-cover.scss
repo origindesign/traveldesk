@@ -1,0 +1,41 @@
+// Component: Hero Cover
+.is-style-hero-cover {
+  width: 100% !important;
+  max-width: 100% !important;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  margin-bottom: 70px;
+
+  @media only screen and (min-width: $desktop) {
+    column-gap: 3rem;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    margin-bottom: 160px;
+  }
+
+  > * {
+    grid-column: span 12;
+    width: 100%;
+    max-width: 100% !important;
+  }
+
+  figure {
+    grid-column: span 11;
+    border-top-right-radius: 105px;
+    border-bottom-left-radius: 105px;
+    overflow: hidden;
+    max-height: 79.2rem;
+    margin-top: -7rem;
+    z-index: -1;
+
+    @media only screen and (min-width: $desktop) {
+      border-top-right-radius: 416px;
+      border-bottom-left-radius: 416px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

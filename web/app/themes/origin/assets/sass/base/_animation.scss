@@ -1,0 +1,10 @@
+// animation
+.fade-in {
+  position: relative;
+  opacity: 0;
+  transition: 2s all ease;
+
+  &.active {
+    opacity: 1;
+  }
+}

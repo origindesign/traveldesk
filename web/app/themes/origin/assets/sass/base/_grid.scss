@@ -1,0 +1,8 @@
+// grid
+.entry-content {
+  padding: 0 1.7rem;
+
+  @media (min-width: $desktop) {
+    padding: 0 6rem;
+  }
+}

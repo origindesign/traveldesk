@@ -7,23 +7,48 @@
       "palette": [
         {
           "slug": "base",
-          "color": "#1e1e1e",
+          "color": "#09182A",
           "name": "Base"
         },
         {
-          "slug": "contrast",
-          "color": "#f0f0f0",
-          "name": "Contrast"
+          "name": "Black",
+          "slug": "black",
+          "color": "#000000"
         },
         {
-          "slug": "primary",
-          "color": "#0073aa",
-          "name": "Primary"
+          "name": "White",
+          "slug": "white",
+          "color": "#ffffff"
         },
         {
-          "slug": "secondary",
-          "color": "#00a0d2",
-          "name": "Secondary"
+          "name": "Strawberry",
+          "slug": "strawberry",
+          "color": "#F34B58"
+        },
+        {
+          "name": "Aqua",
+          "slug": "aqua",
+          "color": "#E9F6F5"
+        },
+        {
+          "name": "Coral",
+          "slug": "coral",
+          "color": "#81DFC5"
+        },
+        {
+          "name": "Spruce",
+          "slug": "spruce",
+          "color": "#295F67"
+        },
+        {
+          "name": "Lime",
+          "slug": "lime",
+          "color": "#CBE66B"
+        },
+        {
+          "name": "Pine",
+          "slug": "pine",
+          "color": "#43654F"
         },
         {
           "slug": "transparent",
@@ -41,36 +66,6 @@
           "slug": "d-primary-transparent",
           "gradient": "linear-gradient(to bottom right, #0073aa 49.9%, transparent 50%)",
           "name": "Diagonal primary to transparent"
-        },
-        {
-          "slug": "d-white-primary",
-          "gradient": "linear-gradient(to bottom right,#fff 49.9%,#0073aa 50%)",
-          "name": "Diagonal white to primary"
-        },
-        {
-          "slug": "d-primary-white",
-          "gradient": "linear-gradient(to bottom right,#0073aa 49.9%,#fff 50%)",
-          "name": "Diagonal primary to white"
-        },
-        {
-          "slug": "h-primary-white",
-          "gradient": "linear-gradient(#0073aa 49.9%,#fff 50%)",
-          "name": "Horizontal primary to white"
-        },
-        {
-          "slug": "h-white-primary",
-          "gradient": "linear-gradient(#fff 49.9%,#0073aa 50%)",
-          "name": "Horizontal white to primary"
-        },
-        {
-          "slug": "v-primary-white",
-          "gradient": "linear-gradient(to right, #0073aa 49.9%,#fff 50%)",
-          "name": "Vertical primary to white"
-        },
-        {
-          "slug": "v-white-primary",
-          "gradient": "linear-gradient(to right, #fff 49.9%,#0073aa 50%)",
-          "name": "Vertical white to primary"
         }
       ],
       "duotone": [
@@ -83,17 +78,12 @@
           "colors": ["#0073aa", "#f0f0f1"],
           "slug": "primary-contrast",
           "name": "Primary and foreground"
-        },
-        {
-          "colors": ["#1e1e1e", "#f0f0f1"],
-          "slug": "base-contrast",
-          "name": "background and foreground"
         }
       ]
     },
     "layout": {
-      "contentSize": "700px",
-      "wideSize": "1100px"
+      "contentSize": "1200px",
+      "wideSize": "1600px"
     },
     "spacing": {
       "units": ["px", "em", "rem", "vh", "vw", "%"],
@@ -102,39 +92,19 @@
       },
       "spacingSizes": [
         {
-          "size": "0.44rem",
-          "slug": "20",
-          "name": "2"
+          "name": "Small",
+          "slug": "small",
+          "size": "1.5rem"
         },
         {
-          "size": "0.67rem",
-          "slug": "30",
-          "name": "3"
+          "name": "Medium",
+          "slug": "medium",
+          "size": "3rem"
         },
         {
-          "size": "1rem",
-          "slug": "40",
-          "name": "4"
-        },
-        {
-          "size": "1.5rem",
-          "slug": "50",
-          "name": "5"
-        },
-        {
-          "size": "2.25rem",
-          "slug": "60",
-          "name": "6"
-        },
-        {
-          "size": "clamp(2.25rem, 10vw, 3.38rem)",
-          "slug": "70",
-          "name": "7"
-        },
-        {
-          "size": "clamp(3.38rem, 10vw, 5.06rem)",
-          "slug": "80",
-          "name": "8"
+          "name": "Large",
+          "slug": "large",
+          "size": "4.5rem"
         }
       ]
     },
@@ -158,26 +128,117 @@
           "fontFamily": "Consolas,Menlo,Monaco,\"SF Mono\",\"DejaVu Sans Mono\",\"Roboto Mono\",\"Courier New\",Courier,monospace"
         },
         {
-          "name": "Lora",
-          "slug": "lora",
-          "fontFamily": "Lora,\"Times New Roman\",\"New York\",Times,\"Noto Serif\",serif",
+          "name": "Prompt",
+          "slug": "prompt",
+          "fontFamily": "Prompt,\"Times New Roman\",\"New York\",Times,\"Noto Serif\",serif",
           "fontFace": [
             {
-              "fontFamily": "Lora",
-              "fontWeight": "200 900",
+              "fontFamily": "Prompt",
+              "fontWeight": "800",
               "fontStyle": "normal",
               "fontStretch": "normal",
-              "src": [
-                "file:./assets/fonts/lora-v23-latin-ext_latin-regular.woff2"
-              ]
+              "src": ["file:./assets/fonts/Prompt-ExtraBold.woff2"]
             },
             {
-              "fontFamily": "Lora",
-              "fontWeight": "200 900",
+              "fontFamily": "Prompt",
+              "fontWeight": "800",
+              "fontStyle": "italic",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/Prompt-ExtraBoldItalic.woff2"]
+            }
+          ]
+        },
+        {
+          "name": "Plus Jakarta Sans",
+          "slug": "plus-jakarta-sans",
+          "fontFamily": "Plus Jakarta Sans,\"Times New Roman\",\"New York\",Times,\"Noto Serif\",serif",
+          "fontFace": [
+            {
+              "fontFamily": "Plus Jakarta Sans",
+              "fontWeight": "100",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/PlusJakartaSans-ExtraLight.woff2"]
+            },
+            {
+              "fontFamily": "Plus Jakarta Sans",
+              "fontWeight": "100",
               "fontStyle": "italic",
               "fontStretch": "normal",
               "src": [
-                "file:./assets/fonts/lora-v23-latin-ext_latin-italic.woff2"
+                "file:./assets/fonts/PlusJakartaSans-ExtraLightItalic.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Plus Jakarta Sans",
+              "fontWeight": "200",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/PlusJakartaSans-Light.woff2"]
+            },
+            {
+              "fontFamily": "Plus Jakarta Sans",
+              "fontWeight": "200",
+              "fontStyle": "italic",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/PlusJakartaSans-LightItalic.woff2"]
+            },
+            {
+              "fontFamily": "Plus Jakarta Sans",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/PlusJakartaSans-Regular.woff2"]
+            },
+            {
+              "fontFamily": "Plus Jakarta Sans",
+              "fontWeight": "400",
+              "fontStyle": "italic",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/PlusJakartaSans-Italic.woff2"]
+            },
+            {
+              "fontFamily": "Plus Jakarta Sans",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/PlusJakartaSans-Medium.woff2"]
+            },
+            {
+              "fontFamily": "Plus Jakarta Sans",
+              "fontWeight": "500",
+              "fontStyle": "italic",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/PlusJakartaSans-MediumItalic.woff2"]
+            },
+            {
+              "fontFamily": "Plus Jakarta Sans",
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/PlusJakartaSans-Bold.woff2"]
+            },
+            {
+              "fontFamily": "Plus Jakarta Sans",
+              "fontWeight": "700",
+              "fontStyle": "italic",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/PlusJakartaSans-BoldItalic.woff2"]
+            },
+            {
+              "fontFamily": "Plus Jakarta Sans",
+              "fontWeight": "800",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/PlusJakartaSans-ExtraBold.woff2"]
+            },
+            {
+              "fontFamily": "Plus Jakarta Sans",
+              "fontWeight": "800",
+              "fontStyle": "italic",
+              "fontStretch": "normal",
+              "src": [
+                "file:./assets/fonts/PlusJakartaSans-ExtraBoldItalic.woff2"
               ]
             }
           ]
@@ -242,207 +303,6 @@
         "typography": {
           "fontSize": "var(--wp--preset--font-size--small)"
         }
-      },
-      "core/comment-date": {
-        "typography": {
-          "fontSize": "var(--wp--preset--font-size--small)"
-        }
-      },
-      "core/comment-edit-link": {
-        "typography": {
-          "fontSize": "var(--wp--preset--font-size--small)"
-        }
-      },
-      "core/comment-reply-link": {
-        "typography": {
-          "fontSize": "var(--wp--preset--font-size--small)"
-        }
-      },
-      "core/details": {
-        "color": {
-          "text": "var(--wp--preset--color--base)",
-          "background": "var(--wp--preset--color--secondary)"
-        },
-        "spacing": {
-          "padding": {
-            "top": "var(--wp--preset--spacing--30)",
-            "right": "var(--wp--preset--spacing--30)",
-            "bottom": "var(--wp--preset--spacing--30)",
-            "left": "var(--wp--preset--spacing--30)"
-          }
-        }
-      },
-      "core/footnotes": {
-        "typography": {
-          "fontSize": "var(--wp--preset--font-size--extra-small)"
-        },
-        "color": {
-          "text": "var(--wp--preset--color--secondary)"
-        },
-        "elements": {
-          "link": {
-            "color": {
-              "text": "var(--wp--preset--color--secondary)"
-            }
-          }
-        }
-      },
-      "core/latest-comments": {
-        "spacing": {
-          "padding": {
-            "left": "0px"
-          }
-        }
-      },
-      "core/navigation": {
-        "elements": {
-          "link": {
-            "typography": {
-              "textDecoration": "underline"
-            },
-            ":hover": {
-              "typography": {
-                "textDecoration": "none"
-              }
-            }
-          }
-        }
-      },
-      "core/page-list": {
-        "elements": {
-          "link": {
-            "typography": {
-              "textDecoration": "underline"
-            },
-            ":hover": {
-              "typography": {
-                "textDecoration": "none"
-              }
-            }
-          }
-        }
-      },
-      "core/separator": {
-        "color": {
-          "background": "var(--wp--preset--color--secondary)"
-        }
-      },
-      "core/post-author-name": {
-        "typography": {
-          "fontSize": "var(--wp--preset--font-size--extra-small)"
-        },
-        "color": {
-          "text": "var(--wp--preset--color--secondary)"
-        },
-        "elements": {
-          "link": {
-            "color": {
-              "text": "var(--wp--preset--color--secondary)"
-            }
-          }
-        }
-      },
-      "core/post-content": {
-        "spacing": {
-          "padding": {
-            "top": "var(--wp--preset--spacing--60)",
-            "bottom": "var(--wp--preset--spacing--60)"
-          }
-        }
-      },
-      "core/post-date": {
-        "typography": {
-          "fontSize": "var(--wp--preset--font-size--extra-small)"
-        },
-        "color": {
-          "text": "var(--wp--preset--color--secondary)"
-        },
-        "elements": {
-          "link": {
-            "color": {
-              "text": "var(--wp--preset--color--secondary)"
-            }
-          }
-        }
-      },
-      "core/post-navigation-link": {
-        "typography": {
-          "fontWeight": "700"
-        }
-      },
-      "core/post-terms": {
-        "typography": {
-          "fontSize": "var(--wp--preset--font-size--extra-small)"
-        },
-        "color": {
-          "text": "var(--wp--preset--color--secondary)"
-        },
-        "elements": {
-          "link": {
-            "color": {
-              "text": "var(--wp--preset--color--secondary)"
-            }
-          }
-        }
-      },
-      "core/post-title": {
-        "typography": {
-          "fontSize": "var(--wp--preset--font-size--x-large)"
-        }
-      },
-      "core/query-pagination": {
-        "typography": {
-          "fontWeight": "700"
-        },
-        "spacing": {
-          "padding": {
-            "top": "var(--wp--preset--spacing--60)",
-            "bottom": "var(--wp--preset--spacing--60)"
-          }
-        }
-      },
-      "core/query-title": {
-        "typography": {
-          "fontSize": "var(--wp--preset--font-size--x-large)"
-        }
-      },
-      "core/search": {
-        "typography": {
-          "fontSize": "var(--wp--preset--font-size--small)"
-        }
-      },
-      "core/site-title": {
-        "typography": {
-          "fontSize": "var(--wp--preset--font-size--medium)"
-        }
-      },
-      "woocommerce/product-categories": {
-        "css": "& ul{list-style:none;} & ul:first-child{padding-left:0;}"
-      },
-      "woocommerce/product-price": {
-        "color": {
-          "text": "var(--wp--preset--color--contrast)"
-        },
-        "elements": {
-          "link": {
-            "color": {
-              "text": "var(--wp--preset--color--contrast)"
-            }
-          }
-        }
-      },
-      "woocommerce/filter-wrapper": {
-        "elements": {
-          "heading": {
-            "typography": {
-              "fontSize": "var(--wp--preset--font-size--medium)",
-              "fontWeight": "400"
-            }
-          }
-        }
-      },
-      "yoast/faq-block": {
-        "css": "& .schema-faq-section { background: var(--wp--preset--color--secondary); color: var(--wp--preset--color--base); padding: 8px 4px 8px 32px; margin: 4px 0;} & .schema-faq-answer{line-height: inherit; margin: 0;}"
       }
     },
     "color": {
@@ -470,28 +330,6 @@
         ":active": {
           "color": {
             "text": "var(--wp--preset--color--contrast)"
-          }
-        }
-      },
-      "button": {
-        "border": {
-          "color": "var(--wp--preset--color--transparent)",
-          "width": "4px",
-          "style": "solid",
-          "radius": "4px"
-        },
-        "color": {
-          "background": "var(--wp--preset--color--primary)",
-          "text": "var(--wp--preset--color--contrast)"
-        },
-        "typography": {
-          "fontSize": "var(--wp--preset--font-size--small)",
-          "fontWeight": "700"
-        },
-        "shadow": "var(--wp--preset--shadow--natural)",
-        ":hover": {
-          "border": {
-            "color": "var(--wp--preset--color--secondary)"
           }
         }
       }

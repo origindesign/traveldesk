@@ -64,3 +64,9 @@ require_once get_theme_file_path( 'inc/register-block-styles.php' );
 
 // Block pattern and block category examples.
 require_once get_theme_file_path( 'inc/register-block-patterns.php' );
+
+function cc_mime_types($mimes) {
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+  }
+  add_filter('upload_mimes', 'cc_mime_types');

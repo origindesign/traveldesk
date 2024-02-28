@@ -1,0 +1,14 @@
+// elements
+p {
+  font-size: 1.6rem;
+  line-height: 140%;
+  letter-spacing: 0rem;
+  margin-bottom: 4rem;
+  margin-top: 0;
+
+  @media only screen and (min-width: 1600px) {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-bottom: 5rem;
+  }
+}

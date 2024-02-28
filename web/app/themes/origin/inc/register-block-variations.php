@@ -24,5 +24,6 @@ function origin_register_block_variation() {
 		ORIGIN_VERSION,
 		true
 	);
+	
 }
 add_action( 'enqueue_block_assets', 'origin_register_block_variation' );

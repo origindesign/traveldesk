@@ -16,52 +16,29 @@
 function origin_register_block_styles() {
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/button',
+		'core/group',
 		array(
-			'name'  => 'origin-flat-button',
-			'label' => __( 'Flat button', 'origin' ),
-		)
-	);
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/list',
-		array(
-			'name'  => 'origin-list-underline',
-			'label' => __( 'Underlined list items', 'origin' ),
+			'name'  => 'single-column-copy',
+			'label' => __( 'Single Column Copy', 'origin' ),
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/group',
 		array(
-			'name'  => 'origin-box-shadow',
-			'label' => __( 'Box shadow', 'origin' ),
+			'name'  => 'hero-cover',
+			'label' => __( 'Hero Cover', 'origin' ),
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/column',
+		'core/heading',
 		array(
-			'name'  => 'origin-box-shadow',
-			'label' => __( 'Box shadow', 'origin' ),
+			'name'  => 'hero-heading',
+			'label' => __( 'Hero Heading', 'origin' ),
 		)
 	);
 
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/columns',
-		array(
-			'name'  => 'origin-box-shadow',
-			'label' => __( 'Box shadow', 'origin' ),
-		)
-	);
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/details',
-		array(
-			'name'  => 'origin-plus',
-			'label' => __( 'Plus & minus', 'origin' ),
-		)
-	);
 }
 add_action( 'init', 'origin_register_block_styles' );
 

@@ -25,6 +25,11 @@ function origin_register_block_patterns() {
 		array( 'label' => esc_html__( 'Theme patterns', 'origin' ) )
 	);
 
+	register_block_pattern_category(
+		'travel-desk',
+		array( 'label' => __( 'TravelDesk', 'origin' ) )
+	);
+
 }
 add_action( 'init', 'origin_register_block_patterns', 9 );
 
