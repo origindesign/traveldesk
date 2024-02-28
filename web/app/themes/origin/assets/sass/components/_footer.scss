@@ -1,0 +1,75 @@
+.site-footer {
+  background-color: var(--wp--preset--color--pine);
+  color: var(--wp--preset--color--lime);
+  padding: 10.5rem 1.7rem 3rem 1.7rem;
+
+  @media (min-width: $desktop) {
+    padding: 10.5rem 6rem 3rem 6rem;
+  }
+
+  .footer-strapline {
+    font-family: "Plus Jakarta Sans";
+    font-size: 132px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 222px; /* 238.71% */
+    letter-spacing: 5px;
+
+    width: 100%;
+    max-width: 100%; // TODO
+
+    strong {
+      font-family: Prompt;
+      font-size: 140px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 222px; /* 158.571% */
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      display: block;
+      text-align: right;
+      margin-top: -75px;
+    }
+  }
+
+  nav {
+    padding: 0;
+
+    ul {
+      gap: 0 !important;
+      justify-content: flex-end !important;
+
+      li {
+        position: relative;
+
+        &:not(:last-child):after {
+          content: "";
+          display: block;
+          position: absolute;
+          height: 3.2rem;
+          width: 1px;
+          background-color: var(--wp--preset--color--lime);
+          right: 0;
+        }
+
+        a {
+          font-family: "Plus Jakarta Sans";
+          font-size: 2rem;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 100%; /* 20px */
+          padding: 0 18px;
+        }
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+    text-align: right;
+    font-family: "Plus Jakarta Sans";
+    font-size: 13px;
+    line-height: 120%;
+    margin-top: -6rem;
+  }
+}

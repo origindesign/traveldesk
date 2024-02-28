@@ -1,10 +1,12 @@
-// animation
-.fade-in {
-  position: relative;
-  opacity: 0;
-  transition: 2s all ease;
+// animation - target front end only
+.wp-site-blocks {
+  .fade-in {
+    position: relative;
+    opacity: 0;
+    transition: 2s all ease;
 
-  &.active {
-    opacity: 1;
+    &.active {
+      opacity: 1;
+    }
   }
 }
