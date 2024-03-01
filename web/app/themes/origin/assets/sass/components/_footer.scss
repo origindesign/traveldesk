@@ -7,6 +7,11 @@
     padding: 10.5rem 6rem 3rem 6rem;
   }
 
+  > * {
+    max-width: var(--wp--style--global--wide-size);
+    margin: auto;
+  }
+
   .footer-strapline {
     font-size: 4.8rem;
     font-weight: 200;
@@ -67,21 +72,29 @@
       li {
         position: relative;
 
-        &:not(:last-child):after {
-          content: "";
-          display: block;
-          position: absolute;
-          height: 1px;
-          width: 8.3rem;
-          background-color: var(--wp--preset--color--lime);
-          bottom: 0;
-          right: 0;
+        &:last-child {
+          a {
+            padding-right: 0;
+          }
+        }
 
-          @media (min-width: $desktop) {
+        &:not(:last-child) {
+          &:after {
             content: "";
-            height: 3.2rem;
-            width: 1px;
-            bottom: unset;
+            display: block;
+            position: absolute;
+            height: 1px;
+            width: 8.3rem;
+            background-color: var(--wp--preset--color--lime);
+            bottom: 0;
+            right: 0;
+
+            @media (min-width: $desktop) {
+              content: "";
+              height: 3.2rem;
+              width: 1px;
+              bottom: unset;
+            }
           }
         }
 
@@ -102,14 +115,14 @@
   }
 
   p {
-    margin: 0;
     text-align: right;
     font-family: var(--wp--preset--font-family--plus-jakarta-sans);
     font-size: 1.5rem;
     line-height: 140%;
+    margin-top: 1.5rem;
 
     @media (min-width: $desktop) {
-      margin-top: -6rem;
+      margin-top: -3rem;
       font-size: 1.3rem;
       line-height: 120%;
     }

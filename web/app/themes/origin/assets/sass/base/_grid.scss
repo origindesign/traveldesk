@@ -1,4 +1,17 @@
 // grid
+@mixin container {
+  width: 100%;
+  max-width: var(--wp--style--global--wide-size);
+  margin: auto;
+}
+
+// set non-dynamic content width
+body
+  .is-layout-constrained
+  > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+  max-width: var(--wp--style--global--wide-size) !important;
+}
+
 .entry-content {
   padding: 0 1.7rem;
 

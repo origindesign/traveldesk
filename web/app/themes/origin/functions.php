@@ -76,7 +76,6 @@ add_filter('upload_mimes', 'origin_mime_types');
  * Remote assets.
  */
 function origin_theme_assets() {
-	wp_enqueue_style( 'style-name', 'https://cdn.icomoon.io/42560/TravelDesk/style-svg.css?59n2je' );
-	wp_enqueue_script( 'script-name', 'https://cdn.icomoon.io/42560/TravelDesk/svgxuse.js?59n2je', array(), '1.0.0', true );
+	wp_enqueue_style( 'style-name', 'https://cdn.icomoon.io/42560/TravelDesk/style.css?8u3ryn' );
 }
 add_action( 'wp_enqueue_scripts', 'origin_theme_assets' );
