@@ -13,9 +13,13 @@ body
 }
 
 .entry-content {
-  padding: 0 1.7rem;
+  padding: 0 var(--wp--custom--grid--gutter);
+
+  @media (min-width: $tablet) {
+    padding: 0 var(--wp--custom--grid--gutter-medium);
+  }
 
   @media (min-width: $desktop) {
-    padding: 0 6rem;
+    padding: 0 var(--wp--custom--grid--gutter-large);
   }
 }

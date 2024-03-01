@@ -123,11 +123,6 @@
           "fontFamily": "\"Times New Roman\",\"New York\",Times,\"Noto Serif\",serif"
         },
         {
-          "name": "Monospace",
-          "slug": "monospace",
-          "fontFamily": "Consolas,Menlo,Monaco,\"SF Mono\",\"DejaVu Sans Mono\",\"Roboto Mono\",\"Courier New\",Courier,monospace"
-        },
-        {
           "name": "Prompt",
           "slug": "prompt",
           "fontFamily": "Prompt,\"Times New Roman\",\"New York\",Times,\"Noto Serif\",serif",
@@ -295,20 +290,34 @@
         }
       ]
     },
-    "useRootPaddingAwareAlignments": true
-  },
-  "styles": {
-    "blocks": {
-      "core/comment-author-name": {
-        "typography": {
-          "fontSize": "var(--wp--preset--font-size--small)"
+    "custom": {
+      "typography": {
+        "font-weight": {
+          "light": 100,
+          "normal": 200,
+          "bold": 800
+        }
+      },
+      "grid": {
+        "gutter-large": "6rem",
+        "gutter-medium": "4rem",
+        "gutter": "2rem",
+        "gutter-sm": "1.7rem",
+        "containers": {
+          "xs": "100%",
+          "sm": "90%",
+          "md": "90%",
+          "lg": "160rem"
         }
       }
     },
+    "useRootPaddingAwareAlignments": true
+  },
+  "styles": {
+    "blocks": {},
     "color": {
       "text": "var(--wp--preset--color--base)"
     },
-    "css": ".sidebar{ background: var(--wp--preset--color--primary); border-radius: 4px;}",
     "elements": {
       "link": {
         "color": {
@@ -340,13 +349,8 @@
       "lineHeight": "1.7"
     },
     "spacing": {
-      "blockGap": "1.7rem",
-      "padding": {
-        "top": "var(--wp--preset--spacing--60)",
-        "right": "var(--wp--preset--spacing--60)",
-        "bottom": "var(--wp--preset--spacing--60)",
-        "left": "var(--wp--preset--spacing--60)"
-      }
+      "blockGap": false,
+      "padding": false
     }
   },
   "templateParts": [

@@ -1,14 +1,22 @@
+// custom social link icons.
 .wp-block-social-links {
+  gap: 1rem;
+
+  .wp-social-link {
+    a {
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 3.4rem;
+      height: 3.4rem;
+    }
+  }
+
   .wp-social-link-facebook {
     svg {
       display: none;
     }
     a {
       background-image: url("../images/icon-fb.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 34px;
-      height: 34px;
     }
   }
   .wp-social-link-x {
@@ -17,10 +25,6 @@
     }
     a {
       background-image: url("../images/icon-x.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 34px;
-      height: 34px;
     }
   }
   .wp-social-link-instagram {
@@ -29,10 +33,6 @@
     }
     a {
       background-image: url("../images/icon-instagram.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 34px;
-      height: 34px;
     }
   }
   .wp-social-link-linkedin {
@@ -41,10 +41,6 @@
     }
     a {
       background-image: url("../images/icon-linkedin.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 34px;
-      height: 34px;
     }
   }
 }

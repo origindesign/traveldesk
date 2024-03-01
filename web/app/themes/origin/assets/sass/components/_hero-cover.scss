@@ -44,7 +44,7 @@
   }
 
   sub {
-    margin-right: 8%;
+    margin-right: 13%;
     opacity: 0;
     transition: 2s ease-in-out;
     transition-delay: 0.1s;
@@ -54,7 +54,7 @@
   &.active {
     sub {
       opacity: 1;
-      margin-right: 5%;
+      margin-right: 11%;
     }
   }
 }

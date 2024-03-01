@@ -1,10 +1,23 @@
+.hide-nav header {
+  transform: translateY(-150%);
+}
+
 header {
   height: 7rem;
-  padding: 0 1.7rem;
+  padding: 0 var(--wp--custom--grid--gutter);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--wp--preset--color--aqua);
+  transition: 0.4s ease-in-out;
+
+  @media (min-width: $tablet) {
+    padding: 0 var(--wp--custom--grid--gutter-medium);
+  }
 
   @media (min-width: $desktop) {
     height: 10.5rem;
-    padding: 0 6rem;
+    padding: 0 var(--wp--custom--grid--gutter-large);
   }
 
   .wp-block-site-logo {
@@ -24,7 +37,7 @@ header {
     a {
       font-family: var(--wp--preset--font-family--plus-jakarta-sans);
       font-size: 1.6rem;
-      font-weight: 800;
+      font-weight: var(--wp--custom--typography--font-weight--bold);
       line-height: 100%;
       padding: 1.5rem;
 
@@ -41,7 +54,7 @@ header {
           position: absolute;
           top: 80%;
           left: 15px;
-          background: black;
+          background: var(--wp--preset--color--black);
           transition: 300ms;
         }
 
@@ -94,8 +107,8 @@ header {
   height: 4rem;
   width: 4.2rem;
   padding: 0.5rem;
-  top: -0.5rem;
-  right: -0.5rem;
+  top: 1.5rem !important;
+  right: 2.5rem !important;
 
   &::before {
     content: "";
@@ -128,12 +141,13 @@ header {
     background-position: center;
     display: block;
     top: 3rem;
-    left: 1.7rem;
+    left: var(--wp--custom--grid--gutter-sm);
   }
 
   .wp-block-page-list {
     margin-top: 5.2rem;
     width: 100%;
+    gap: 1.5rem;
 
     li {
       border: 1px solid var(--wp--preset--color--lime);
@@ -192,18 +206,17 @@ header {
       }
 
       a {
-        display: block;
         color: var(--wp--preset--color--lime) !important;
-        padding: 1.7rem 2rem 1.7rem 4rem !important;
-        font-family: "Plus Jakarta Sans";
+        padding: var(--wp--custom--grid--gutter-sm) 2rem
+          var(--wp--custom--grid--gutter-sm) 4rem !important;
+        font-family: var(--wp--preset--font-family--plus-jakarta-sans);
         font-size: 16px;
         font-style: normal;
-        font-weight: 800;
+        font-weight: var(--wp--custom--typography--font-weight--bold);
         line-height: 100%;
         width: 100%;
         position: relative;
         height: 70px;
-
         align-items: center;
         display: flex;
 
@@ -232,7 +245,6 @@ header {
           border: 1px solid var(--wp--preset--color--lime);
           padding: 0 0.5rem;
           border-radius: 2rem;
-
           position: absolute;
           background: none !important;
           top: unset;

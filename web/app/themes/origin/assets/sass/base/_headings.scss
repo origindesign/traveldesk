@@ -10,7 +10,7 @@ h4,
 h5,
 h6 {
   font-family: var(--wp--preset--font-family--plus-jakarta-sans);
-  font-weight: 800;
+  font-weight: var(--wp--custom--typography--font-weight--bold);
 }
 
 h1,
@@ -112,7 +112,7 @@ h6,
   font-family: "Plus Jakarta Sans";
   line-height: 95%;
   letter-spacing: 0.5rem;
-  font-weight: 200;
+  font-weight: var(--wp--custom--typography--font-weight--normal);
 
   @media only screen and (min-width: $tablet) {
     font-size: 9rem;
