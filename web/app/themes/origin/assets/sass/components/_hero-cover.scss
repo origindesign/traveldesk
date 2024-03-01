@@ -48,6 +48,7 @@
     opacity: 0;
     transition: 2s ease-in-out;
     transition-delay: 0.1s;
+    transition-property: margin-right;
   }
 
   &.active {
