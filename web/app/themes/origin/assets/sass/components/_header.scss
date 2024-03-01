@@ -12,13 +12,38 @@ header {
 
   li {
     a {
-      /* Desktop/Nav */
-      font-family: "Plus Jakarta Sans";
-      font-size: 16px;
-      font-style: normal;
+      font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+      font-size: 1.6rem;
       font-weight: 800;
-      line-height: 100%; /* 16px */
+      line-height: 100%;
       padding: 1.5rem;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      // desktop hover underline
+      @media (min-width: $desktop) {
+        &::after {
+          content: "";
+          width: 0px;
+          height: 2px;
+          position: absolute;
+          top: 80%;
+          left: 15px;
+          background: black;
+          transition: 300ms;
+        }
+
+        &:hover:after {
+          width: calc(100% - 30px);
+        }
+
+        &:not(:hover):after {
+          right: 15px;
+          left: auto;
+        }
+      }
     }
   }
 }

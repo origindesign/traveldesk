@@ -1,34 +1,52 @@
 .site-footer {
   background-color: var(--wp--preset--color--pine);
   color: var(--wp--preset--color--lime);
-  padding: 10.5rem 1.7rem 3rem 1.7rem;
+  padding: 5.5rem 1.7rem 3rem 1.7rem;
 
   @media (min-width: $desktop) {
     padding: 10.5rem 6rem 3rem 6rem;
   }
 
   .footer-strapline {
-    font-family: "Plus Jakarta Sans";
-    font-size: 132px;
-    font-style: normal;
+    font-size: 4.8rem;
     font-weight: 200;
-    line-height: 222px; /* 238.71% */
-    letter-spacing: 5px;
-
+    letter-spacing: 0.5rem;
+    line-height: 100%;
     width: 100%;
     max-width: 100%; // TODO
 
+    @media (min-width: $desktop) {
+      font-size: 13.2rem;
+      line-height: 22.2rem;
+    }
+
     strong {
-      font-family: Prompt;
-      font-size: 140px;
-      font-style: normal;
+      font-family: var(--wp--preset--font-family--prompt);
+      font-size: 5rem;
       font-weight: 800;
-      line-height: 222px; /* 158.571% */
-      letter-spacing: 8px;
+      line-height: 100%;
+      letter-spacing: 0.8rem;
       text-transform: uppercase;
       display: block;
-      text-align: right;
-      margin-top: -75px;
+
+      @media (min-width: $desktop) {
+        font-size: 14rem;
+        line-height: 22.2rem;
+        margin-top: -7.5rem;
+        text-align: right;
+      }
+    }
+  }
+
+  .wp-block-columns {
+    flex-wrap: nowrap !important;
+  }
+
+  .wp-block-social-links {
+    padding-top: 1.5rem;
+
+    @media (min-width: $desktop) {
+      padding-top: 0;
     }
   }
 
@@ -38,6 +56,13 @@
     ul {
       gap: 0 !important;
       justify-content: flex-end !important;
+      flex-direction: column !important;
+      align-items: flex-end !important;
+
+      @media (min-width: $desktop) {
+        align-items: center !important;
+        flex-direction: row !important;
+      }
 
       li {
         position: relative;
@@ -46,19 +71,31 @@
           content: "";
           display: block;
           position: absolute;
-          height: 3.2rem;
-          width: 1px;
+          height: 1px;
+          width: 8.3rem;
           background-color: var(--wp--preset--color--lime);
+          bottom: 0;
           right: 0;
+
+          @media (min-width: $desktop) {
+            content: "";
+            height: 3.2rem;
+            width: 1px;
+            bottom: unset;
+          }
         }
 
         a {
-          font-family: "Plus Jakarta Sans";
-          font-size: 2rem;
-          font-style: normal;
+          font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+          font-size: 1.6rem;
           font-weight: 800;
-          line-height: 100%; /* 20px */
-          padding: 0 18px;
+          line-height: 100%;
+          padding: 1.5rem 0;
+
+          @media (min-width: $desktop) {
+            font-size: 2rem;
+            padding: 0 1.8rem;
+          }
         }
       }
     }
@@ -67,9 +104,14 @@
   p {
     margin: 0;
     text-align: right;
-    font-family: "Plus Jakarta Sans";
-    font-size: 13px;
-    line-height: 120%;
-    margin-top: -6rem;
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+    font-size: 1.5rem;
+    line-height: 140%;
+
+    @media (min-width: $desktop) {
+      margin-top: -6rem;
+      font-size: 1.3rem;
+      line-height: 120%;
+    }
   }
 }

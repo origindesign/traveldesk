@@ -127,6 +127,15 @@ h6,
   strong {
     font-family: "Prompt";
     letter-spacing: 0;
+    font-size: 5rem;
+
+    @media only screen and (min-width: $tablet) {
+      font-size: 9rem;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 14rem;
+    }
   }
 
   sub {

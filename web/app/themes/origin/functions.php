@@ -65,8 +65,18 @@ require_once get_theme_file_path( 'inc/register-block-styles.php' );
 // Block pattern and block category examples.
 require_once get_theme_file_path( 'inc/register-block-patterns.php' );
 
-function cc_mime_types($mimes) {
+// Allow SVG's.
+function origin_mime_types($mimes) {
 	$mimes['svg'] = 'image/svg+xml';
 	return $mimes;
-  }
-  add_filter('upload_mimes', 'cc_mime_types');
+}
+add_filter('upload_mimes', 'origin_mime_types');
+
+/**
+ * Remote assets.
+ */
+function origin_theme_assets() {
+	wp_enqueue_style( 'style-name', 'https://cdn.icomoon.io/42560/TravelDesk/style-svg.css?59n2je' );
+	wp_enqueue_script( 'script-name', 'https://cdn.icomoon.io/42560/TravelDesk/svgxuse.js?59n2je', array(), '1.0.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'origin_theme_assets' );
