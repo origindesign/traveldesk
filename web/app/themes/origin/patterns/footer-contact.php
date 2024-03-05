@@ -12,7 +12,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly", "className":"is-style-gallery is-full-width-container fade-in","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-gallery is-full-width-container">
+<div class="wp-block-group is-style-gallery is-full-width-container fade-in">
 	<!-- wp:columns {"isStackedOnMobile":false} -->
 	<div class="wp-block-columns is-not-stacked-on-mobile">
 		<!-- wp:column -->

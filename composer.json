@@ -64,7 +64,8 @@
     "pantheon-upstreams/upstream-configuration": "dev-main",
     "wpackagist-plugin/pantheon-advanced-page-cache": "*",
     "wpackagist-plugin/wp-native-php-sessions": "*",
-    "cweagans/composer-patches": "^1.7"
+    "cweagans/composer-patches": "^1.7",
+    "yoast/wordpress-seo": "^22.1"
   },
   "require-dev": {
     "pantheon-systems/pantheon-wp-coding-standards": "*",
