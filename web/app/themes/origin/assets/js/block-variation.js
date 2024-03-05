@@ -37,26 +37,26 @@ window.addEventListener(
 // todo
 (function () {
   const a = document.querySelectorAll(".schema-faq-section");
+
   if (!a) return;
+
   a.forEach(function (a) {
     a.addEventListener("click", function () {
-      a.classList.toggle("in"),
-        document
-          .querySelector(".rw-acf-faq-panel-body-" + a.dataset.attr)
-          .classList.toggle("in");
-      let b = document.querySelector(
-        ".rw-acf-faq-panel-body-" + a.dataset.attr,
-      );
+      a.classList.toggle("in");
+
+      let b = a.querySelector(".schema-faq-answer");
+
       b.style.maxHeight
         ? (b.style.maxHeight = null)
-        : (b.style.maxHeight = b.scrollHeight * 2 + "px");
+        : (b.style.maxHeight = b.scrollHeight * 3 + "px");
     });
   });
-  const b = document.querySelectorAll(".faq-section h3");
-  if (!b) return;
-  b.forEach(function (a) {
-    a.addEventListener("click", function () {
-      a.closest(".faq-section").classList.toggle("in");
-    });
-  });
+
+  // const b = document.querySelectorAll(".faq-section h3");
+  // if (!b) return;
+  // b.forEach(function (a) {
+  //   a.addEventListener("click", function () {
+  //     a.closest(".faq-section").classList.toggle("in");
+  //   });
+  // });
 })();

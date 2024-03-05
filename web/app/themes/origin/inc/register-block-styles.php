@@ -40,6 +40,14 @@ function origin_register_block_styles() {
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/heading',
+		array(
+			'name'  => 'keyline-heading',
+			'label' => __( 'Keyline Heading', 'origin' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/button',
 		array(
 			'name'  => 'newsletter-sign-up',

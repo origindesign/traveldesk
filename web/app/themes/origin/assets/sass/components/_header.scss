@@ -7,7 +7,7 @@ header {
   padding: 0 var(--wp--custom--grid--gutter);
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 10;
   background-color: var(--wp--preset--color--aqua);
   transition: 0.4s ease-in-out;
 

@@ -177,3 +177,18 @@ h2,
 h3 {
   color: var(--wp--preset--color--strawberry);
 }
+
+.is-style-keyline-heading {
+  /* Desktop/Keyline Title Thing */
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 18px */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  @media only screen and (min-width: $desktop) {
+    font-size: 18px;
+  }
+}
