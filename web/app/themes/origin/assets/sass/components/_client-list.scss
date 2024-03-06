@@ -1,5 +1,6 @@
 .is-style-client-list-wrapper {
   background-color: var(--wp--preset--color--white);
+  overflow: hidden;
   padding: 5.2rem var(--wp--custom--grid--gutter) 7rem;
 
   @media (min-width: $tablet) {
@@ -7,6 +8,20 @@
   }
   @media (min-width: $desktop) {
     padding: 12.2rem var(--wp--custom--grid--gutter-large);
+  }
+
+  // transition
+  &.fade-in.active {
+    .is-style-client-list-internal {
+      p:nth-child(even) {
+        margin-left: 0 !important;
+        margin-right: auto !important;
+      }
+      p:nth-child(odd) {
+        margin-right: 0 !important;
+        margin-left: auto !important;
+      }
+    }
   }
 }
 
@@ -30,58 +45,139 @@
       left: 0;
       display: block;
       position: absolute;
-      top: 24px;
+      top: 2.4rem;
       z-index: -1;
+    }
+  }
+
+  .is-style-client-list-internal {
+    max-width: 95vw !important;
+
+    @media only screen and (min-width: $tablet) {
+      max-width: 85vw !important;
+    }
+    @media only screen and (min-width: 900px) {
+      max-width: 65vw !important;
+    }
+    @media only screen and (min-width: $desktop) {
+      max-width: 100.5rem !important;
+    }
+    @media only screen and (min-width: 1400px) {
+      max-width: 115rem !important;
     }
   }
 
   p {
     color: var(--wp--preset--color--strawberry);
-    font-family: Prompt;
-    font-size: 35px;
+    font-family: var(--wp--preset--font-family--prompt);
+    font-size: 3.5rem;
     font-style: normal;
-    font-weight: 800;
-    line-height: 32px;
+    font-weight: var(--wp--custom--typography--font-weight--bold);
+    line-height: 3.2rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    margin-bottom: 0.8rem;
     text-align: left;
+    transition: 1s ease-in-out;
+    transition-property: margin-left, margin-right;
+    transition-delay: 0.2s;
+
+    @media only screen and (min-width: $desktop) {
+      min-width: 100rem !important;
+      max-width: 100rem !important;
+    }
+
+    // client has max 10 clients, so we can run the iterating animation in css, no js.
+    &:nth-child(2) {
+      transition-delay: 1.2s;
+    }
+    &:nth-child(3) {
+      transition-delay: 1.4s;
+    }
+    &:nth-child(4) {
+      transition-delay: 1.6s;
+    }
+    &:nth-child(5) {
+      transition-delay: 1.8s;
+    }
+    &:nth-child(6) {
+      transition-delay: 2s;
+    }
+    &:nth-child(7) {
+      transition-delay: 2.2s;
+    }
+    &:nth-child(8) {
+      transition-delay: 2.4s;
+    }
+    &:nth-child(9) {
+      transition-delay: 2.6s;
+    }
+    &:nth-child(10) {
+      transition-delay: 2.8s;
+    }
 
     @media only screen and (min-width: $tablet) {
-      font-size: 35px;
       margin-bottom: 0;
+      font-weight: var(--wp--custom--typography--font-weight--bold);
+      letter-spacing: 0.5rem;
+      font-size: 5.5rem;
+      line-height: 5.5rem;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 10rem;
+      line-height: 10rem;
+    }
+
+    &:nth-child(even) {
+      @media only screen and (min-width: $desktop) {
+        margin-left: -25vw !important;
+      }
     }
 
     &:nth-child(odd) {
-      font-family: "Plus Jakarta Sans";
-      font-size: 33px;
-      font-style: normal;
-      font-weight: 200;
-      line-height: 28px;
+      font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+      font-size: 3.3rem;
+      font-weight: var(--wp--custom--typography--font-weight--normal);
+      line-height: 3.3rem;
       letter-spacing: 1px;
       text-transform: uppercase;
       text-align: right;
-      margin-bottom: 10px;
+      margin-bottom: 1rem;
 
       @media only screen and (min-width: $tablet) {
-        font-size: 33px;
+        font-weight: var(--wp--custom--typography--font-weight--normal);
+        letter-spacing: 0.5rem;
+        margin-left: 0 !important;
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+      }
+
+      @media only screen and (min-width: $desktop) {
+        font-size: 8rem;
+        line-height: 8rem;
+        margin-right: -25vw !important;
       }
     }
 
     &:first-of-type {
-      margin-top: 45px;
+      margin-top: 4.5rem;
       text-align: center;
 
       @media only screen and (min-width: $tablet) {
-        margin-top: 68px;
+        margin-top: 6.8rem;
+      }
+
+      @media only screen and (min-width: $desktop) {
+        text-align: right;
       }
     }
 
     &:last-of-type {
-      margin-bottom: 68px;
+      margin-bottom: 6.8rem;
 
-      @media only screen and (min-width: $tablet) {
-        margin-bottom: 68px;
+      @media only screen and (min-width: $desktop) {
+        margin-bottom: 10rem;
       }
     }
   }
