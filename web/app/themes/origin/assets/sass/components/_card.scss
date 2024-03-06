@@ -1,0 +1,197 @@
+.is-style-cards {
+  .wp-block-heading {
+    margin-bottom: 2rem;
+
+    @media only screen and (min-width: $desktop) {
+      max-width: 45% !important;
+      text-align: right;
+      margin-right: 0 !important;
+    }
+  }
+
+  h2 {
+    color: var(--wp--preset--color--spruce);
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+    font-weight: var(--wp--custom--typography--font-weight--bold);
+    text-transform: unset;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.wp-block-query {
+  padding: 5rem 0 7rem 0;
+  border-top: 1px solid var(--wp--preset--color--spruce);
+
+  @media only screen and (min-width: $desktop) {
+    padding: 5rem 0 16rem 0;
+  }
+
+  .wp-block-post-template {
+    width: 100% !important;
+    max-width: 100% !important;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    row-gap: 4rem;
+
+    @media only screen and (min-width: $tablet) {
+      column-gap: 4rem;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      column-gap: 5rem;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    .wp-block-post {
+      grid-column: span 8;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      border-radius: 0 2.5rem 2.5rem 2.5rem;
+      overflow: hidden;
+      transition: 0.2s ease-in-out;
+
+      @media only screen and (min-width: $tablet) {
+        grid-column: span 4;
+      }
+
+      @media only screen and (min-width: $desktop) {
+        grid-column: span 4;
+      }
+
+      &:hover {
+        transform: scale(1.02);
+      }
+
+      &:nth-child(3n + 1) {
+        background-color: var(--wp--preset--color--spruce);
+      }
+      &:nth-child(3n + 2) {
+        background-color: var(--wp--preset--color--base);
+      }
+      &:nth-child(3n + 3) {
+        background-color: var(--wp--preset--color--lime);
+
+        .wp-block-group {
+          color: var(--wp--preset--color--base);
+        }
+
+        .wp-block-post-excerpt__more-link {
+          &::after {
+            border: 1px solid var(--wp--preset--color--base);
+            color: var(--wp--preset--color--base);
+          }
+        }
+      }
+
+      figure {
+        margin: 0;
+        border-bottom-left-radius: 2.5rem;
+        overflow: hidden;
+      }
+
+      .taxonomy-clients {
+        font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+        font-size: 1.7rem;
+        font-weight: var(--wp--custom--typography--font-weight--bold);
+        line-height: 100%;
+        letter-spacing: 1px;
+
+        a {
+          text-decoration: none;
+        }
+      }
+
+      .wp-block-group {
+        color: var(--wp--preset--color--white);
+        padding: 3rem 2rem;
+
+        @media only screen and (min-width: $desktop) {
+          padding: 10.5rem 2.5rem 4rem 2.5rem;
+        }
+      }
+
+      .wp-block-post-title {
+        margin-bottom: 2.2rem;
+        margin-top: 1rem;
+        font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+        font-size: 2rem;
+        font-weight: var(--wp--custom--typography--font-weight--bold);
+        line-height: 110%;
+        letter-spacing: 1px;
+        margin-left: 0 !important;
+
+        @media only screen and (min-width: $desktop) {
+          font-size: 2.3rem;
+          width: 66%;
+        }
+      }
+
+      .wp-block-post-excerpt {
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 2rem;
+
+        @media only screen and (min-width: $desktop) {
+          flex-direction: row;
+          align-items: flex-end;
+          gap: 0;
+        }
+
+        &__excerpt {
+          width: 100%;
+
+          @media only screen and (min-width: $desktop) {
+            width: 66%;
+          }
+        }
+      }
+
+      .wp-block-post-excerpt__more-text {
+        &::after {
+          content: "\e901";
+          color: var(--wp--preset--color--white);
+          font-family: "icomoon";
+          font-size: 1.7rem;
+          text-align: center;
+          line-height: 130%;
+          height: 2.2rem;
+          width: 3.6rem;
+          border: 1px solid var(--wp--preset--color--white);
+          padding: 0.2rem 2rem;
+          border-radius: 2rem;
+          display: block;
+        }
+      }
+
+      .wp-block-post-excerpt__more-link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        font-size: 0;
+      }
+
+      // swap image and media on even elements
+      @media only screen and (min-width: $desktop) {
+        &:nth-child(even) {
+          flex-direction: column-reverse;
+
+          figure {
+            border-radius: 0 2.5rem 2.5rem 2.5rem;
+          }
+
+          .wp-block-group {
+            padding: 4rem 2.5rem 10.5rem 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}

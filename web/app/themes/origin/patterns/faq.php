@@ -11,7 +11,7 @@
 
 ?>
 
-<!-- wp:group {"className":"is-style-accordion","layout":{"type":"constrained"}} -->
+<!-- wp:group {"className":"is-style-accordion fade-in","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-accordion">
 	<!-- wp:group {"className":"is-style-accordion-text","layout":{"type":"constrained"}} -->
 	<div class="wp-block-group is-style-accordion-text">

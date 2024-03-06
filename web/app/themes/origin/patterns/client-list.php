@@ -11,7 +11,7 @@
 
 ?>
 
-<!-- wp:group {"templateLock":"contentOnly",  "className":"is-full-width-container is-style-client-list-wrapper fade-in","layout":{"type":"constrained"}} -->
+<!-- wp:group {"templateLock":"contentOnly","className":"is-full-width-container is-style-client-list-wrapper fade-in","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-full-width-container is-style-client-list-wrapper fade-in">
 	<!-- wp:group {"className":"is-style-client-list","layout":{"type":"constrained"}} -->
 	<div class="wp-block-group is-style-client-list">
