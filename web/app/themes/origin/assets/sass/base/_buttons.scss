@@ -1,6 +1,38 @@
 $sign-up-btn-border-radius-desktop: 1.1rem;
 $sign-up-btn-border-radius-mob: 0.55rem;
 
+.wp-block-button__link {
+  background-color: var(--wp--preset--color--lime);
+  border: 2px solid var(--wp--preset--color--lime);
+  color: var(--wp--preset--color--base);
+  border-radius: 55px;
+  padding: 10px 26px 10px 30px;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.32px;
+  display: inline-flex;
+  align-items: center;
+
+  &:hover {
+    background-color: var(--wp--preset--color--white);
+    text-decoration: none;
+  }
+
+  &::after {
+    content: "\e901";
+    font-family: "icomoon";
+    font-size: 28px;
+    font-weight: 100;
+    text-align: center;
+    border-radius: 2rem;
+    margin-left: 6px;
+    margin-bottom: -3px;
+  }
+}
+
 .wp-block-buttons.sign-up-wrapper {
   border: 1px solid var(--wp--preset--color--lime);
   border-left: none;
@@ -96,6 +128,7 @@ $sign-up-btn-border-radius-mob: 0.55rem;
   }
 
   .wp-block-button__link {
+    border: none;
     background: none;
     color: var(--wp--preset--color--lime);
     font-family: var(--wp--preset--font-family--plus-jakarta-sans);

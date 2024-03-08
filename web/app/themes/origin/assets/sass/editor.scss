@@ -1,4 +1,4 @@
-@import "https://cdn.icomoon.io/42560/TravelDesk/style.css?nh15ks";
+@import "https://cdn.icomoon.io/42560/TravelDesk/style.css?ncs6cz";
 
 @import "base/settings";
 @import "base/base";
@@ -8,11 +8,20 @@
 @import "base/grid";
 @import "base/buttons";
 
-@import "helpers/variables";
+@import "blocks/block";
 
+@import "components/header";
 @import "components/footer";
+@import "components/hero-cover";
 @import "components/single-column-copy";
 @import "components/gallery";
+@import "components/accordion";
+@import "components/client-list";
+@import "components/card";
+@import "components/carousel-text";
 
 @import "components/wp-social-links";
 @import "components/wp-navigation";
+
+@import "helpers/variables";
+@import "vendor/vendor";

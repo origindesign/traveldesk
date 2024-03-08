@@ -22,11 +22,15 @@ define( 'ORIGIN_VERSION', wp_get_theme()->get( 'Version' ) );
  *
  * @return void
  */
-function origin_setup() {
-	add_editor_style( './assets/css/main.min.css' );
-	add_editor_style( './assets/css/editor.min.css' );
-}
-add_action( 'after_setup_theme', 'origin_setup' );
+// function origin_setup() {
+// 	// add_editor_style( './assets/css/main.min.css' );
+// 	add_editor_style( './assets/css/editor.min.css' );
+// }
+// add_action( 'after_setup_theme', 'origin_setup' );
+
+add_action('enqueue_block_editor_assets', function () {
+    wp_enqueue_style('editor-assets-test', get_stylesheet_directory_uri() . '/assets/css/editor.min.css');
+}, 999);
 
 /**
  * Enqueue the CSS files.
@@ -76,7 +80,7 @@ add_filter('upload_mimes', 'origin_mime_types');
  * Remote assets.
  */
 function origin_theme_assets() {
-	wp_enqueue_style( 'style-name', 'https://cdn.icomoon.io/42560/TravelDesk/style.css?nh15ks' );
+	wp_enqueue_style( 'style-name', 'https://cdn.icomoon.io/42560/TravelDesk/style.css?ncs6cz' );
 }
 add_action( 'wp_enqueue_scripts', 'origin_theme_assets' );
 
