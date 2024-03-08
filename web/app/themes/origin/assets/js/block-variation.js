@@ -60,3 +60,64 @@ window.addEventListener(
   //   });
   // });
 })();
+
+(function () {
+  console.log(2344);
+  // var splide = new Splide(".splide").mount();
+  // splide.on("move", function () {
+  //   // do something
+  //   console.log("meow");
+  // });
+
+  document.addEventListener("DOMContentLoaded", (event) => {
+    // insert splide before here.
+    const parentElement = document.querySelector(".splide");
+    const newChild = document.createElement("p");
+    newChild.classList.add("splide-pagination-custom");
+
+    parentElement.insertBefore(newChild, parentElement.firstChild);
+
+    setTimeout(function () {
+      var el = document.querySelector(".splide__slide.is-active");
+      document.querySelector(".splide-pagination-custom").innerHTML =
+        el.ariaLabel.replace("of", "/");
+    }, 50);
+
+    // select the target node
+    var target = document.querySelector(".splide__track");
+
+    // create an observer instance
+    var observer = new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        console.log(mutation.type);
+        // var el = document.querySelector(".splide__slide.is-active");
+        // console.log(el.ariaLabel, 999);
+        // setTimeout(function () {
+        //   var el = document.querySelector(".splide__slide.is-active");
+        //   document.querySelector(".splide-pagination-custom").innerHTML =
+        //     el.ariaLabel;
+        // }, 50);
+        // var el = document.querySelector(".splide__slide.is-active");
+        // document.querySelector(".splide-pagination-custom").innerHTML =
+        //   el.ariaLabel;
+        // var el = document.querySelector(".splide__slide.is-active");
+        // document.querySelector(".splide-pagination-custom").innerHTML =
+        //   el.ariaLabel;
+
+        var el = document.querySelector(".splide__slide.is-active");
+        document.querySelector(".splide-pagination-custom").innerHTML =
+          el.ariaLabel.replace("of", "/");
+      });
+
+      // var el = document.querySelector(".splide__slide.is-active");
+      // document.querySelector(".splide-pagination-custom").innerHTML =
+      //   el.ariaLabel;
+    });
+
+    // configuration of the observer:
+    var config = { childList: true, subtree: true };
+
+    // pass in the target node, as well as the observer options
+    observer.observe(target, config);
+  });
+})();

@@ -1,3 +1,294 @@
 .is-style-carousel-text {
   background-color: var(--wp--preset--color--pine);
+  overflow: hidden;
+
+  .wp-block-columns {
+    width: 100% !important;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    max-width: var(--wp--style--global--wide-size);
+    margin-bottom: 0;
+    column-gap: 1.5rem;
+
+    @media only screen and (min-width: $desktop) {
+      column-gap: 3rem;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    // left col
+    .wp-block-column:first-of-type {
+      grid-column: span 8;
+      padding: 3.6rem var(--wp--custom--grid--gutter) 0
+        var(--wp--custom--grid--gutter);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: $desktop) {
+        padding: 5.2rem var(--wp--custom--grid--gutter);
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background: var(--wp--preset--color--pine);
+        right: 0;
+        height: 4rem;
+        width: 55%;
+        bottom: -3.2rem;
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+
+        @media (min-width: $desktop) {
+          right: -7rem;
+          height: 45%;
+          width: 5rem;
+          top: 0;
+          bottom: unset;
+          border-bottom-right-radius: 2rem;
+          border-bottom-left-radius: 0;
+        }
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 52%;
+        height: 1.6rem;
+        width: 1.8rem;
+        bottom: -1.5rem;
+        border-top-right-radius: 3rem;
+        border-top: 1.1rem solid var(--wp--preset--color--pine);
+        border-right: 1rem solid var(--wp--preset--color--pine);
+
+        @media (min-width: $desktop) {
+          right: -5.7rem;
+          height: 4rem;
+          width: 2.7rem;
+          top: 44.5rem;
+          top: 43.2%;
+          border-top-right-radius: 0;
+          border-top-left-radius: 3rem;
+          border-top: 1.6rem solid var(--wp--preset--color--pine);
+          border-left: 1.6rem solid var(--wp--preset--color--pine);
+          border-right: none;
+        }
+      }
+
+      @media (min-width: $tablet) {
+        padding: 5rem var(--wp--custom--grid--gutter-medium);
+        grid-column: span 8;
+      }
+
+      @media (min-width: $desktop) {
+        padding: 12.2rem var(--wp--custom--grid--gutter-large);
+        grid-column: span 8;
+        padding-right: 2rem;
+      }
+    }
+
+    // right col
+    .wp-block-column:last-of-type {
+      grid-column: span 8;
+
+      @media only screen and (max-width: $tablet) {
+        order: 1;
+      }
+
+      @media only screen and (min-width: $tablet) {
+        grid-column: span 8;
+      }
+
+      @media only screen and (min-width: $desktop) {
+        grid-column: span 4;
+      }
+
+      figure {
+        margin: 0;
+        height: 45vh;
+        width: 100%;
+
+        @media only screen and (min-width: $desktop) {
+          width: 150%;
+          height: 100%;
+        }
+
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+          object-position: right;
+        }
+      }
+    }
+  }
+
+  // paragraph
+  p {
+    color: var(--wp--preset--color--white);
+    order: 2;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+
+    @media (min-width: $desktop) {
+      order: unset;
+    }
+  }
+
+  .drop-cap {
+    max-width: 35rem;
+    margin-bottom: 4.5rem;
+
+    @media (min-width: $desktop) {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  h2 {
+    color: var(--wp--preset--color--lime);
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+    font-size: 3.3rem;
+    font-weight: var(--wp--custom--typography--font-weight--normal);
+    line-height: 3.3rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    margin-bottom: 4.5rem;
+    order: 1;
+
+    @media (min-width: $desktop) {
+      font-size: 9.3rem;
+      font-weight: var(--wp--custom--typography--font-weight--normal);
+      line-height: 9.3rem;
+      margin-bottom: 12.2rem;
+      margin-top: 10rem;
+      order: unset;
+    }
+
+    sub {
+      font-family: var(--wp--preset--font-family--prompt);
+      font-size: 3.5rem;
+      font-weight: var(--wp--custom--typography--font-weight--bold);
+      line-height: 3.5rem;
+      letter-spacing: 0.5rem;
+      text-transform: uppercase;
+      vertical-align: baseline;
+
+      @media (min-width: $desktop) {
+        font-size: 10rem;
+        line-height: 10rem;
+      }
+
+      @media (min-width: 1350px) {
+        display: block;
+        margin-left: 5vw;
+      }
+    }
+  }
+
+  h4 {
+    color: var(--wp--preset--color--lime);
+  }
+
+  // carousel
+  .wp-block-splide-carousel__container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    order: 3;
+
+    @media (min-width: $desktop) {
+      order: unset;
+      width: 80%;
+    }
+
+    @media (min-width: 1650px) {
+      width: 60%;
+    }
+
+    .splide__arrow {
+      background: none;
+      border: 1px solid var(--wp--preset--color--lime);
+      border-radius: 0.3rem;
+      opacity: 1;
+
+      svg {
+        display: none;
+      }
+
+      &::before {
+        content: "\e901";
+        font-family: "icomoon";
+        display: block;
+        position: absolute;
+        font-size: 2.3rem;
+        transform: rotate(45deg);
+      }
+
+      &.splide__arrow--prev {
+        &::before {
+          transform: rotate(225deg);
+        }
+      }
+
+      &:hover {
+        background-color: var(--wp--preset--color--lime);
+      }
+    }
+
+    .splide-pagination-custom {
+      width: 10rem;
+      min-width: 10rem;
+      text-align: center;
+      margin-right: 2.2rem;
+      font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 100%;
+      letter-spacing: 0.5rem;
+      text-transform: uppercase;
+      height: max-content;
+      padding: 1rem 0;
+      display: none;
+
+      @media only screen and (min-width: $desktop) {
+        display: block;
+      }
+    }
+
+    .wp-block-splide-carousel {
+      display: flex;
+      flex-direction: column;
+
+      @media only screen and (min-width: $desktop) {
+        flex-direction: row;
+      }
+    }
+
+    .splide__arrows {
+      display: flex;
+      gap: 1.1rem;
+      order: 2;
+      justify-content: flex-end;
+      margin-right: 0;
+      margin-bottom: -1rem;
+
+      @media only screen and (min-width: $desktop) {
+        order: unset;
+        margin-bottom: unset;
+        margin-right: 4.4rem;
+        justify-content: flex-start;
+      }
+    }
+    .splide__arrow {
+      position: static;
+      transform: none;
+    }
+    .splide__arrow--next {
+      right: unset;
+    }
+  }
 }
