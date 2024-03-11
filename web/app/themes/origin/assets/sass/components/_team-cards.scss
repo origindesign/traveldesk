@@ -1,0 +1,80 @@
+.is-style-team-cards {
+  width: 100% !important;
+  max-width: 100% !important;
+  position: relative;
+  display: grid !important;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  row-gap: 5rem;
+
+  @media only screen and (min-width: $tablet) {
+    column-gap: 4rem;
+    row-gap: 4rem;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    column-gap: 2rem;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .wp-block-column {
+    grid-column: span 8;
+
+    @media only screen and (min-width: $tablet) {
+      grid-column: span 4;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      grid-column: span 3;
+    }
+  }
+
+  .team-card {
+    background-color: var(--wp--preset--color--white);
+    border-radius: 0 2rem 2rem 2rem;
+    overflow: hidden;
+
+    figure {
+      border-radius: 0 2rem;
+      overflow: hidden;
+      margin-bottom: 2.3rem;
+
+      @media only screen and (min-width: $desktop) {
+        margin-bottom: 3rem;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    h4 {
+      padding: 0 1.5rem 0 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h5 {
+      padding: 0 1.5rem 0 1.5rem;
+      margin-bottom: 1.8rem;
+      font-size: 1.5rem;
+      font-weight: 400;
+
+      @media only screen and (min-width: $desktop) {
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+
+    p {
+      padding: 0 1.5rem 0 1.5rem;
+      font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+      font-size: 1.5rem;
+      margin-bottom: 1.3rem;
+
+      @media only screen and (min-width: $desktop) {
+        font-size: 1.6rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}

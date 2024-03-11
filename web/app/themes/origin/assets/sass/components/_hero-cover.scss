@@ -20,6 +20,10 @@
     max-width: 100% !important;
   }
 
+  h1 {
+    z-index: 1;
+  }
+
   figure {
     grid-column: span 11;
     border-top-right-radius: 10.5rem;
@@ -27,7 +31,6 @@
     overflow: hidden;
     height: 37rem;
     margin-top: -2rem;
-    z-index: -1;
 
     @media only screen and (min-width: $tablet) {
       height: 79rem;

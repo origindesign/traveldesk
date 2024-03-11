@@ -15,6 +15,11 @@
  */
 define( 'ORIGIN_VERSION', wp_get_theme()->get( 'Version' ) );
 
+// Remove core block patterns
+add_action('init', function() {
+    remove_theme_support('core-block-patterns');
+},  9  );
+
 /**
  * Add theme support for block styles and editor style.
  *
@@ -31,6 +36,13 @@ define( 'ORIGIN_VERSION', wp_get_theme()->get( 'Version' ) );
 add_action('enqueue_block_editor_assets', function () {
     wp_enqueue_style('editor-assets-test', get_stylesheet_directory_uri() . '/assets/css/editor.min.css');
 }, 999);
+
+
+// Register "foo" CSS to use when needed later
+function register_foo_style() {
+    wp_register_style( 'foo-template-css', get_stylesheet_directory_uri(). '/assets/css/comp.css' );
+}
+add_action( 'init', 'register_foo_style' );
 
 /**
  * Enqueue the CSS files.
@@ -83,6 +95,27 @@ function origin_theme_assets() {
 	wp_enqueue_style( 'style-name', 'https://cdn.icomoon.io/42560/TravelDesk/style.css?l5ffji' );
 }
 add_action( 'wp_enqueue_scripts', 'origin_theme_assets' );
+
+/**
+ * JS Assets
+ */
+function origin_theme_js() {
+	wp_enqueue_script(
+		'origin-splide-custom',
+		get_template_directory_uri() . '/assets/js/ui.js',
+		array( 'wp-blocks' ),
+		ORIGIN_VERSION,
+		true
+	);
+	wp_enqueue_script(
+		'origin-splide-custom',
+		get_template_directory_uri() . '/assets/js/splide-custom.js',
+		array( 'wp-blocks' ),
+		ORIGIN_VERSION,
+		true
+	);
+}
+add_action( 'enqueue_block_assets', 'origin_theme_js' );
 
 /**
  * CPT's

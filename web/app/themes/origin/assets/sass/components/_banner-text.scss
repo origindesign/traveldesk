@@ -1,0 +1,54 @@
+.is-style-banner-text {
+  width: 100% !important;
+  max-width: 100% !important;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  margin-bottom: 9rem;
+
+  @media only screen and (min-width: $desktop) {
+    column-gap: 3rem;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    margin-bottom: 16rem;
+  }
+
+  &-internal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: span 8;
+
+    @media only screen and (min-width: $tablet) {
+      grid-column: span 3;
+      order: unset;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      grid-column: span 5;
+      width: 135%;
+    }
+  }
+
+  .h4 {
+    margin: 0;
+    width: 100%;
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+    font-weight: var(--wp--custom--typography--font-weight--bold);
+    line-height: 110%;
+    letter-spacing: 1px;
+  }
+
+  h1 {
+    color: var(--wp--preset--color--strawberry);
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    z-index: 1;
+
+    @media only screen and (min-width: $desktop) {
+      margin-top: 2.5rem;
+    }
+  }
+}

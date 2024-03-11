@@ -1,8 +1,16 @@
+.editor-styles-wrapper {
+  font-size: 62.5% !important;
+  background-color: var(--wp--preset--color--aqua);
+
+  .wp-block-post-title {
+    font-size: 2.2rem;
+  }
+}
+
 @import "https://cdn.icomoon.io/42560/TravelDesk/style.css?l5ffji";
 
 @import "base/settings";
 @import "base/base";
-@import "base/animation";
 @import "base/headings";
 @import "base/elements";
 @import "base/grid";
@@ -19,6 +27,9 @@
 @import "components/client-list";
 @import "components/card";
 @import "components/carousel-text";
+@import "components/banner-image";
+@import "components/banner-text";
+@import "components/team-cards";
 
 @import "components/wp-social-links";
 @import "components/wp-navigation";

@@ -1,3 +1,18 @@
+.editor-styles-wrapper {
+  .is-style-client-list {
+    .is-style-client-list-internal {
+      p {
+        max-width: unset !important;
+      }
+      p:nth-child(odd),
+      p:nth-child(even) {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+      }
+    }
+  }
+}
+
 .is-style-client-list-wrapper {
   background-color: var(--wp--preset--color--white);
   overflow: hidden;
