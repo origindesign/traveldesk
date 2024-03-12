@@ -20,6 +20,29 @@ add_action('init', function() {
     remove_theme_support('core-block-patterns');
 },  9  );
 
+
+add_action('template_redirect', 'showid');
+function showid(){
+    $theid = get_queried_object_id();
+    return $theid;
+}
+
+//  $post_content = get_post( 6 )->post_content;
+
+//  //get all blocks of requested type
+//  $blocks = array_filter( parse_blocks( $post_content ), function( $block ) use( $block_name ) {
+// 	 var_dump( $block_name === $block['blockName'] );
+// 	//  print_r($block['blockName']);
+// 	print_r($block['attrs']['className']);
+
+// 	// echo '<pre>';
+// 	//  print_r($block);
+// 	//  echo '</pre>';
+// 	echo '<br/>';
+//  });
+
+
+
 /**
  * Add theme support for block styles and editor style.
  *
