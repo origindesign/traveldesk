@@ -1,0 +1,111 @@
+.is-style-image-callout {
+  background-color: var(--wp--preset--color--lime);
+  padding: 5.2rem var(--wp--custom--grid--gutter);
+  position: relative;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  margin-bottom: 0;
+  column-gap: 1.5rem;
+
+  @media (min-width: $tablet) {
+    padding: 5rem var(--wp--custom--grid--gutter-medium);
+  }
+
+  @media (min-width: $desktop) {
+    padding: 12.2rem var(--wp--custom--grid--gutter-large);
+    column-gap: 3rem;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    margin-bottom: 3rem;
+  }
+
+  figure {
+    grid-column: span 8;
+    width: 100%;
+    border-radius: 0 4rem;
+    overflow: hidden;
+    margin-bottom: 3rem;
+
+    @media only screen and (min-width: $desktop) {
+      border-radius: 0 29rem;
+      grid-column: span 12;
+      margin-bottom: 5rem;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .is-style-image-callout-internal {
+    grid-column: span 8;
+    background-color: var(--wp--preset--color--white);
+    border-radius: 2rem;
+    padding: 3rem 1.8rem 10rem 1.8rem;
+    position: relative;
+
+    @media only screen and (min-width: $tablet) {
+      grid-column: 3 / span 6;
+      padding: 3rem 9rem 10rem 3rem;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      grid-column: 6 / span 7;
+      padding: 5.2rem 30rem 5.2rem 5.5rem;
+    }
+
+    h3 {
+      font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+      font-size: 3rem;
+      font-weight: var(--wp--custom--typography--font-weight--bold);
+      line-height: 110%;
+      letter-spacing: 1px;
+      text-transform: inherit;
+      margin-bottom: 2.25rem;
+      color: var(--wp--preset--color--base);
+    }
+
+    p {
+      margin: 0;
+      font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+      font-size: 1.6rem;
+    }
+
+    .wp-block-buttons {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border: 20px solid var(--wp--preset--color--lime);
+      background: var(--wp--preset--color--lime);
+      border-top-left-radius: 35px;
+
+      &::before {
+        content: "";
+        display: block;
+        height: 4rem;
+        width: 4rem;
+        background-color: var(--wp--preset--color--white);
+        position: absolute;
+        left: -6rem;
+        bottom: -4rem;
+        border-bottom-right-radius: 5.1rem;
+        border-bottom: 2rem solid var(--wp--preset--color--lime);
+        border-right: 2rem solid var(--wp--preset--color--lime);
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        height: 4rem;
+        width: 4rem;
+        background-color: var(--wp--preset--color--white);
+        position: absolute;
+        right: -4rem;
+        top: -6rem;
+        border-bottom-right-radius: 5.1rem;
+        border-bottom: 2rem solid var(--wp--preset--color--lime);
+        border-right: 2rem solid var(--wp--preset--color--lime);
+      }
+    }
+  }
+}

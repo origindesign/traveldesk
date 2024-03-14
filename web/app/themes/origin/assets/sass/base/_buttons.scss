@@ -1,34 +1,55 @@
 $sign-up-btn-border-radius-desktop: 1.1rem;
 $sign-up-btn-border-radius-mob: 0.55rem;
 
-.wp-block-button__link {
-  background-color: var(--wp--preset--color--lime);
-  border: 2px solid var(--wp--preset--color--lime);
-  color: var(--wp--preset--color--base);
-  border-radius: 5.5rem;
-  padding: 1rem 2.6rem 1rem 3rem;
-  font-family: var(--wp--preset--font-family--plus-jakarta-sans);
-  font-size: 1.6rem;
-  font-weight: var(--wp--custom--typography--font-weight--bold);
-  line-height: 2rem;
-  letter-spacing: 0.32px;
-  display: inline-flex;
-  align-items: center;
+.wp-block-button {
+  .wp-block-button__link {
+    background-color: var(--wp--preset--color--lime);
+    border: 2px solid var(--wp--preset--color--lime);
+    color: var(--wp--preset--color--base);
+    border-radius: 5.5rem;
+    padding: 1rem 2.6rem 1rem 3rem;
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+    font-size: 1.6rem;
+    font-weight: var(--wp--custom--typography--font-weight--bold);
+    line-height: 2rem;
+    letter-spacing: 0.32px;
+    display: inline-flex;
+    align-items: center;
 
-  &:hover {
-    background-color: var(--wp--preset--color--white);
-    text-decoration: none;
+    &:hover {
+      background-color: var(--wp--preset--color--white);
+      text-decoration: none;
+    }
+
+    &::after {
+      content: "\e901";
+      font-family: "icomoon";
+      font-size: 2.8rem;
+      font-weight: var(--wp--custom--typography--font-weight--light);
+      text-align: center;
+      border-radius: 2rem;
+      margin-left: 0.6rem;
+      margin-bottom: -0.3rem;
+    }
   }
 
-  &::after {
-    content: "\e901";
-    font-family: "icomoon";
-    font-size: 2.8rem;
-    font-weight: var(--wp--custom--typography--font-weight--light);
-    text-align: center;
-    border-radius: 2rem;
-    margin-left: 0.6rem;
-    margin-bottom: -0.3rem;
+  // strawberry
+  &.btn--strawberry {
+    .wp-block-button__link {
+      background-color: var(--wp--preset--color--strawberry);
+      border: 2px solid var(--wp--preset--color--strawberry);
+      color: var(--wp--preset--color--white);
+
+      &::after {
+        color: var(--wp--preset--color--base);
+      }
+
+      &:hover {
+        background-color: var(--wp--preset--color--white);
+        color: var(--wp--preset--color--base);
+        text-decoration: none;
+      }
+    }
   }
 }
 
