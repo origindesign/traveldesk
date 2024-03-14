@@ -1,0 +1,55 @@
+.is-style-card-stat {
+  background-color: var(--wp--preset--color--spruce);
+  color: var(--wp--preset--color--coral);
+  padding: 8.3rem 3.5rem;
+  border-radius: 16px;
+  display: inline-block;
+  position: relative;
+
+  // ticket notches
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2.1rem;
+    width: 30%;
+    z-index: 1;
+    border-right: none;
+    border-top-left-radius: $sign-up-btn-border-radius-desktop;
+    border-top-right-radius: 0.55rem;
+    background-color: var(--wp--preset--color--lime);
+
+    @media only screen and (min-width: $desktop) {
+      height: 3rem;
+    }
+  }
+
+  &::after {
+    left: unset;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 0.55rem;
+    border-bottom-left-radius: $sign-up-btn-border-radius-desktop;
+  }
+
+  h4 {
+    font-family: "Plus Jakarta Sans";
+    font-size: 32.637px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%; /* 32.637px */
+    letter-spacing: 0.989px;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+  }
+}
