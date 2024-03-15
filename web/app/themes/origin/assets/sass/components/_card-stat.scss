@@ -1,8 +1,13 @@
+.is-style-card-stat-columns {
+  gap: 20px;
+}
+
 .is-style-card-stat {
   background-color: var(--wp--preset--color--spruce);
   color: var(--wp--preset--color--coral);
   padding: 8.3rem 3.5rem;
-  border-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
   display: inline-block;
   position: relative;
 
@@ -11,15 +16,15 @@
   &::after {
     content: "";
     position: absolute;
-    top: 0;
+    top: -3rem;
     left: 0;
     height: 2.1rem;
-    width: 30%;
+    width: 33%;
     z-index: 1;
     border-right: none;
     border-top-left-radius: $sign-up-btn-border-radius-desktop;
     border-top-right-radius: 0.55rem;
-    background-color: var(--wp--preset--color--lime);
+    background-color: var(--wp--preset--color--spruce);
 
     @media only screen and (min-width: $desktop) {
       height: 3rem;
@@ -31,7 +36,7 @@
     right: 0;
     bottom: 0;
     border-top-left-radius: 0.55rem;
-    border-bottom-left-radius: $sign-up-btn-border-radius-desktop;
+    border-top-right-radius: $sign-up-btn-border-radius-desktop;
   }
 
   h4 {
@@ -42,6 +47,29 @@
     line-height: 100%; /* 32.637px */
     letter-spacing: 0.989px;
     margin-bottom: 2rem;
+
+    // middle cutaway
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2.1rem;
+      left: -2.2rem;
+      height: 2rem;
+      width: 2.7rem;
+      border: 1px solid var(--wp--preset--color--lime);
+      border-left: none;
+      border-bottom-right-radius: 0.55rem;
+      border-bottom-left-radius: 0.55rem;
+      background: #eaf6f5;
+      border: none;
+
+      @media only screen and (min-width: $desktop) {
+        top: -20px;
+        left: 33%;
+        height: 2.6rem;
+        width: 34%;
+      }
+    }
   }
 
   p {
