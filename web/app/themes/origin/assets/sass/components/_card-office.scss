@@ -99,11 +99,13 @@
       margin: 0;
       border-bottom-left-radius: 2.5rem;
       overflow: hidden;
+      width: 100%;
     }
 
     img {
       height: 22.1rem;
       object-fit: cover;
+      width: 100%;
 
       @media only screen and (min-width: $desktop) {
         height: 31rem;
