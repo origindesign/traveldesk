@@ -23,7 +23,7 @@
 			<!-- wp:group {"className":"is-style-office-card","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group is-style-office-card">
 				<!-- wp:image {"id":380,"sizeSlug":"full","linkDestination":"none"} -->
-				<figure class="wp-block-image size-full"><img src="https://trd.lndo.site//app/uploads/2024/03/insidetd-banner.jpg" alt="" class="wp-image-380"/></figure>
+				<figure class="wp-block-image size-full"><img src="https://via.placeholder.com/500x310" alt="" class="wp-image-380"/></figure>
 				<!-- /wp:image -->
 				<!-- wp:heading {"level":3} -->
 				<h3 class="wp-block-heading">London</h3>
@@ -49,7 +49,7 @@
 			<!-- wp:group {"className":"is-style-office-card","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group is-style-office-card">
 				<!-- wp:image {"id":380,"sizeSlug":"full","linkDestination":"none"} -->
-				<figure class="wp-block-image size-full"><img src="https://trd.lndo.site//app/uploads/2024/03/insidetd-banner.jpg" alt="" class="wp-image-380"/></figure>
+				<figure class="wp-block-image size-full"><img src="https://via.placeholder.com/500x310" alt="" class="wp-image-380"/></figure>
 				<!-- /wp:image -->
 				<!-- wp:heading {"level":3} -->
 				<h3 class="wp-block-heading">Kansas City</h3>
@@ -75,7 +75,7 @@
 			<!-- wp:group {"className":"is-style-office-card","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group is-style-office-card">
 				<!-- wp:image {"id":380,"sizeSlug":"full","linkDestination":"none"} -->
-				<figure class="wp-block-image size-full"><img src="https://trd.lndo.site//app/uploads/2024/03/insidetd-banner.jpg" alt="" class="wp-image-380"/></figure>
+				<figure class="wp-block-image size-full"><img src="https://via.placeholder.com/500x310" alt="" class="wp-image-380"/></figure>
 				<!-- /wp:image -->
 				<!-- wp:heading {"level":3} -->
 				<h3 class="wp-block-heading">Berlin</h3>
