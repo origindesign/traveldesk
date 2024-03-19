@@ -2,7 +2,7 @@
 /**
  * Title: Case Study Cards
  * Slug: origin/case-study-cards
- * Categories: theme, travel-desk
+ * Categories: theme, cards
  * Block Types: core/group
  *
  * @package origin

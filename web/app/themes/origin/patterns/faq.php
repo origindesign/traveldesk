@@ -2,7 +2,7 @@
 /**
  * Title: FAQ
  * Slug: origin/faq
- * Categories: theme, travel-desk
+ * Categories: theme, text
  * Block Types: core/group
  *
  * @package origin

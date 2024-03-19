@@ -1,0 +1,19 @@
+.wp-block-query-pagination {
+  justify-content: center;
+}
+
+.wp-block-query-pagination .page-numbers {
+  padding: 5px 10px;
+  background: var(--wp--preset--color--base);
+  color: white;
+  font-weight: 800;
+  border-radius: 4px;
+}
+
+.wp-block-query-pagination .page-numbers.current {
+  padding: 5px 10px;
+  background: var(--wp--preset--color--strawberry);
+  color: white;
+  font-weight: 800;
+  border-radius: 4px;
+}

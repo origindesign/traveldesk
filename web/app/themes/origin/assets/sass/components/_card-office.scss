@@ -1,0 +1,157 @@
+.is-style-office-cards {
+  .wp-block-heading {
+    border-bottom: 1px solid var(--wp--preset--color--spruce);
+    margin-bottom: 2rem;
+
+    @media only screen and (min-width: $desktop) {
+      padding-bottom: 2.6rem;
+      margin-bottom: 3.7rem;
+      text-align: right;
+      margin-right: 0 !important;
+    }
+  }
+
+  // swap image and media on even elements
+  @media only screen and (min-width: $desktop) {
+    .wp-block-column:nth-child(even) {
+      .is-style-office-card {
+        padding-bottom: 0;
+        padding-top: 3.6rem;
+
+        h3 {
+          padding-top: 0;
+        }
+
+        figure {
+          margin-top: 10rem;
+          order: 2;
+        }
+      }
+    }
+  }
+
+  .is-style-office-cards-row {
+    width: 100% !important;
+    max-width: 100% !important;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    row-gap: 4rem;
+
+    @media only screen and (min-width: $tablet) {
+      column-gap: 4rem;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      column-gap: 5rem;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+  }
+
+  .wp-block-column {
+    grid-column: span 8;
+
+    @media only screen and (min-width: $tablet) {
+      grid-column: span 4;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      grid-column: span 4;
+    }
+  }
+
+  .wp-block-column:nth-child(3n + 1) {
+    .is-style-office-card {
+      background-color: var(--wp--preset--color--spruce);
+    }
+  }
+  .wp-block-column:nth-child(3n + 2) {
+    .is-style-office-card {
+      background-color: var(--wp--preset--color--base);
+    }
+  }
+  .wp-block-column:nth-child(3n + 3) {
+    .is-style-office-card {
+      background-color: var(--wp--preset--color--lime);
+
+      h3,
+      p {
+        color: var(--wp--preset--color--base);
+      }
+    }
+  }
+
+  .is-style-office-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 0 2.5rem 2.5rem 2.5rem;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+    padding-bottom: 3.6rem;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    figure {
+      margin: 0;
+      border-bottom-left-radius: 2.5rem;
+      overflow: hidden;
+    }
+
+    img {
+      height: 22.1rem;
+      object-fit: cover;
+
+      @media only screen and (min-width: $desktop) {
+        height: 31rem;
+      }
+    }
+
+    h3 {
+      border: none;
+      color: var(--wp--preset--color--white);
+      padding: 0 1.2rem;
+      margin-bottom: 1.5rem;
+      margin-top: 3rem;
+      font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+      font-size: 2rem;
+      font-weight: var(--wp--custom--typography--font-weight--bold);
+      line-height: 110%;
+      letter-spacing: 1px;
+      margin-left: 0 !important;
+      max-width: 100% !important;
+      text-align: left;
+
+      @media only screen and (min-width: $desktop) {
+        font-size: 2.3rem;
+        padding: 10.5rem 2.5rem 0 2.5rem;
+      }
+    }
+
+    p {
+      color: var(--wp--preset--color--white);
+      font-size: 1.6rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 2rem;
+      width: 100%;
+      padding: 0 1.2rem;
+      margin-bottom: 0.25rem;
+
+      @media only screen and (min-width: $desktop) {
+        padding: 0 2.5rem;
+      }
+
+      @media only screen and (min-width: $desktop) {
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 0;
+      }
+    }
+  }
+}

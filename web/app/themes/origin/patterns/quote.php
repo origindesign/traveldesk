@@ -2,7 +2,7 @@
 /**
  * Title: Quote
  * Slug: origin/quote
- * Categories: theme, travel-desk
+ * Categories: theme, text
  * Block Types: core/quote
  *
  * @package origin

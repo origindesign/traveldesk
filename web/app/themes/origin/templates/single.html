@@ -2,18 +2,27 @@
 
 <!-- wp:group {"tagName":"main","layout":{"type":"default"}} -->
 <main class="wp-block-group">
-	<!-- wp:group {"layout":{"type":"constrained"}} -->
-	<div class="wp-block-group">
-		<!-- wp:post-title {"level":1} /-->
-		<!-- wp:pattern {"slug":"origin/hidden-post-meta"} /-->
-		<!-- wp:separator -->
-		<hr class="wp-block-separator has-alpha-channel-opacity"/>
-		<!-- /wp:separator -->
+	<div class="entry-content">
+
+		<!-- wp:group {"className":"is-style-banner-image fade-in","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group is-style-banner-image fade-in">
+			<!-- wp:group {"className":"is-style-banner-image-internal","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group is-style-banner-image-internal">
+				<!-- wp:paragraph {"className":"h4"} -->
+				<!-- wp:post-terms {"term":"clients", "className":"h4"} /-->
+				<!-- /wp:paragraph -->
+				<!-- wp:heading {"level":1} -->
+				<!-- wp:post-title {"level":1} /-->
+				<!-- /wp:heading -->
+			</div>
+			<!-- /wp:group -->
+			<!-- wp:post-featured-image /-->
+		</div>
+		<!-- /wp:group -->
+
+		<!-- wp:post-content {"align":"full","layout":{"type":"constrained"}} /-->
+
 	</div>
-	<!-- /wp:group -->
-	<!-- wp:post-content {"align":"full","layout":{"type":"constrained"}} /-->
-	<!-- wp:pattern {"slug":"origin/comments"} /-->
-	<!-- wp:template-part {"slug":"post-navigation"} /-->
 </main>
 <!-- /wp:group -->
 

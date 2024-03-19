@@ -2,7 +2,7 @@
 /**
  * Title: Banner with Text
  * Slug: origin/banner-text
- * Categories: theme, travel-desk, banner
+ * Categories: theme, banner
  * Block Types: core/group
  *
  * @package origin

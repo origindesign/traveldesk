@@ -1,5 +1,5 @@
 // Component: Single Column Copy
-.is-style-single-column-copy {
+.is-style-double-column-copy {
   width: 100% !important;
   max-width: 100% !important;
   position: relative;
@@ -12,9 +12,19 @@
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
+  .is-style-double-column-copy-cols {
+    grid-column: 3 / span 8;
+    display: flex;
+    gap: 4rem;
+  }
+
+  .is-style-double-column-copy-col {
+    grid-column: 3 / span 8;
+  }
+
   h2 {
-    grid-column: span 8;
     margin-left: 0 !important;
+    grid-column: span 8;
 
     @media only screen and (min-width: $desktop) {
       grid-column: 2 / span 7;

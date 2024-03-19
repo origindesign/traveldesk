@@ -2,7 +2,7 @@
 /**
  * Title: Body Copy Right
  * Slug: origin/body-copy-right
- * Categories: theme, travel-desk
+ * Categories: theme, text
  * Block Types: core/group
  *
  * @package origin

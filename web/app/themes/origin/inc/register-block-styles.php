@@ -79,15 +79,3 @@ function origin_unregister_block_style() {
 }
 add_action( 'enqueue_block_editor_assets', 'origin_unregister_block_style' );
 
-
-
-
-add_action( 'init', 'themeslug_enqueue_block_styles' );
-
-function themeslug_enqueue_block_styles() {
-	wp_enqueue_block_style( 'core/quote', array(
-		'handle' => 'themeslug-block-image',
-		'src'    => get_theme_file_uri( "assets/blocks/core-quote.css" ),
-		'path'   => get_theme_file_path( "assets/blocks/core-quote.css" )
-	) );
-}

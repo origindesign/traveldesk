@@ -2,7 +2,7 @@
 /**
  * Title: Hero Cover
  * Slug: origin/hero-cover
- * Categories: theme, travel-desk
+ * Categories: theme, banner
  * Block Types: core/group
  *
  * @package origin

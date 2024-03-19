@@ -2,7 +2,7 @@
 /**
  * Title: Team Cards
  * Slug: origin/team-cards
- * Categories: theme, travel-desk
+ * Categories: theme, cards
  * Block Types: core/group
  *
  * @package origin

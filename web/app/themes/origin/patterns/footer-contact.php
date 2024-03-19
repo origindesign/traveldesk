@@ -2,7 +2,7 @@
 /**
  * Title: Footer Contact
  * Slug: origin/footer-contact
- * Categories: theme, travel-desk
+ * Categories: theme
  * Block Types: core/group
  *
  * @package origin

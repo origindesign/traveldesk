@@ -30,6 +30,20 @@ function origin_register_block_patterns() {
 		array( 'label' => __( 'TravelDesk', 'origin' ) )
 	);
 
+	register_block_pattern_category(
+		'cards',
+		array( 'label' => __( 'Cards', 'origin' ) )
+	);
+
+	register_block_pattern_category(
+		'text',
+		array( 'label' => __( 'Text', 'origin' ) )
+	);
+
+	register_block_pattern_category(
+		'carousel',
+		array( 'label' => __( 'Carousel', 'origin' ) )
+	);
 }
 add_action( 'init', 'origin_register_block_patterns', 9 );
 

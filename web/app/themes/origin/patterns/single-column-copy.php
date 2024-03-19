@@ -2,7 +2,7 @@
 /**
  * Title: Single Column Copy
  * Slug: origin/single-column-copy
- * Categories: theme, travel-desk
+ * Categories: theme, text
  * Block Types: core/group
  *
  * @package origin

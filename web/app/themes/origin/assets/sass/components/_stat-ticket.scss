@@ -1,2 +1,97 @@
-.is-style-stat-list-ticket {
+.wp-block-group.is-style-stat-list-ticket {
+  background-color: var(--wp--preset--color--lime);
+  border-left: none;
+  border-top-right-radius: 0.55rem;
+  border-bottom-right-radius: 0.55rem;
+  color: var(--wp--preset--color--pine);
+  max-width: 85% !important;
+  margin: auto;
+  position: relative;
+  padding: 2.5rem;
+  margin-bottom: 1rem;
+  margin-left: 0 !important;
+
+  @media (min-width: 500px) {
+    max-width: 32.5rem !important;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: unset !important;
+    width: 62.5rem !important;
+    padding: 5.8rem;
+    margin-bottom: 2.2rem;
+  }
+
+  &:nth-of-type(3n + 2) {
+    background-color: var(--wp--preset--color--spruce);
+    color: var(--wp--preset--color--white);
+    margin-left: 15% !important;
+
+    &::before,
+    &::after {
+      background-color: var(--wp--preset--color--spruce);
+    }
+  }
+
+  &:nth-of-type(3n + 3) {
+    background-color: var(--wp--preset--color--strawberry);
+    color: var(--wp--preset--color--white);
+    margin-left: 8% !important;
+
+    &::before,
+    &::after {
+      background-color: var(--wp--preset--color--strawberry);
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1.4rem;
+    height: 33%;
+    width: 1.4rem;
+    background-color: var(--wp--preset--color--lime);
+    border-right: none;
+    border-top-left-radius: $sign-up-btn-border-radius-mob;
+    border-bottom-left-radius: $sign-up-btn-border-radius-mob;
+  }
+
+  &::after {
+    top: unset;
+    bottom: 0;
+  }
+
+  p {
+    margin: 0;
+    font-family: var(--wp--preset--font-family--prompt);
+    font-size: 2rem;
+    font-weight: var(--wp--custom--typography--font-weight--bold);
+    line-height: 100%;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    @media (min-width: $desktop) {
+      font-size: 3.3rem;
+      letter-spacing: 0.1rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 33%;
+      left: -0.5rem;
+      height: 34%;
+      width: 1.1rem;
+      border-left: none;
+      border-top-right-radius: 0.55rem;
+      border-bottom-right-radius: 0.55rem;
+      background: var(--wp--preset--color--aqua);
+
+      @media (min-width: $desktop) {
+        left: 0;
+      }
+    }
+  }
 }

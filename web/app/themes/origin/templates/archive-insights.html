@@ -1,0 +1,93 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"default"}} -->
+<main class="wp-block-group">
+	<div class="entry-content">
+		<!-- wp:group {"className":"is-style-banner-text fade-in","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group is-style-banner-text fade-in">
+			<!-- wp:group {"className":"is-style-banner-text-internal","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group is-style-banner-text-internal">
+				<!-- wp:paragraph {"className":"h4"} -->
+				<p class="h4">Insights</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:heading {"level":1} -->
+				<h1 class="wp-block-heading">More than just numbers</h1>
+				<!-- /wp:heading -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:group -->
+
+		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-cards featured-cards fade-in","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group is-style-cards featured-cards fade-in">
+			<!-- wp:heading {"className":"is-style-keyline-heading"} -->
+			<h2 class="wp-block-heading is-style-keyline-heading">FEATURED</h2>
+			<!-- /wp:heading -->
+			<!-- wp:query {"queryId":6,"query":{"perPage":1,"pages":"1","offset":0,"postType":"insights","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"featured":[8]},"parents":[]}} -->
+			<div class="wp-block-query">
+				<!-- wp:post-template -->
+				<!-- wp:post-featured-image /-->
+				<!-- wp:group {"layout":{"type":"constrained"}} -->
+				<div class="wp-block-group">
+					<!-- wp:post-terms {"term":"clients"} /-->
+					<!-- wp:post-title {"level":4} /-->
+					<!-- wp:post-excerpt {"moreText":"More","excerptLength":10} /-->
+				</div>
+				<!-- /wp:group -->
+				<!-- /wp:post-template -->
+			</div>
+				<!-- wp:query-pagination -->
+				<!-- wp:query-pagination-previous /-->
+				<!-- wp:query-pagination-numbers /-->
+				<!-- wp:query-pagination-next /-->
+				<!-- /wp:query-pagination -->
+			<!-- /wp:query -->
+		</div>
+		<!-- /wp:group -->
+
+		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-cards archive-cards fade-in","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group is-style-cards archive-cards fade-in">
+			<!-- wp:query {"queryId":6,"query":{"perPage":5,"pages":"5","offset":0,"postType":"insights","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]}} -->
+			<div class="wp-block-query">
+				<!-- wp:post-template -->
+				<!-- wp:post-featured-image /-->
+				<!-- wp:group {"layout":{"type":"constrained"}} -->
+				<div class="wp-block-group">
+					<!-- wp:post-terms {"term":"clients"} /-->
+					<!-- wp:post-title {"level":4} /-->
+					<!-- wp:post-excerpt {"moreText":"More","excerptLength":10} /-->
+				</div>
+				<!-- /wp:group -->
+				<!-- /wp:post-template -->
+			</div>
+				<!-- wp:query-pagination -->
+				<!-- wp:query-pagination-previous /-->
+				<!-- wp:query-pagination-numbers /-->
+				<!-- wp:query-pagination-next /-->
+				<!-- /wp:query-pagination -->
+			<!-- /wp:query -->
+		</div>
+		<!-- /wp:group -->
+	</div>
+</main>
+
+<!-- wp:group {"templateLock":"contentOnly", "className":"footer-row\u002d\u002dtop","layout":{"type":"constrained"}} -->
+<div class="wp-block-group footer-contact-cta fade-in">
+	<!-- wp:html -->
+	<div class="footer-contact-cta__internal">
+		<h2>Get<strong><span class="graphic-btn"></span><span class="inset">in<span class="graphic-btn--thumb"></span></span>touch<span class="graphic-btn--line"></span></strong></h2>
+		<!-- wp:buttons -->
+		<div class="wp-block-buttons">
+			<!-- wp:button -->
+			<div class="wp-block-button">
+				<a class="wp-block-button__link wp-element-button" href="https://www.google.com">Contact us</a>
+			</div>
+			<!-- /wp:button -->
+		</div>
+		<!-- /wp:buttons -->
+	</div>
+	<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer"} /-->

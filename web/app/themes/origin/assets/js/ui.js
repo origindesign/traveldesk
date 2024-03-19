@@ -13,11 +13,13 @@ function elementFadeIn() {
   }
 }
 window.addEventListener("scroll", elementFadeIn);
-elementFadeIn();
 
 // Scroll position - navigation use-case.
 var lastScrollTop = 0;
 
+/*
+ * Navigation bar display UI.
+ */
 window.addEventListener(
   "scroll",
   function () {
@@ -35,22 +37,30 @@ window.addEventListener(
 );
 
 /*
- * Yoast FAQ dropdowns.
+ * Yoast FAQ https://yoast.com/developer-blog/theming-gutenberg-the-faq-block/ - Block UI functionality.
  */
-(function () {
-  const a = document.querySelectorAll(".schema-faq-section");
+function yoastFAQUI() {
+  const yoastBlock = document.querySelectorAll(".schema-faq-section");
 
-  if (!a) return;
+  if (!yoastBlock) return;
 
-  a.forEach(function (a) {
-    a.addEventListener("click", function () {
-      a.classList.toggle("in");
+  yoastBlock.forEach(function (el) {
+    el.addEventListener("click", function () {
+      el.classList.toggle("in");
 
-      let b = a.querySelector(".schema-faq-answer");
+      let yoastAnswer = el.querySelector(".schema-faq-answer");
 
-      b.style.maxHeight
-        ? (b.style.maxHeight = null)
-        : (b.style.maxHeight = b.scrollHeight * 3 + "px");
+      yoastAnswer.style.maxHeight
+        ? (yoastAnswer.style.maxHeight = null)
+        : (yoastAnswer.style.maxHeight = yoastAnswer.scrollHeight * 3 + "px");
     });
   });
+}
+
+/*
+ * Sequentially run our on-load functions.
+ */
+(function () {
+  elementFadeIn();
+  yoastFAQUI();
 })();

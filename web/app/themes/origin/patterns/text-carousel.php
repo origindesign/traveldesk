@@ -2,7 +2,7 @@
 /**
  * Title: Text Carousel
  * Slug: origin/text-carousel
- * Categories: theme, travel-desk
+ * Categories: theme, carousel
  * Block Types: core/group
  *
  * @package origin
