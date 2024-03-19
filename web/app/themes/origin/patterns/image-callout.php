@@ -2,7 +2,7 @@
 /**
  * Title: Image Callout
  * Slug: origin/image-callout
- * Categories: theme, image
+ * Categories: theme, images
  * Block Types: core/group
  *
  * @package origin

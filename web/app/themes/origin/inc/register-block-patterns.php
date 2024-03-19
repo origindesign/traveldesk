@@ -44,6 +44,11 @@ function origin_register_block_patterns() {
 		'carousel',
 		array( 'label' => __( 'Carousel', 'origin' ) )
 	);
+
+	register_block_pattern_category(
+		'images',
+		array( 'label' => __( 'Images', 'origin' ) )
+	);
 }
 add_action( 'init', 'origin_register_block_patterns', 9 );
 

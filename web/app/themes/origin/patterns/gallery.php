@@ -2,7 +2,7 @@
 /**
  * Title: Image gallery
  * Slug: origin/image-gallery
- * Categories: theme, imae
+ * Categories: theme, images
  * Block Types: core/group
  *
  * @package origin
