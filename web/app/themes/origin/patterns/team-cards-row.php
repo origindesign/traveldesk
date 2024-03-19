@@ -18,7 +18,7 @@
 		<!-- wp:group {"className":"team-card","layout":{"type":"constrained"}} -->
 		<div class="wp-block-group team-card">
 			<!-- wp:image -->
-			<figure class="wp-block-image"><img alt=""/></figure>
+			<figure class="wp-block-image"><img src="https://via.placeholder.com/450x350" alt=""/></figure>
 			<!-- /wp:image -->
 			<!-- wp:heading {"level":4} -->
 			<h4 class="wp-block-heading">Name</h4>
@@ -38,7 +38,7 @@
 		<!-- wp:group {"className":"team-card","layout":{"type":"constrained"}} -->
 		<div class="wp-block-group team-card">
 			<!-- wp:image -->
-			<figure class="wp-block-image"><img alt=""/></figure>
+			<figure class="wp-block-image"><img src="https://via.placeholder.com/450x350" alt=""/></figure>
 			<!-- /wp:image -->
 			<!-- wp:heading {"level":4} -->
 			<h4 class="wp-block-heading">Name</h4>
@@ -58,7 +58,7 @@
 		<!-- wp:group {"className":"team-card","layout":{"type":"constrained"}} -->
 		<div class="wp-block-group team-card">
 			<!-- wp:image -->
-			<figure class="wp-block-image"><img alt=""/></figure>
+			<figure class="wp-block-image"><img src="https://via.placeholder.com/450x350" alt=""/></figure>
 			<!-- /wp:image -->
 			<!-- wp:heading {"level":4} -->
 			<h4 class="wp-block-heading">Name</h4>
@@ -78,7 +78,7 @@
 		<!-- wp:group {"className":"team-card","layout":{"type":"constrained"}} -->
 		<div class="wp-block-group team-card">
 			<!-- wp:image -->
-			<figure class="wp-block-image"><img alt=""/></figure>
+			<figure class="wp-block-image"><img src="https://via.placeholder.com/450x350" alt=""/></figure>
 			<!-- /wp:image -->
 			<!-- wp:heading {"level":4} -->
 			<h4 class="wp-block-heading">Name</h4>

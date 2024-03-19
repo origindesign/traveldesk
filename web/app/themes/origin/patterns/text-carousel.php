@@ -41,7 +41,7 @@
 							<!-- wp:cloudcatch/splide-carousel-item -->
 							<div class="wp-block-cloudcatch-splide-carousel-item wp-block-splide-carousel__slide splide__slide">
 								<!-- wp:paragraph -->
-								<p>ddd</p>
+								<p>Lorem Ipsum</p>
 								<!-- /wp:paragraph -->
 							</div>
 							<!-- /wp:cloudcatch/splide-carousel-item -->
@@ -55,7 +55,7 @@
 		<!-- wp:column {"templateLock":"contentOnly","width":"33.33%"} -->
 		<div class="wp-block-column" style="flex-basis:33.33%">
 			<!-- wp:image {"id":195,"sizeSlug":"full","linkDestination":"none"} -->
-			<figure class="wp-block-image size-full"><img src="https://trd.lndo.site//app/uploads/2024/03/AdobeStock_677778872.jpg" alt="" class="wp-image-195"/></figure>
+			<figure class="wp-block-image size-full"><img src="http://placehold.it/730x900" alt="" class="wp-image-195"/></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->

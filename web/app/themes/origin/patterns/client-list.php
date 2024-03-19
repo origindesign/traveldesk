@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Client List
- * Slug: origin/faq
+ * Slug: origin/client-list
  * Categories: theme, text
  * Block Types: core/group
  *

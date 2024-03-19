@@ -16,15 +16,15 @@
 	<!-- wp:group {"className":"is-style-banner-image-internal","layout":{"type":"constrained"}} -->
 	<div class="wp-block-group is-style-banner-image-internal">
 		<!-- wp:paragraph {"className":"h4"} -->
-		<p class="h4">What we do</p>
+		<p class="h4">Subheading</p>
 		<!-- /wp:paragraph -->
 		<!-- wp:heading {"level":1} -->
-		<h1 class="wp-block-heading">Your Gateway to Global Travellers</h1>
+		<h1 class="wp-block-heading">Heading</h1>
 		<!-- /wp:heading -->
 	</div>
 	<!-- /wp:group -->
 	<!-- wp:image {"id":243,"sizeSlug":"full","linkDestination":"none"} -->
-	<figure class="wp-block-image size-full"><img src="https://trd.lndo.site//app/uploads/2024/03/what-we-do-lg.jpg" alt="" class="wp-image-243"/></figure>
+	<figure class="wp-block-image size-full"><img src="https://via.placeholder.com/1000x700" alt="" class="wp-image-243"/></figure>
 	<!-- /wp:image -->
 </div>
 <!-- /wp:group -->

@@ -17,7 +17,7 @@
 	<h1 class="wp-block-heading is-style-hero-heading">TRAVEL <strong>CONNECTS </strong><sub><strong>US ALL</strong></sub></h1>
 	<!-- /wp:heading -->
 	<!-- wp:image {"id":43,"sizeSlug":"large","linkDestination":"none"} -->
-	<figure class="wp-block-image size-large"><img src="https://trd.lndo.site//app/uploads/2024/02/td-home-min-1024x683.jpeg" alt="" class="wp-image-43"/></figure>
+	<figure class="wp-block-image size-large"><img src="http://placehold.it/1100x700" alt="" class="wp-image-43"/></figure>
 	<!-- /wp:image -->
 </div>
 <!-- /wp:group -->

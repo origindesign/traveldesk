@@ -1,0 +1,56 @@
+.wp-block-jetpack-contact-form-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  margin-bottom: 9rem;
+
+  @media only screen and (min-width: $desktop) {
+    column-gap: 3rem;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    margin-bottom: 16rem;
+  }
+}
+
+form.contact-form {
+  grid-column: span 8;
+
+  @media only screen and (min-width: $tablet) {
+    grid-column: 2 / span 6;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    grid-column: 2 / span 8;
+  }
+
+  .wp-block-jetpack-contact-form {
+    gap: 3rem;
+
+    label {
+      /* Desktop/Form Label */
+      font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+      font-size: 1.6rem;
+      font-weight: var(--wp--custom--typography--font-weight--bold);
+      line-height: 2rem;
+      letter-spacing: 0.03rem;
+      text-transform: uppercase;
+      margin-bottom: 1.4rem;
+    }
+
+    input,
+    textarea {
+      border-radius: 3rem;
+      border: 1px solid var(--wp--preset--color--strawberry);
+      background: var(--wp--preset--color--white);
+      font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+      line-height: 2.4rem;
+      padding: 1.6rem 3rem;
+    }
+
+    button {
+      margin-top: 1rem;
+    }
+  }
+}

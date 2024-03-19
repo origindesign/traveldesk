@@ -1,0 +1,146 @@
+.editor-styles-wrapper {
+  .is-style-activation-list {
+    .is-style-activation-list-internal {
+      p {
+        max-width: unset !important;
+      }
+      p:nth-child(odd),
+      p:nth-child(even) {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+      }
+    }
+  }
+}
+
+.is-style-activation-list-wrapper {
+  background-color: var(--wp--preset--color--white);
+  overflow: hidden;
+  padding: 5.2rem var(--wp--custom--grid--gutter) 7rem;
+
+  @media (min-width: $tablet) {
+    padding: 5rem var(--wp--custom--grid--gutter-medium);
+  }
+  @media (min-width: $desktop) {
+    padding: 12.2rem var(--wp--custom--grid--gutter-large);
+  }
+}
+
+.is-style-activation-list {
+  text-align: center;
+  position: relative;
+  border-bottom: 0.2rem solid var(--wp--preset--color--pine);
+  z-index: 0;
+
+  h2 {
+    color: var(--wp--preset--color--pine);
+    display: inline-block;
+    padding: 1.6rem;
+    background: var(--wp--preset--color--white);
+    margin-bottom: 0;
+
+    &::before {
+      content: "";
+      height: 0.2rem;
+      background-color: var(--wp--preset--color--pine);
+      width: 100%;
+      left: 0;
+      display: block;
+      position: absolute;
+      top: 2.4rem;
+      z-index: -1;
+    }
+  }
+
+  > p {
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    width: 90%;
+    margin-top: 3rem;
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 1.8rem;
+      width: 52%;
+      margin-bottom: 0;
+    }
+  }
+
+  .is-style-activation-list-internal {
+    max-width: 95vw !important;
+    padding-bottom: 4rem;
+
+    @media only screen and (min-width: $tablet) {
+      max-width: 85vw !important;
+    }
+    @media only screen and (min-width: 900px) {
+      max-width: 65vw !important;
+    }
+    @media only screen and (min-width: $desktop) {
+      max-width: 100.5rem !important;
+      padding-bottom: 10.5rem;
+      padding-top: 8.5rem;
+    }
+    @media only screen and (min-width: 1400px) {
+      max-width: 140rem !important;
+    }
+
+    p {
+      color: var(--wp--preset--color--pine);
+      font-family: var(--wp--preset--font-family--prompt);
+      font-size: 3.5rem;
+      font-style: normal;
+      font-weight: var(--wp--custom--typography--font-weight--bold);
+      line-height: 3.2rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+      text-align: left;
+      display: inline-block;
+      margin-right: 0.5rem !important;
+      margin-left: 0.5rem !important;
+
+      @media only screen and (min-width: $desktop) {
+        margin-right: 2.5rem !important;
+        margin-left: 2.5rem !important;
+      }
+
+      @media only screen and (min-width: $tablet) {
+        margin-bottom: 0;
+        font-weight: var(--wp--custom--typography--font-weight--bold);
+        letter-spacing: 0.5rem;
+        font-size: 5.5rem;
+        line-height: 5.5rem;
+      }
+
+      @media only screen and (min-width: $desktop) {
+        font-size: 10rem;
+        line-height: 10rem;
+      }
+
+      &:nth-child(odd) {
+        font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+        font-size: 3.3rem;
+        font-weight: var(--wp--custom--typography--font-weight--normal);
+        line-height: 3.3rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: right;
+        margin-bottom: 1rem;
+
+        @media only screen and (min-width: $tablet) {
+          font-weight: var(--wp--custom--typography--font-weight--normal);
+          letter-spacing: 0.5rem;
+          font-size: 4.5rem;
+          line-height: 4.5rem;
+        }
+
+        @media only screen and (min-width: $desktop) {
+          font-size: 9rem;
+          line-height: 8rem;
+        }
+      }
+    }
+  }
+}

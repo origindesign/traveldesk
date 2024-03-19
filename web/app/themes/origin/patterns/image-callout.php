@@ -14,7 +14,7 @@
 <!-- wp:group {"templateLock":"contentOnly","className":"is-style-image-callout is-full-width-container","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-image-callout is-full-width-container">
 	<!-- wp:image {"id":320,"sizeSlug":"full","linkDestination":"none"} -->
-	<figure class="wp-block-image size-full"><img src="https://trd.lndo.site//app/uploads/2024/03/AdobeStock_373761958.jpg" alt="" class="wp-image-320"/></figure>
+	<figure class="wp-block-image size-full"><img src="https://via.placeholder.com/1600x800" alt="" class="wp-image-320"/></figure>
 	<!-- /wp:image -->
 	<!-- wp:group {"className":"is-style-image-callout-internal","layout":{"type":"constrained"}} -->
 	<div class="wp-block-group is-style-image-callout-internal">
