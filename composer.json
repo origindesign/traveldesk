@@ -65,7 +65,8 @@
     "wpackagist-plugin/pantheon-advanced-page-cache": "*",
     "wpackagist-plugin/wp-native-php-sessions": "*",
     "cweagans/composer-patches": "^1.7",
-    "yoast/wordpress-seo": "^22.1"
+    "yoast/wordpress-seo": "^22.1",
+    "automattic/jetpack": "^13.2"
   },
   "require-dev": {
     "pantheon-systems/pantheon-wp-coding-standards": "*",
@@ -80,7 +81,9 @@
       "composer/installers": true,
       "roots/wordpress-core-installer": true,
       "cweagans/composer-patches": true,
-      "dealerdirect/phpcodesniffer-composer-installer": true
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "automattic/jetpack-autoloader": true,
+      "automattic/jetpack-composer-plugin": true
     }
   },
   "minimum-stability": "stable",
