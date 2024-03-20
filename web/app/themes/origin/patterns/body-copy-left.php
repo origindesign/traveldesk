@@ -11,8 +11,8 @@
 
 ?>
 
-<!-- wp:group {"templateLock":"contentOnly","className":"is-style-body-text-left","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-body-text-left">
+<!-- wp:group {"templateLock":"contentOnly","className":"is-style-body-text-left fade-in","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-body-text-left fade-in">
 	<!-- wp:heading {"className":"is-style-default"} -->
 	<h2 class="wp-block-heading is-style-default">Body Copy Left Subheading</h2>
 	<!-- /wp:heading -->

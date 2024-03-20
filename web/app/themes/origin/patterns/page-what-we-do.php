@@ -59,8 +59,8 @@
 	<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
-<!-- wp:group {"templateLock":"contentOnly","className":"is-style-image-callout is-full-width-container","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-image-callout is-full-width-container">
+<!-- wp:group {"templateLock":"contentOnly","className":"is-style-image-callout is-full-width-container fade-in","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-image-callout is-full-width-container fade-in">
 	<!-- wp:image {"id":320,"sizeSlug":"full","linkDestination":"none"} -->
 	<figure class="wp-block-image size-full"><img src="https://via.placeholder.com/1600x800" alt="" class="wp-image-320"/></figure>
 	<!-- /wp:image -->
@@ -83,8 +83,8 @@
 	<!-- /wp:group -->
 </div>
 <!-- /wp:group -->
-<!-- wp:group {"templateLock":"contentOnly","className":"is-style-body-text-right","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-body-text-right">
+<!-- wp:group {"templateLock":"contentOnly","className":"is-style-body-text-right fade-in","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-body-text-right fade-in">
 	<!-- wp:heading {"className":"is-style-default"} -->
 	<h2 class="wp-block-heading is-style-default">Body Copy Right Subheading</h2>
 	<!-- /wp:heading -->
@@ -100,8 +100,8 @@
 <div class="wp-block-columns is-style-card-stat-columns">
 	<!-- wp:column -->
 	<div class="wp-block-column">
-		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat","layout":{"type":"constrained"}} -->
-		<div class="wp-block-group is-style-card-stat">
+		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat fade-in","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group is-style-card-stat fade-in">
 			<!-- wp:heading {"level":4} -->
 			<h4 class="wp-block-heading">TravelDesk Audiences</h4>
 			<!-- /wp:heading -->
@@ -114,8 +114,8 @@
 	<!-- /wp:column -->
 	<!-- wp:column -->
 	<div class="wp-block-column">
-		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat","layout":{"type":"constrained"}} -->
-		<div class="wp-block-group is-style-card-stat">
+		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat fade-in","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group is-style-card-stat fade-in">
 			<!-- wp:heading {"level":4} -->
 			<h4 class="wp-block-heading">TravelDesk Audiences</h4>
 			<!-- /wp:heading -->
@@ -128,8 +128,8 @@
 	<!-- /wp:column -->
 	<!-- wp:column -->
 	<div class="wp-block-column">
-		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat","layout":{"type":"constrained"}} -->
-		<div class="wp-block-group is-style-card-stat">
+		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat fade-in","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group is-style-card-stat fade-in">
 			<!-- wp:heading {"level":4} -->
 			<h4 class="wp-block-heading">TravelDesk Audiences</h4>
 			<!-- /wp:heading -->
@@ -142,8 +142,8 @@
 	<!-- /wp:column -->
 	<!-- wp:column -->
 	<div class="wp-block-column">
-		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat","layout":{"type":"constrained"}} -->
-		<div class="wp-block-group is-style-card-stat">
+		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat fade-in","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group is-style-card-stat fade-in">
 			<!-- wp:heading {"level":4} -->
 			<h4 class="wp-block-heading">TravelDesk Audiences</h4>
 			<!-- /wp:heading -->
@@ -204,8 +204,8 @@
 	<!-- /wp:group -->
 </div>
 <!-- /wp:group -->
-<!-- wp:group {"templateLock":"contentOnly","className":"is-style-body-text-right","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-body-text-right">
+<!-- wp:group {"templateLock":"contentOnly","className":"is-style-body-text-right fade-in","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-body-text-right fade-in">
 	<!-- wp:heading {"className":"is-style-default"} -->
 	<h2 class="wp-block-heading is-style-default">Body Copy Right Subheading</h2>
 	<!-- /wp:heading -->
@@ -217,29 +217,29 @@
 	<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
-<!-- wp:group {"templateLock":"contentOnly","className":"is-style-stat-list-ticket","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-stat-list-ticket">
+<!-- wp:group {"templateLock":"contentOnly","className":"is-style-stat-list-ticket fade-in","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-stat-list-ticket fade-in">
 	<!-- wp:paragraph -->
 	<p>Multi Channel Creative</p>
 	<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
-<!-- wp:group {"templateLock":"contentOnly","className":"is-style-stat-list-ticket","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-stat-list-ticket">
+<!-- wp:group {"templateLock":"contentOnly","className":"is-style-stat-list-ticket fade-in","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-stat-list-ticket fade-in">
 	<!-- wp:paragraph -->
 	<p>Multi Channel Creative</p>
 	<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
-<!-- wp:group {"templateLock":"contentOnly","className":"is-style-stat-list-ticket","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-stat-list-ticket">
+<!-- wp:group {"templateLock":"contentOnly","className":"is-style-stat-list-ticket fade-in","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-stat-list-ticket fade-in">
 	<!-- wp:paragraph -->
 	<p>Multi Channel Creative</p>
 	<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
-<!-- wp:group {"templateLock":"contentOnly","className":"is-style-body-text-left","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-body-text-left">
+<!-- wp:group {"templateLock":"contentOnly","className":"is-style-body-text-left fade-in","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-body-text-left fade-in">
 	<!-- wp:heading {"className":"is-style-default"} -->
 	<h2 class="wp-block-heading is-style-default">Body Copy Left Subheading</h2>
 	<!-- /wp:heading -->
@@ -255,8 +255,8 @@
 <div class="wp-block-columns is-style-card-stat-columns">
 	<!-- wp:column -->
 	<div class="wp-block-column">
-		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat","layout":{"type":"constrained"}} -->
-		<div class="wp-block-group is-style-card-stat">
+		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat fade-in","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group is-style-card-stat fade-in">
 			<!-- wp:heading {"level":4} -->
 			<h4 class="wp-block-heading">TravelDesk Audiences</h4>
 			<!-- /wp:heading -->
@@ -269,8 +269,8 @@
 	<!-- /wp:column -->
 	<!-- wp:column -->
 	<div class="wp-block-column">
-		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat","layout":{"type":"constrained"}} -->
-		<div class="wp-block-group is-style-card-stat">
+		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat fade-in","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group is-style-card-stat fade-in">
 			<!-- wp:heading {"level":4} -->
 			<h4 class="wp-block-heading">TravelDesk Audiences</h4>
 			<!-- /wp:heading -->
@@ -283,8 +283,8 @@
 	<!-- /wp:column -->
 	<!-- wp:column -->
 	<div class="wp-block-column">
-		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat","layout":{"type":"constrained"}} -->
-		<div class="wp-block-group is-style-card-stat">
+		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat fade-in","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group is-style-card-stat fade-in">
 			<!-- wp:heading {"level":4} -->
 			<h4 class="wp-block-heading">TravelDesk Audiences</h4>
 			<!-- /wp:heading -->
@@ -297,8 +297,8 @@
 	<!-- /wp:column -->
 	<!-- wp:column -->
 	<div class="wp-block-column">
-		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat","layout":{"type":"constrained"}} -->
-		<div class="wp-block-group is-style-card-stat">
+		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat fade-in","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group is-style-card-stat fade-in">
 			<!-- wp:heading {"level":4} -->
 			<h4 class="wp-block-heading">TravelDesk Audiences</h4>
 			<!-- /wp:heading -->

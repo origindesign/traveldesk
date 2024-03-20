@@ -11,7 +11,7 @@
 
 ?>
 
-<!-- wp:post-terms {"term":"channels"} /-->
+<!-- wp:post-terms {"term":"channels", "className":"fade-in"} /-->
 <!-- wp:group {"className":"is-style-single-column-copy fade-in","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-single-column-copy fade-in">
 	<!-- wp:heading -->
@@ -47,8 +47,8 @@
 	<!-- /wp:group -->
 </div>
 <!-- /wp:group -->
-<!-- wp:group {"templateLock":"contentOnly","className":"is-style-body-text-right","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-body-text-right">
+<!-- wp:group {"templateLock":"contentOnly","className":"is-style-body-text-right fade-in","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-body-text-right fade-in">
 	<!-- wp:heading {"className":"is-style-default"} -->
 	<h2 class="wp-block-heading is-style-default"></h2>
 	<!-- /wp:heading -->
@@ -64,8 +64,8 @@
 <div class="wp-block-columns is-style-card-stat-columns">
 	<!-- wp:column -->
 	<div class="wp-block-column">
-		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat is-style-card-stat-number","layout":{"type":"constrained"}} -->
-		<div class="wp-block-group is-style-card-stat is-style-card-stat-number">
+		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat is-style-card-stat-number fade-in","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group is-style-card-stat is-style-card-stat-number fade-in">
 			<!-- wp:paragraph -->
 			<p>100K</p>
 			<!-- /wp:paragraph -->
@@ -78,8 +78,8 @@
 	<!-- /wp:column -->
 	<!-- wp:column -->
 	<div class="wp-block-column">
-		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat is-style-card-stat-number","layout":{"type":"constrained"}} -->
-		<div class="wp-block-group is-style-card-stat is-style-card-stat-number">
+		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat is-style-card-stat-number fade-in","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group is-style-card-stat is-style-card-stat-number fade-in">
 			<!-- wp:paragraph -->
 			<p>200K</p>
 			<!-- /wp:paragraph -->
@@ -92,8 +92,8 @@
 	<!-- /wp:column -->
 	<!-- wp:column -->
 	<div class="wp-block-column">
-		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat is-style-card-stat-number","layout":{"type":"constrained"}} -->
-		<div class="wp-block-group is-style-card-stat is-style-card-stat-number">
+		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat is-style-card-stat-number fade-in","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group is-style-card-stat is-style-card-stat-number fade-in">
 			<!-- wp:paragraph -->
 			<p>300X</p>
 			<!-- /wp:paragraph -->
