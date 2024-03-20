@@ -49,11 +49,8 @@
 <!-- /wp:group -->
 <!-- wp:group {"templateLock":"contentOnly","className":"is-style-body-text-right fade-in","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-body-text-right fade-in">
-	<!-- wp:heading {"className":"is-style-default"} -->
-	<h2 class="wp-block-heading is-style-default"></h2>
-	<!-- /wp:heading -->
-	<!-- wp:heading {"level":3} -->
-	<h3 class="wp-block-heading">The Results</h3>
+	<!-- wp:heading {"level":2} -->
+	<h2 class="wp-block-heading">The Results</h2>
 	<!-- /wp:heading -->
 	<!-- wp:paragraph -->
 	<p>Bro ipsum dolor sit amet air drop wheelie drop first tracks gaper steed huckfest Skate stunt washboard fatty wheels bail crank. Skid lid air ripping pillow popping chain suck. Dust on crust bowl park fully. Cork saddle sharkbite Whistler rock roll huck scream pinner schwag wack air.</p>

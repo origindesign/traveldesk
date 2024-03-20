@@ -111,13 +111,24 @@
 
 /* Block Editor styling */
 .editor-styles-wrapper {
-  h4,
-  p {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .is-style-card-stat {
+    h4,
+    p {
+      padding-left: 2rem;
+      padding-right: 2rem;
 
-    &::after {
-      top: -9rem;
+      &::after {
+        top: -9rem;
+      }
+    }
+
+    &-number {
+      h4,
+      p {
+        &::after {
+          top: -18rem;
+        }
+      }
     }
   }
 }

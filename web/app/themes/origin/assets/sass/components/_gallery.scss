@@ -260,8 +260,10 @@
 
     &__link {
       background-color: inherit;
+      border: none;
       display: flex;
       align-items: center;
+      color: var(--wp--preset--color--white);
 
       &:hover {
         text-decoration: none;
