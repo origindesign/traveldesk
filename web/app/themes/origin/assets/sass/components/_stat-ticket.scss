@@ -95,3 +95,23 @@
     }
   }
 }
+
+/* Block Editor styling */
+.editor-styles-wrapper {
+  .block-editor-block-list__layout.is-root-container > {
+    .is-style-stat-list-ticket {
+      margin-left: 4rem !important;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+
+      p {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}

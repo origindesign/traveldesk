@@ -24,33 +24,39 @@ form.contact-form {
   @media only screen and (min-width: $desktop) {
     grid-column: 2 / span 8;
   }
+}
 
-  .wp-block-jetpack-contact-form {
-    gap: 3rem;
+.wp-block-jetpack-contact-form {
+  gap: 3rem;
 
-    label {
-      /* Desktop/Form Label */
-      font-family: var(--wp--preset--font-family--plus-jakarta-sans);
-      font-size: 1.6rem;
-      font-weight: var(--wp--custom--typography--font-weight--bold);
-      line-height: 2rem;
-      letter-spacing: 0.03rem;
-      text-transform: uppercase;
-      margin-bottom: 1.4rem;
-    }
+  .block-editor-block-list__layout {
+    gap: 3rem !important;
+  }
 
-    input,
-    textarea {
-      border-radius: 3rem;
-      border: 1px solid var(--wp--preset--color--strawberry);
-      background: var(--wp--preset--color--white);
-      font-family: var(--wp--preset--font-family--plus-jakarta-sans);
-      line-height: 2.4rem;
-      padding: 1.6rem 3rem;
-    }
+  label {
+    /* Desktop/Form Label */
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+    font-size: 1.6rem;
+    font-weight: var(--wp--custom--typography--font-weight--bold);
+    line-height: 2rem;
+    letter-spacing: 0.03rem;
+    text-transform: uppercase;
+    margin-bottom: 1.4rem;
+  }
 
-    button {
-      margin-top: 1rem;
-    }
+  .jetpack-field__input,
+  .jetpack-field__textarea,
+  input,
+  textarea {
+    border-radius: 3rem;
+    border: 1px solid var(--wp--preset--color--strawberry);
+    background: var(--wp--preset--color--white);
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+    line-height: 2.4rem;
+    padding: 1.6rem 3rem;
+  }
+
+  button {
+    margin-top: 1rem;
   }
 }

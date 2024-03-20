@@ -225,6 +225,7 @@ function origin_register_taxonomy_clients() {
 		'labels' => $labels,
 		'show_ui' => true,
 		'show_in_rest' => true,
+		// 'public' => false,
 		'show_admin_column' => true,
 		'query_var' => true,
 		'rewrite' => array( 'slug' => 'client' ),

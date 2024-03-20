@@ -109,3 +109,23 @@
     }
   }
 }
+
+/* Block Editor styling */
+.editor-styles-wrapper {
+  .is-style-image-callout {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+
+    .is-style-image-callout-internal {
+      padding: 3rem 1.8rem 10rem 1.8rem !important;
+
+      @media only screen and (min-width: $tablet) {
+        padding: 3rem 9rem 10rem 3rem !important;
+      }
+
+      @media only screen and (min-width: $desktop) {
+        padding: 5.2rem 30rem 5.2rem 5.5rem !important;
+      }
+    }
+  }
+}

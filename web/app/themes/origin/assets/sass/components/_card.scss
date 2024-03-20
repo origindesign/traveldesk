@@ -325,3 +325,12 @@
     }
   }
 }
+
+/* Block Editor styling */
+.editor-styles-wrapper {
+  .is-style-cards {
+    .wp-block-heading {
+      margin-right: 0 !important;
+    }
+  }
+}

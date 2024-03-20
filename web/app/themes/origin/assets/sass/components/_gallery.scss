@@ -297,3 +297,17 @@
     }
   }
 }
+
+/* Block Editor styling */
+.editor-styles-wrapper {
+  .is-style-gallery {
+    h2 {
+      font-size: 8rem;
+
+      sub {
+        font-size: 8rem;
+        margin-left: 0 !important;
+      }
+    }
+  }
+}

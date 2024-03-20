@@ -39,6 +39,13 @@
     font-weight: var(--wp--custom--typography--font-weight--bold);
     line-height: 110%;
     letter-spacing: 1px;
+    text-decoration: none;
+    pointer-events: none;
+
+    a {
+      text-decoration: none;
+      pointer-events: none;
+    }
   }
 
   h1 {

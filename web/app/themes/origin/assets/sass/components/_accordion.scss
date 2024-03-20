@@ -244,13 +244,22 @@
   }
 }
 
-/* Backend Styles: Ensure all content is visible in the block editor */
+/* Block Editor styling */
+.editor-styles-wrapper {
+  .schema-faq-question {
+    cursor: text;
+  }
 
-.editor-styles-wrapper .schema-faq-question {
-  cursor: text;
-}
+  .schema-faq-answer {
+    display: block;
+    max-height: none;
+  }
 
-.editor-styles-wrapper .schema-faq-answer {
-  display: block;
-  max-height: none;
+  .schema-faq-section {
+    padding: inherit;
+  }
+
+  [data-type="yoast/faq-block"] {
+    grid-column: 5 / span 7;
+  }
 }

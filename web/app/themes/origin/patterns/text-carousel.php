@@ -11,8 +11,8 @@
 
 ?>
 
-<!-- wp:group {"className":"is-full-width-container is-style-carousel-text","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-full-width-container is-style-carousel-text">
+<!-- wp:group {"className":"is-full-width-container is-style-carousel-text fade-in","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-full-width-container is-style-carousel-text fade-in">
 	<!-- wp:columns -->
 	<div class="wp-block-columns">
 		<!-- wp:column {"width":"66.66%"} -->
