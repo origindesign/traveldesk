@@ -1,0 +1,83 @@
+.is-style-image-carousel {
+  background-color: var(--wp--preset--color--pine);
+  padding: 5rem 3rem 10rem 3rem;
+  margin-top: 7rem;
+
+  @media only screen and (min-width: $desktop) {
+    margin-top: 16rem;
+    padding: 10rem 6rem;
+  }
+
+  .wp-block-splide-carousel__container {
+    max-width: 95 !important;
+  }
+
+  .splide__slide {
+    padding: 2rem;
+
+    figure {
+      border-radius: 1rem;
+      border: 1rem solid var(--wp--preset--color--base);
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .splide__arrow {
+    background: none;
+    border: 1px solid var(--wp--preset--color--lime);
+    border-radius: 0.3rem;
+    opacity: 1;
+
+    svg {
+      display: none;
+    }
+
+    &::before {
+      content: "\e901";
+      font-family: "icomoon";
+      display: block;
+      position: absolute;
+      font-size: 2.3rem;
+      transform: rotate(45deg);
+    }
+
+    &.splide__arrow--prev {
+      &::before {
+        transform: rotate(225deg);
+      }
+    }
+
+    &:hover {
+      background-color: var(--wp--preset--color--lime);
+    }
+  }
+
+  .splide__arrows {
+    display: flex;
+    gap: 1.1rem;
+    order: 2;
+    justify-content: flex-end;
+    margin-right: 0;
+    margin-bottom: -1rem;
+    position: absolute;
+    bottom: -6rem;
+    right: 0;
+    margin-top: 6rem;
+
+    @media only screen and (min-width: $desktop) {
+      order: unset;
+      margin-bottom: unset;
+      margin-right: 2rem;
+    }
+  }
+  .splide__arrow {
+    position: static;
+    transform: none;
+  }
+  .splide__arrow--next {
+    right: unset;
+  }
+}

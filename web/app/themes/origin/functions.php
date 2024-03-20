@@ -233,6 +233,38 @@ function origin_register_taxonomy_clients() {
 add_action( 'init', 'origin_register_taxonomy_clients', 0 );
 
 /**
+ * Register taxonomy - 'Channels', for Case Study CPT.
+ */
+function origin_register_taxonomy_channels() {
+	// Define UI labels
+	$labels = array(
+		'name' => _x( 'Channels', 'taxonomy general name' ),
+		'singular_name' => _x( 'Channel', 'taxonomy singular name' ),
+		'search_items' =>  __( 'Search Channels' ),
+		'all_items' => __( 'All Channels' ),
+		'parent_item' => __( 'Parent Channel' ),
+		'parent_item_colon' => __( 'Parent Channel:' ),
+		'edit_item' => __( 'Edit Channel' ), 
+		'update_item' => __( 'Update Channel' ),
+		'add_new_item' => __( 'Add New Channel' ),
+		'new_item_name' => __( 'New Channel Name' ),
+		'menu_name' => __( 'Channels' ),
+	);
+
+	// Now register the taxonomy
+	register_taxonomy('channels',array('case-study'), array(
+		'hierarchical' => true,
+		'labels' => $labels,
+		'show_ui' => true,
+		'show_in_rest' => true,
+		'show_admin_column' => true,
+		'query_var' => true,
+		'rewrite' => array( 'slug' => 'channels' ),
+	));
+}
+add_action( 'init', 'origin_register_taxonomy_channels', 0 );
+
+/**
  * Register taxonomy - 'Featured'.
  */
 function origin_register_taxonomy_featured() {

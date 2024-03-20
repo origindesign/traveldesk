@@ -1,0 +1,44 @@
+body .taxonomy-channels {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  margin-bottom: 7rem;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: max-content !important;
+  position: relative;
+
+  @media only screen and (min-width: $tablet) {
+    align-items: center;
+    margin-bottom: 10rem;
+    flex-direction: row;
+    max-width: 100% !important;
+  }
+
+  &::before {
+    content: "Channels";
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+    position: absolute;
+    top: 0;
+    left: -100%;
+
+    @media only screen and (min-width: $tablet) {
+      position: relative;
+      top: unset;
+      left: unset;
+    }
+  }
+
+  a {
+    @include label;
+    background-color: var(--wp--preset--color--lime);
+    border-radius: 6rem;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    pointer-events: none;
+  }
+
+  span {
+    display: none;
+  }
+}

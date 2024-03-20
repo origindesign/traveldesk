@@ -1,0 +1,36 @@
+.wp-block-table {
+  background-color: var(--wp--preset--color--white);
+  border-radius: 2rem 2rem 0 0;
+  font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+  font-size: 1.6rem;
+  margin: 6rem 0;
+
+  thead {
+    background-color: var(--wp--preset--color--spruce);
+    color: var(--wp--preset--color--white);
+
+    th {
+      border: 1px solid var(--wp--preset--color--spruce);
+      padding: 2.5rem;
+      text-align: left;
+    }
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid var(--wp--preset--color--strawberry);
+    padding: 2.5rem;
+  }
+
+  tr {
+    td:first-of-type {
+      font-weight: 700;
+    }
+
+    &:last-of-type {
+      td {
+        border-bottom: none;
+      }
+    }
+  }
+}
