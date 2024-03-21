@@ -257,6 +257,10 @@
 
   .schema-faq-section {
     padding: inherit;
+
+    &:hover {
+      transform: none;
+    }
   }
 
   [data-type="yoast/faq-block"] {
