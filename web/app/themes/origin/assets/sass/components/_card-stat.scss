@@ -1,9 +1,33 @@
 .is-style-card-stat-columns {
-  gap: 20px;
+  flex-wrap: wrap !important;
+  gap: 6rem;
+
+  @media only screen and (min-width: $desktop) {
+    gap: 2rem;
+  }
 
   .wp-block-column {
+    @media only screen and (min-width: $tablet) {
+      flex-basis: 45% !important;
+    }
     @media only screen and (min-width: $desktop) {
-      max-width: 385px;
+      flex-basis: 0 !important;
+    }
+
+    &:nth-of-type(odd) {
+      .is-style-card-stat {
+        @media only screen and (min-width: $tablet) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &:nth-of-type(even) {
+      .is-style-card-stat {
+        @media only screen and (min-width: $tablet) {
+          margin-left: 0;
+        }
+      }
     }
   }
 }
@@ -11,20 +35,27 @@
 .is-style-card-stat {
   background-color: var(--wp--preset--color--spruce);
   color: var(--wp--preset--color--coral);
-  padding: 8.3rem 3.5rem;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-  display: inline-block;
+  padding: 6.5rem 2.6rem 2.6rem;
+  border-bottom-left-radius: 1.6rem;
+  border-bottom-right-radius: 1.6rem;
+  display: block;
   position: relative;
   width: 100%;
-  height: -webkit-fill-available;
+  height: 100%;
+  max-width: 33.5rem;
+  margin: auto;
+
+  @media only screen and (min-width: $tablet) {
+    padding: 8.3rem 3.5rem;
+    max-width: 38rem;
+  }
 
   // ticket notches
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: -3rem;
+    top: -2rem;
     left: 0;
     height: 2.1rem;
     width: 33%;
@@ -36,6 +67,7 @@
 
     @media only screen and (min-width: $desktop) {
       height: 3rem;
+      top: -3rem;
     }
   }
 
@@ -48,31 +80,34 @@
   }
 
   h4 {
-    font-family: "Plus Jakarta Sans";
-    font-size: 32.637px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 100%; /* 32.637px */
-    letter-spacing: 0.989px;
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+    font-size: 2.5rem;
+    font-weight: var(--wp--custom--typography--font-weight--bold);
+    line-height: 100%;
+    letter-spacing: 0.01rem;
     margin-bottom: 2rem;
+
+    @media only screen and (min-width: $tablet) {
+      font-size: 3.2rem;
+    }
 
     // middle cutaway
     &::after {
       content: "";
       position: absolute;
-      top: 2.1rem;
-      left: -2.2rem;
+      top: -0.5rem;
+      left: 33%;
       height: 2rem;
-      width: 2.7rem;
+      width: 34%;
       border: 1px solid var(--wp--preset--color--lime);
       border-left: none;
       border-bottom-right-radius: 0.55rem;
       border-bottom-left-radius: 0.55rem;
-      background: #eaf6f5;
+      background: var(--wp--preset--color--aqua);
       border: none;
 
       @media only screen and (min-width: $desktop) {
-        top: -20px;
+        top: -2rem;
         left: 33%;
         height: 2.6rem;
         width: 34%;
@@ -81,11 +116,7 @@
   }
 
   p {
-    font-family: "Plus Jakarta Sans";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
     margin: 0;
   }
 
@@ -93,14 +124,13 @@
     padding-bottom: 5.2rem;
 
     p {
-      font-family: Prompt;
-      font-size: 70px;
-      font-style: normal;
-      font-weight: 800;
-      line-height: 80px;
-      letter-spacing: 2px;
+      font-family: var(--wp--preset--font-family--prompt);
+      font-size: 7rem;
+      font-weight: var(--wp--custom--typography--font-weight--bold);
+      line-height: 8rem;
+      letter-spacing: 0.2rem;
       text-transform: uppercase;
-      margin-bottom: 10px;
+      margin-bottom: 1rem;
     }
 
     h4 {

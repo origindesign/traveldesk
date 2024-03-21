@@ -1,10 +1,5 @@
 .is-style-team-cards {
-  width: 100% !important;
-  max-width: 100% !important;
-  position: relative;
-  display: grid !important;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
+  @include grid-container;
   row-gap: 5rem;
 
   @media only screen and (min-width: $tablet) {
@@ -14,7 +9,6 @@
 
   @media only screen and (min-width: $desktop) {
     column-gap: 2rem;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .wp-block-column {
@@ -60,7 +54,7 @@
       font-weight: 400;
 
       @media only screen and (min-width: $desktop) {
-        font-size: 16px;
+        font-size: 1.6rem;
         font-weight: 700;
       }
     }

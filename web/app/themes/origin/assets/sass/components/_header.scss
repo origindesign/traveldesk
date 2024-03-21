@@ -49,21 +49,21 @@ header {
       @media (min-width: $desktop) {
         &::after {
           content: "";
-          width: 0px;
-          height: 2px;
+          width: 0;
+          height: 0.2rem;
           position: absolute;
           top: 80%;
-          left: 15px;
+          left: 1.5rem;
           background: var(--wp--preset--color--black);
           transition: 300ms;
         }
 
         &:hover:after {
-          width: calc(100% - 30px);
+          width: calc(100% - 3rem);
         }
 
         &:not(:hover):after {
-          right: 15px;
+          right: 1.5rem;
           left: auto;
         }
       }
@@ -211,13 +211,13 @@ header {
         padding: var(--wp--custom--grid--gutter-sm) 2rem
           var(--wp--custom--grid--gutter-sm) 4rem !important;
         font-family: var(--wp--preset--font-family--plus-jakarta-sans);
-        font-size: 16px;
+        font-size: 1.6rem;
         font-style: normal;
         font-weight: var(--wp--custom--typography--font-weight--bold);
         line-height: 100%;
         width: 100%;
         position: relative;
-        height: 70px;
+        height: 7rem;
         align-items: center;
         display: flex;
 
@@ -230,8 +230,8 @@ header {
           width: 1.1rem;
           border: 1px solid var(--wp--preset--color--lime);
           border-left: none;
-          border-top-right-radius: 5.5px;
-          border-bottom-right-radius: 5.5px;
+          border-top-right-radius: 0.55rem;
+          border-bottom-right-radius: 0.55rem;
         }
 
         &::after {

@@ -1,0 +1,196 @@
+@mixin h1 {
+  font-size: 3.5rem;
+  line-height: 3.3rem;
+  letter-spacing: 0.3rem;
+
+  @media only screen and (min-width: $desktop) {
+    font-size: 9rem;
+    line-height: 8rem;
+    letter-spacing: 0.8rem;
+  }
+}
+
+@mixin h2 {
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 4rem;
+  margin-top: 0;
+
+  @media only screen and (min-width: $desktop) {
+    font-size: 5rem;
+    line-height: 5rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 7rem;
+  }
+}
+
+@mixin h3 {
+  font-size: 2rem;
+  line-height: 100%;
+  letter-spacing: 0.05rem;
+  margin-bottom: 4rem;
+  margin-top: 0;
+
+  @media only screen and (min-width: $desktop) {
+    font-size: 3.3rem;
+    line-height: 100%;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@mixin h4 {
+  font-size: 1.7rem;
+  line-height: 100%;
+  letter-spacing: 0.1rem;
+  margin-bottom: 3rem;
+  margin-top: 0;
+
+  @media only screen and (min-width: $desktop) {
+    font-size: 2.3rem;
+    line-height: 110%;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@mixin h5 {
+  font-size: 1.6rem;
+  line-height: 100%;
+  letter-spacing: 0.1rem;
+  margin-bottom: 3rem;
+  margin-top: 0;
+
+  @media only screen and (min-width: $desktop) {
+    font-size: 2rem;
+    line-height: 100%;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@mixin h6 {
+  font-size: 1.5rem;
+  line-height: 100%;
+  letter-spacing: 0.1rem;
+  margin-bottom: 3rem;
+  margin-top: 0;
+
+  @media only screen and (min-width: $desktop) {
+    font-size: 1.7rem;
+    line-height: 100%;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+// hero banner heading
+@mixin hero {
+  color: var(--wp--preset--color--strawberry);
+  font-size: 4.7rem;
+  font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+  line-height: 95%;
+  letter-spacing: 0.5rem;
+  font-weight: var(--wp--custom--typography--font-weight--normal);
+
+  @media only screen and (min-width: $tablet) {
+    font-size: 9rem;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    font-size: 13.8rem;
+    line-height: 95%;
+    letter-spacing: 0.8rem;
+  }
+
+  strong {
+    font-family: var(--wp--preset--font-family--prompt);
+    letter-spacing: 0;
+    font-size: 5rem;
+
+    @media only screen and (min-width: $tablet) {
+      font-size: 9rem;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 14rem;
+    }
+  }
+
+  sub {
+    font-size: inherit;
+    font-weight: inherit;
+    display: block;
+    transition: 0.2s ease-in-out;
+    text-align: right;
+    margin-right: 10vw;
+
+    @media only screen and (min-width: 600px) {
+      margin-right: 16vw;
+    }
+    @media only screen and (min-width: 700px) {
+      margin-right: 18vw;
+    }
+    @media only screen and (min-width: 800px) {
+      margin-right: 0;
+    }
+    @media only screen and (min-width: 900px) {
+      margin-right: 6vw;
+    }
+    @media only screen and (min-width: 1100px) {
+      margin-right: 10vw;
+    }
+    @media only screen and (min-width: 1300px) {
+      margin-right: 16vw;
+    }
+    @media only screen and (min-width: 1400px) {
+      margin-right: 0;
+    }
+    @media only screen and (min-width: 1600px) {
+      margin-right: 5vw;
+    }
+  }
+}
+
+// keyline section heading
+@mixin keyline {
+  display: inline-block;
+  font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.15rem;
+  padding: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  z-index: 0;
+
+  @media only screen and (min-width: $desktop) {
+    font-size: 1.8rem;
+  }
+
+  &::before {
+    content: "";
+    height: 0.2rem;
+    width: 100%;
+    left: 0;
+    display: block;
+    position: absolute;
+    top: 2.4rem;
+    z-index: -1;
+  }
+}
+
+// labels
+@mixin label {
+  font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+
+  @media only screen and (min-width: $desktop) {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+}

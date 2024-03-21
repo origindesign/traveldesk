@@ -1,10 +1,3 @@
-// grid
-@mixin container {
-  width: 100%;
-  max-width: var(--wp--style--global--wide-size);
-  margin: auto;
-}
-
 // set non-dynamic content width
 body
   .is-layout-constrained
@@ -26,11 +19,5 @@ body
 
 // Full width container
 body .entry-content .is-full-width-container {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw !important;
-  margin-right: -50vw !important;
-  max-width: 100vw !important;
+  @include container-full-width;
 }

@@ -64,18 +64,11 @@
   }
 
   p {
-    margin: 0;
+    @include h3;
+    margin: 0 !important;
     font-family: var(--wp--preset--font-family--prompt);
-    font-size: 2rem;
     font-weight: var(--wp--custom--typography--font-weight--bold);
-    line-height: 100%;
-    letter-spacing: 0.5px;
     text-transform: uppercase;
-
-    @media (min-width: $desktop) {
-      font-size: 3.3rem;
-      letter-spacing: 0.1rem;
-    }
 
     &::before {
       content: "";

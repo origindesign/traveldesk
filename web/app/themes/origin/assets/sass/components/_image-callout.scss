@@ -1,10 +1,7 @@
 .is-style-image-callout {
+  @include grid-container-full-width;
   background-color: var(--wp--preset--color--lime);
   padding: 5.2rem var(--wp--custom--grid--gutter);
-  position: relative;
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
   margin-bottom: 0;
   column-gap: 1.5rem;
 
@@ -15,7 +12,6 @@
   @media (min-width: $desktop) {
     padding: 12.2rem var(--wp--custom--grid--gutter-large);
     column-gap: 3rem;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
     margin-bottom: 3rem;
   }
 
@@ -75,9 +71,9 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      border: 20px solid var(--wp--preset--color--lime);
+      border: 2rem solid var(--wp--preset--color--lime);
       background: var(--wp--preset--color--lime);
-      border-top-left-radius: 35px;
+      border-top-left-radius: 3.5rem;
 
       &::before {
         content: "";

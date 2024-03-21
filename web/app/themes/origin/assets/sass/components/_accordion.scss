@@ -1,10 +1,5 @@
 .is-style-accordion {
-  width: 100% !important;
-  max-width: 100% !important;
-  position: relative;
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
+  @include grid-container;
   padding: 7rem 0;
 
   @media only screen and (min-width: $tablet) {
@@ -12,8 +7,6 @@
   }
 
   @media only screen and (min-width: $desktop) {
-    column-gap: 3rem;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
     padding: 16rem 0;
   }
 
@@ -72,17 +65,7 @@
 
 // yoast faq block
 .is-style-yoast-faq-wrapper {
-  width: 100% !important;
-  max-width: 100% !important;
-  position: relative;
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
-
-  @media only screen and (min-width: $desktop) {
-    column-gap: 3rem;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-  }
+  @include grid-container;
 }
 
 .wp-block-yoast-faq-block {
@@ -165,6 +148,7 @@
 }
 
 .schema-faq-question {
+  @include h3;
   background: var(--wp--preset--color--lime);
   color: var(--wp--preset--color--pine);
   cursor: pointer;
@@ -172,19 +156,17 @@
   align-items: center;
   transition: opacity ease 0.25s;
   font-family: var(--wp--preset--font-family--prompt);
-  font-size: 2rem;
   font-weight: var(--wp--custom--typography--font-weight--bold);
-  line-height: 100%;
-  letter-spacing: 1px;
   text-transform: uppercase;
   padding: 3.1rem 3.2rem 3.1rem 3rem;
   border-radius: 0 1.1rem 1.1rem 0;
   position: relative;
   height: 5.5rem;
+  margin-bottom: 0;
 
   @media only screen and (min-width: $desktop) {
-    font-size: 3.3rem;
     height: 8.6rem;
+    margin-bottom: 0;
   }
 
   // open / close icon
@@ -214,7 +196,7 @@
     border-left: none;
     border-top-right-radius: 0.55rem;
     border-bottom-right-radius: 0.55rem;
-    background: #eaf6f5;
+    background: var(--wp--preset--color--aqua);
     border: none;
 
     @media only screen and (min-width: $desktop) {

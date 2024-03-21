@@ -1,112 +1,14 @@
-// mixins for reusability
-
-@mixin h1 {
-  font-size: 3.5rem;
-  line-height: 3.3rem;
-  letter-spacing: 0.3rem;
-
-  @media only screen and (min-width: $desktop) {
-    font-size: 9rem;
-    line-height: 8rem;
-    letter-spacing: 0.8rem;
-  }
-}
-
-@mixin h2 {
-  font-size: 2.6rem;
-  line-height: 2.6rem;
-  letter-spacing: 0.2rem;
-  margin-bottom: 4rem;
-  margin-top: 0;
-
-  @media only screen and (min-width: $desktop) {
-    font-size: 5rem;
-    line-height: 5rem;
-    letter-spacing: 0.3rem;
-    margin-bottom: 7rem;
-  }
-}
-
-@mixin h3 {
-  font-size: 2rem;
-  line-height: 100%;
-  letter-spacing: 0.05rem;
-  margin-bottom: 4rem;
-  margin-top: 0;
-
-  @media only screen and (min-width: $desktop) {
-    font-size: 3.3rem;
-    line-height: 100%;
-    letter-spacing: 0.1rem;
-    margin-bottom: 3rem;
-  }
-}
-
-@mixin h4 {
-  font-size: 1.7rem;
-  line-height: 100%;
-  letter-spacing: 0.1rem;
-  margin-bottom: 3rem;
-  margin-top: 0;
-
-  @media only screen and (min-width: $desktop) {
-    font-size: 2.3rem;
-    line-height: 110%;
-    letter-spacing: 0.1rem;
-    margin-bottom: 3rem;
-  }
-}
-
-@mixin h5 {
-  font-size: 1.6rem;
-  line-height: 100%;
-  letter-spacing: 0.1rem;
-  margin-bottom: 3rem;
-  margin-top: 0;
-
-  @media only screen and (min-width: $desktop) {
-    font-size: 2rem;
-    line-height: 100%;
-    letter-spacing: 0.1rem;
-    margin-bottom: 3rem;
-  }
-}
-
-@mixin h6 {
-  font-size: 1.5rem;
-  line-height: 100%;
-  letter-spacing: 0.1rem;
-  margin-bottom: 3rem;
-  margin-top: 0;
-
-  @media only screen and (min-width: $desktop) {
-    font-size: 1.7rem;
-    line-height: 100%;
-    letter-spacing: 0.1rem;
-    margin-bottom: 3rem;
-  }
-}
-
-/* Label */
-@mixin label {
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
-  font-weight: 300;
-  line-height: normal;
-  letter-spacing: 1px;
-
-  @media only screen and (min-width: $desktop) {
-    font-size: 18px;
-    line-height: 24px;
-  }
-}
-
 // headings
 h1,
 h2,
 h3 {
   font-family: var(--wp--preset--font-family--prompt);
   text-transform: uppercase;
+}
+
+h2,
+h3 {
+  color: var(--wp--preset--color--strawberry);
 }
 
 h4,
@@ -146,94 +48,17 @@ h6,
   @include h6;
 }
 
+// hero banner heading
 .is-style-hero-heading {
-  color: var(--wp--preset--color--strawberry);
-  font-size: 4.7rem;
-  font-family: "Plus Jakarta Sans";
-  line-height: 95%;
-  letter-spacing: 0.5rem;
-  font-weight: var(--wp--custom--typography--font-weight--normal);
-
-  @media only screen and (min-width: $tablet) {
-    font-size: 9rem;
-  }
-
-  @media only screen and (min-width: $desktop) {
-    font-size: 13.8rem;
-    line-height: 95%;
-    letter-spacing: 0.8rem;
-  }
-
-  strong {
-    font-family: "Prompt";
-    letter-spacing: 0;
-    font-size: 5rem;
-
-    @media only screen and (min-width: $tablet) {
-      font-size: 9rem;
-    }
-
-    @media only screen and (min-width: $desktop) {
-      font-size: 14rem;
-    }
-  }
-
-  sub {
-    font-size: inherit;
-    font-weight: inherit;
-    display: block;
-    transition: 0.2s ease-in-out;
-    text-align: right;
-    margin-right: 10vw;
-
-    @media only screen and (min-width: 600px) {
-      margin-right: 16vw;
-    }
-    @media only screen and (min-width: 700px) {
-      margin-right: 18vw;
-    }
-    @media only screen and (min-width: 800px) {
-      margin-right: 0;
-    }
-    @media only screen and (min-width: 900px) {
-      margin-right: 6vw;
-    }
-    @media only screen and (min-width: 1100px) {
-      margin-right: 10vw;
-    }
-    @media only screen and (min-width: 1300px) {
-      margin-right: 16vw;
-    }
-    @media only screen and (min-width: 1400px) {
-      margin-right: 0;
-    }
-    @media only screen and (min-width: 1600px) {
-      margin-right: 5vw;
-    }
-  }
+  @include hero;
 }
 
-h2,
-h3 {
-  color: var(--wp--preset--color--strawberry);
-}
-
+// keyline section heading
 .is-style-keyline-heading {
-  /* Desktop/Keyline Title Thing */
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 100%; /* 18px */
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-
-  @media only screen and (min-width: $desktop) {
-    font-size: 18px;
-  }
+  @include keyline;
 }
 
-/* Labels */
+/* labels */
 .label {
   @include label;
 }

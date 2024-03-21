@@ -34,34 +34,19 @@
 
   h2 {
     color: var(--wp--preset--color--pine);
-    display: inline-block;
-    padding: 1.6rem;
     background: var(--wp--preset--color--white);
-    margin-bottom: 0;
 
     &::before {
-      content: "";
-      height: 0.2rem;
       background-color: var(--wp--preset--color--pine);
-      width: 100%;
-      left: 0;
-      display: block;
-      position: absolute;
-      top: 2.4rem;
-      z-index: -1;
     }
   }
 
   > p {
     font-family: var(--wp--preset--font-family--plus-jakarta-sans);
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 2.4rem;
     width: 90%;
     margin-top: 3rem;
 
     @media only screen and (min-width: $desktop) {
-      font-size: 1.8rem;
       width: 52%;
       margin-bottom: 0;
     }

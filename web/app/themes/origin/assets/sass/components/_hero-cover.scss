@@ -1,16 +1,8 @@
 // Component: Hero Cover
 .is-style-hero-cover {
-  width: 100% !important;
-  max-width: 100% !important;
-  position: relative;
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
   margin-bottom: 7rem;
 
   @media only screen and (min-width: $desktop) {
-    column-gap: 3rem;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
     margin-bottom: 16rem;
   }
 
@@ -21,6 +13,7 @@
   }
 
   h1 {
+    position: relative;
     z-index: 1;
   }
 
