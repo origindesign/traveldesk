@@ -56,6 +56,12 @@ h6,
 // keyline section heading
 .is-style-keyline-heading {
   @include keyline;
+
+  &[data-type="core/heading"] {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 /* labels */
