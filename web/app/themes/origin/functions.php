@@ -297,6 +297,15 @@ function origin_register_taxonomy_featured() {
 }
 add_action( 'init', 'origin_register_taxonomy_featured', 0 );
 
+/**
+ * Disable fullscreen mode by default.
+ */
+function origin_disable_editor_fullscreen_mode() {
+	$script = "window.onload = function() { const isFullscreenMode = wp.data.select( 'core/edit-post' ).isFeatureActive( 'fullscreenMode' ); if ( isFullscreenMode ) { wp.data.dispatch( 'core/edit-post' ).toggleFeature( 'fullscreenMode' ); } }";
+	wp_add_inline_script( 'wp-blocks', $script );
+}
+add_action( 'enqueue_block_editor_assets', 'origin_disable_editor_fullscreen_mode' );
+
 // Filters.
 require_once get_theme_file_path( 'inc/filters.php' );
 

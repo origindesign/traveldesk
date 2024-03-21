@@ -56,40 +56,22 @@
           "name": "Transparent"
         }
       ],
-      "gradients": [
-        {
-          "slug": "d-transparent-primary",
-          "gradient": "linear-gradient(to bottom right,transparent 49.9%,#0073aa 50%)",
-          "name": "Diagonal transparent to primary"
-        },
-        {
-          "slug": "d-primary-transparent",
-          "gradient": "linear-gradient(to bottom right, #0073aa 49.9%, transparent 50%)",
-          "name": "Diagonal primary to transparent"
-        }
-      ],
-      "duotone": [
-        {
-          "colors": ["#00a0d2", "#0073aa"],
-          "slug": "secondary-primary",
-          "name": "Secondary and primary"
-        },
-        {
-          "colors": ["#0073aa", "#f0f0f1"],
-          "slug": "primary-contrast",
-          "name": "Primary and foreground"
-        }
-      ]
+      "text": false,
+      "link": false,
+      "background": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "duotone": [],
+      "gradients": []
     },
     "layout": {
       "contentSize": "120rem",
-      "wideSize": "160rem"
+      "wideSize": "160rem",
+      "allowEditing": false
     },
     "spacing": {
-      "units": ["px", "em", "rem", "vh", "vw", "%"],
-      "spacingScale": {
-        "steps": 7
-      },
       "spacingSizes": [
         {
           "name": "Small",
@@ -106,11 +88,14 @@
           "slug": "large",
           "size": "4.5rem"
         }
-      ]
+      ],
+      "margin": false,
+      "padding": false
     },
     "typography": {
       "dropCap": false,
-      "fluid": true,
+      "fluid": false,
+      "customFontSize": false,
       "fontFamilies": [
         {
           "name": "System",
@@ -239,56 +224,13 @@
           ]
         }
       ],
-      "fontSizes": [
-        {
-          "slug": "extra-small",
-          "size": "1rem",
-          "name": "Extra small",
-          "fluid": false
-        },
-        {
-          "slug": "small",
-          "size": "1.125rem",
-          "name": "Small",
-          "fluid": false
-        },
-        {
-          "slug": "medium",
-          "size": "1.25rem",
-          "name": "Medium",
-          "fluid": {
-            "min": "1.25rem",
-            "max": "1.5rem"
-          }
-        },
-        {
-          "slug": "large",
-          "size": "2rem",
-          "name": "Large",
-          "fluid": {
-            "min": "1.75rem",
-            "max": "2rem"
-          }
-        },
-        {
-          "slug": "x-large",
-          "size": "2.75rem",
-          "name": "XL",
-          "fluid": {
-            "min": "2.5rem",
-            "max": "2.75rem"
-          }
-        },
-        {
-          "slug": "xx-large",
-          "size": "3.75rem",
-          "name": "XXL",
-          "fluid": {
-            "min": "3rem",
-            "max": "3.75rem"
-          }
-        }
-      ]
+      "fontSizes": [],
+      "fontWeight": false,
+      "fontStyle": false,
+      "textTransform": false,
+      "letterSpacing": false,
+      "textDecoration": false,
+      "lineHeight": false
     },
     "custom": {
       "typography": {
