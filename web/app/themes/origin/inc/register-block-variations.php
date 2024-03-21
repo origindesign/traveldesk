@@ -20,7 +20,7 @@ function origin_register_block_variation() {
 	wp_enqueue_script(
 		'origin-block-variations',
 		get_template_directory_uri() . '/assets/js/block-variation.js',
-		array( 'wp-blocks' ),
+		array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ),
 		ORIGIN_VERSION,
 		true
 	);
