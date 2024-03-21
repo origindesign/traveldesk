@@ -360,34 +360,9 @@
       "area": "header"
     },
     {
-      "name": "narrow-header",
-      "title": "Narrow header",
-      "area": "header"
-    },
-    {
       "name": "footer",
       "title": "Footer",
       "area": "footer"
-    },
-    {
-      "name": "narrow-footer",
-      "title": "Narrow footer",
-      "area": "footer"
-    },
-    {
-      "name": "sidebar",
-      "title": "Sidebar",
-      "area": "uncategorized"
-    },
-    {
-      "name": "post-navigation",
-      "title": "Post navigation",
-      "area": "uncategorized"
-    },
-    {
-      "name": "comments",
-      "title": "Comments",
-      "area": "uncategorized"
     }
   ],
   "customTemplates": [
@@ -410,14 +385,6 @@
       "name": "sidebar-post-template",
       "title": "Post with sidebar",
       "postTypes": ["post"]
-    },
-    {
-      "name": "single-product",
-      "title": "Single product"
-    },
-    {
-      "name": "archive-product",
-      "title": "Shop (Product archive)"
     }
   ]
 }
