@@ -52,5 +52,5 @@ gulp.task("watch", function () {
     .on("change", gulp.series("main", "editor", "chunks"));
 });
 
-gulp.task("build", gulp.series("main", "editor"));
-gulp.task("default", gulp.series("main", "editor"));
+gulp.task("build", gulp.series("main", "editor", "chunks"));
+gulp.task("default", gulp.series("main", "editor", "chunks"));
