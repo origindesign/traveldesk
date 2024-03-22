@@ -6,16 +6,9 @@
  * @since 1.0.0
  */
 
-/**
- * Register block styles
- *
- * @since 1.0.0
- *
- * @return void
- */
 function origin_register_block_styles() {
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+	
+	register_block_style(
 		'core/group',
 		array(
 			'name'  => 'single-column-copy',
@@ -23,7 +16,7 @@ function origin_register_block_styles() {
 		)
 	);
 
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+	register_block_style(
 		'core/group',
 		array(
 			'name'  => 'hero-cover',
@@ -31,7 +24,7 @@ function origin_register_block_styles() {
 		)
 	);
 
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+	register_block_style(
 		'core/heading',
 		array(
 			'name'  => 'hero-heading',
@@ -39,7 +32,7 @@ function origin_register_block_styles() {
 		)
 	);
 
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+	register_block_style(
 		'core/heading',
 		array(
 			'name'  => 'keyline-heading',
@@ -47,7 +40,7 @@ function origin_register_block_styles() {
 		)
 	);
 
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+	register_block_style(
 		'core/button',
 		array(
 			'name'  => 'newsletter-sign-up',

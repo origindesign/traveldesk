@@ -1,3 +1,7 @@
+@import "../base/settings";
+@import "../settings/grid";
+@import "../settings/typography";
+
 .wp-block-jetpack-contact-form-container {
   @include grid-container;
   margin-bottom: 9rem;

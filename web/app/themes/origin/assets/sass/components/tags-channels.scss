@@ -1,3 +1,7 @@
+@import "../base/settings";
+@import "../settings/grid";
+@import "../settings/typography";
+
 body .taxonomy-channels {
   display: flex;
   justify-content: end;

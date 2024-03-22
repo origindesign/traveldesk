@@ -20,35 +20,6 @@ add_action('init', function() {
 	remove_theme_support('core-block-patterns');
 },  9  );
 
-// add_action('template_redirect', 'showid');
-// function showid(){
-//     $theid = get_queried_object_id();
-// 	echo $theid;
-//     // return $theid;
-
-// 	$post_content = get_post( $theid )->post_content;
-
-// 	$blocks = array_filter( parse_blocks( $post_content ), function( $block ) use( $block_name ) {
-// 		var_dump( $block_name === $block['blockName'] );
-// 		//  print_r($block['blockName']);
-// 		print_r($block['attrs']['className']);
-
-// 		$block_class = $block['attrs']['className'];
-
-// 		if ( $block_class == 'is-style-stat-list-ticket') {
-// 			echo 'enqeueu stat styles';
-//wp_register_style( 'foo-template-css', get_stylesheet_directory_uri(). '/assets/css/comp.css' );
-// 		}
-
-// 		// echo '<pre>';
-// 		//  print_r($block);
-// 		//  echo '</pre>';
-// 		echo '<br/>';
-// 	});
-// }
-
-// print_r( showid() );
-
 /**
  * Add theme support for block styles and editor style.
  *
@@ -90,16 +61,70 @@ add_action( 'customize_register', '__return_true' );
  */
 function origin_enqueue_specific_block_styles() {
 	wp_enqueue_block_style( 'core/quote', array(
-		'handle' => 'themeslug-block-image',
-		'src'    => get_theme_file_uri( "assets/blocks/core-quote.css" ),
-		'path'   => get_theme_file_path( "assets/blocks/core-quote.css" )
+		'handle' => 'origin-quote',
+		'src'    => get_theme_file_uri( "assets/css/chunks/quote.min.css" ),
+		'path'   => get_theme_file_path( "assets/css/chunks/quote.min.css" ),
 	) );
 
 	wp_enqueue_block_style( 'core/query-pagination', array(
-		'handle' => 'themeslug-block-image',
-		'src'    => get_theme_file_uri( "assets/blocks/core-pagination.css" ),
-		'path'   => get_theme_file_path( "assets/blocks/core-pagination.css" )
+		'handle' => 'origin-pagination',
+		'src'    => get_theme_file_uri( "assets/css/chunks/pagination.min.css" ),
+		'path'   => get_theme_file_path( "assets/css/chunks/pagination.min.css" ),
 	) );
+
+	wp_enqueue_block_style( 'core/query', array(
+		'handle' => 'origin-query',
+		'src'    => get_theme_file_uri( "assets/css/chunks/cards.min.css" ),
+		'path'   => get_theme_file_path( "assets/css/chunks/cards.min.css" ),
+	) );
+
+	wp_enqueue_block_style( 'core/table', array(
+		'handle' => 'origin-table',
+		'src'    => get_theme_file_uri( "assets/css/chunks/table.min.css" ),
+		'path'   => get_theme_file_path( "assets/css/chunks/table.min.css" ),
+	) );
+
+	wp_enqueue_block_style( 'core/post-terms', array(
+		'handle' => 'origin-table',
+		'src'    => get_theme_file_uri( "assets/css/chunks/tags-channels.min.css" ),
+		'path'   => get_theme_file_path( "assets/css/chunks/tags-channels.min.css" ),
+	) );
+
+	wp_enqueue_block_style( 'cloudcatch/splide-carousel', array(
+		'handle' => 'origin-carousel',
+		'src'    => get_theme_file_uri( "assets/css/chunks/carousel-text.min.css" ),
+		'path'   => get_theme_file_path( "assets/css/chunks/carousel-text.min.css" ),
+	) );
+
+	wp_enqueue_block_style( 'yoast/faq-block', array(
+		'handle' => 'origin-faq',
+		'src'    => get_theme_file_uri( "assets/css/chunks/accordion.min.css" ),
+		'path'   => get_theme_file_path( "assets/css/chunks/accordion.min.css" ),
+	) );
+
+	wp_enqueue_block_style( 'jetpack/contact-form', array(
+		'handle' => 'origin-form',
+		'src'    => get_theme_file_uri( "assets/css/chunks/forms.min.css" ),
+		'path'   => get_theme_file_path( "assets/css/chunks/forms.min.css" ),
+	) );
+
+	// wp_enqueue_block_style( 'core/columns', array(
+	// 	'handle' => 'origin-office-cards',
+	// 	'src'    => get_theme_file_uri( "assets/css/chunks/card-office.min.css" ),
+	// 	'path'   => get_theme_file_path( "assets/css/chunks/card-office.min.css" ),
+	// ) );
+	// wp_enqueue_block_style( 'core/columns', array(
+	// 	'handle' => 'origin-team-cards',
+	// 	'src'    => get_theme_file_uri( "assets/css/chunks/team-cards.min.css" ),
+	// 	'path'   => get_theme_file_path( "assets/css/chunks/team-cards.min.css" ),
+	// ) );
+	// wp_enqueue_block_style( 'core/columns', array(
+	// 	'handle' => 'origin-stat-cards',
+	// 	'src'    => get_theme_file_uri( "assets/css/chunks/card-stat.min.css" ),
+	// 	'path'   => get_theme_file_path( "assets/css/chunks/card-stat.min.css" ),
+	// ) );
+
+
 }
 add_action( 'init', 'origin_enqueue_specific_block_styles' );
 

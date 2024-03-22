@@ -1,3 +1,7 @@
+@import "../base/settings";
+@import "../settings/grid";
+@import "../settings/typography";
+
 // Component: Single Column Copy
 .is-style-single-column-copy {
   @include grid-container;

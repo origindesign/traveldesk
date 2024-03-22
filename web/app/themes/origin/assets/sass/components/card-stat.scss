@@ -1,3 +1,7 @@
+@import "../base/settings";
+@import "../settings/grid";
+@import "../settings/typography";
+
 .is-style-card-stat-columns {
   flex-wrap: wrap !important;
   gap: 6rem;

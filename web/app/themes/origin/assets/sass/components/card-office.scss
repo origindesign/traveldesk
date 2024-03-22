@@ -1,3 +1,7 @@
+@import "../base/settings";
+@import "../settings/grid";
+@import "../settings/typography";
+
 .is-style-office-cards {
   .wp-block-heading {
     border-bottom: 1px solid var(--wp--preset--color--spruce);

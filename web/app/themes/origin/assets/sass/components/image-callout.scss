@@ -1,3 +1,7 @@
+@import "../base/settings";
+@import "../settings/grid";
+@import "../settings/typography";
+
 .is-style-image-callout {
   @include grid-container-full-width;
   background-color: var(--wp--preset--color--lime);

@@ -1,3 +1,7 @@
+@import "../base/settings";
+@import "../settings/grid";
+@import "../settings/typography";
+
 .is-style-carousel-text {
   background-color: var(--wp--preset--color--pine);
   overflow: hidden;

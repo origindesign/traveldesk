@@ -1,3 +1,7 @@
+@import "../base/settings";
+@import "../settings/grid";
+@import "../settings/typography";
+
 .wp-block-group.is-style-stat-list-ticket {
   background-color: var(--wp--preset--color--lime);
   border-left: none;

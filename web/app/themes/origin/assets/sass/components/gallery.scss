@@ -1,3 +1,7 @@
+@import "../base/settings";
+@import "../settings/grid";
+@import "../settings/typography";
+
 .is-style-gallery {
   background-color: var(--wp--preset--color--spruce);
   padding: 5.2rem var(--wp--custom--grid--gutter);

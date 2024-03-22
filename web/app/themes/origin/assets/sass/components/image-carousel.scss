@@ -1,3 +1,7 @@
+@import "../base/settings";
+@import "../settings/grid";
+@import "../settings/typography";
+
 .is-style-image-carousel {
   background-color: var(--wp--preset--color--pine);
   padding: 5rem 3rem 10rem 3rem;

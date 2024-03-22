@@ -1,3 +1,7 @@
+@import "../base/settings";
+@import "../settings/grid";
+@import "../settings/typography";
+
 .is-style-accordion {
   @include grid-container;
   padding: 7rem 0;

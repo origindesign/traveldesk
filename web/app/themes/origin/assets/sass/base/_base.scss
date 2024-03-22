@@ -33,16 +33,12 @@ main {
   }
 }
 
+// gutenberg resets
 .has-global-padding {
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .wp-site-blocks {
   padding: 0;
-}
-
-a {
-  &:hover {
-    text-decoration: underline;
-  }
 }

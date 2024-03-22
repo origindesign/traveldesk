@@ -1,3 +1,7 @@
+@import "../base/settings";
+@import "../settings/grid";
+@import "../settings/typography";
+
 .is-style-team-cards {
   @include grid-container;
   row-gap: 5rem;

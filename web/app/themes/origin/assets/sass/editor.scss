@@ -3,7 +3,12 @@
   background-color: var(--wp--preset--color--aqua);
 
   .wp-block-post-title {
-    font-size: 2.2rem;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-family: "Plus Jakarta Sans";
+    border-bottom: 2px solid;
+    max-width: 90% !important;
   }
 }
 
@@ -19,8 +24,6 @@
 @import "base/grid";
 @import "base/buttons";
 
-@import "blocks/block";
-
 @import "components/header";
 @import "components/footer";
 @import "components/table";
@@ -32,7 +35,7 @@
 @import "components/accordion";
 @import "components/client-list";
 @import "components/activation-list";
-@import "components/card";
+@import "components/cards";
 @import "components/card-office";
 @import "components/card-stat";
 @import "components/carousel-text";
@@ -44,10 +47,7 @@
 @import "components/image-carousel";
 @import "components/tags-channels";
 
-@import "components/wp-social-links";
-@import "components/wp-navigation";
-
-@import "helpers/variables";
-@import "vendor/vendor";
+@import "components/social-links";
+@import "components/navigation";
 
 @import "site-editor";
