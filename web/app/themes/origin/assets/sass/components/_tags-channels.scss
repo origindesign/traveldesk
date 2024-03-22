@@ -5,7 +5,6 @@ body .taxonomy-channels {
   margin-bottom: 7rem;
   align-items: flex-start;
   flex-direction: column;
-  max-width: max-content !important;
   position: relative;
 
   @media only screen and (min-width: $tablet) {
@@ -18,14 +17,13 @@ body .taxonomy-channels {
   &::before {
     content: "Channels";
     font-family: var(--wp--preset--font-family--plus-jakarta-sans);
-    position: absolute;
-    top: 0;
-    left: -100%;
+    margin-bottom: 10px;
 
     @media only screen and (min-width: $tablet) {
       position: relative;
       top: unset;
       left: unset;
+      margin-bottom: 0;
     }
   }
 
