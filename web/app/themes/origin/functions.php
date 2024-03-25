@@ -60,6 +60,12 @@ add_action( 'customize_register', '__return_true' );
  * Enqeueue specific block styles if block is present on page.
  */
 function origin_enqueue_specific_block_styles() {
+	wp_enqueue_block_style( 'core/pullquote', array(
+		'handle' => 'origin-quote',
+		'src'    => get_theme_file_uri( "assets/css/chunks/pullquote.min.css" ),
+		'path'   => get_theme_file_path( "assets/css/chunks/pullquote.min.css" ),
+	) );
+
 	wp_enqueue_block_style( 'core/quote', array(
 		'handle' => 'origin-quote',
 		'src'    => get_theme_file_uri( "assets/css/chunks/quote.min.css" ),
@@ -117,6 +123,27 @@ function origin_mime_types($mimes) {
 	return $mimes;
 }
 add_filter('upload_mimes', 'origin_mime_types');
+
+/**
+ * Add post 'read time' shortcode.
+*/
+function origin_reading_duration_shortcode( $atts, $content = null ) {
+	$content = get_post_field( 'post_content', $post->ID );
+	$word_count = str_word_count( strip_tags( $content ) );
+	$readingtime = ceil($word_count / 200);
+
+	if ($readingtime == 1) {
+	$timer = " min";
+	} else {
+	$timer = " mins";
+	}
+	$totalreadingtime = '<div class="read-time">' . '<span>' . $readingtime . $timer . '</span></div>';
+
+	return $totalreadingtime;
+}
+
+add_shortcode("reading_duration", "origin_reading_duration_shortcode");
+
 
 /**
  * Enqueue remote assets.
@@ -273,6 +300,38 @@ function origin_register_taxonomy_channels() {
 add_action( 'init', 'origin_register_taxonomy_channels', 0 );
 
 /**
+ * Register taxonomy - 'Categories', for Insights CPT.
+ */
+function origin_register_taxonomy_cat() {
+	// Define UI labels
+	$labels = array(
+		'name' => _x( 'Categories ( Insights )', 'taxonomy general name' ),
+		'singular_name' => _x( 'Categories', 'taxonomy singular name' ),
+		'search_items' =>  __( 'Search Categories' ),
+		'all_items' => __( 'All Categories' ),
+		'parent_item' => __( 'Parent Category' ),
+		'parent_item_colon' => __( 'Parent Category:' ),
+		'edit_item' => __( 'Edit Category' ), 
+		'update_item' => __( 'Update Category' ),
+		'add_new_item' => __( 'Add New Category' ),
+		'new_item_name' => __( 'New Category Name' ),
+		'menu_name' => __( 'Categories ( Insights )' ),
+	);
+
+	// Now register the taxonomy
+	register_taxonomy('categories-insights',array('insights'), array(
+		'hierarchical' => true,
+		'labels' => $labels,
+		'show_ui' => true,
+		'show_in_rest' => true,
+		'show_admin_column' => true,
+		'query_var' => true,
+		'rewrite' => array( 'slug' => 'categories-insights' ),
+	));
+}
+add_action( 'init', 'origin_register_taxonomy_cat', 0 );
+
+/**
  * Register taxonomy - 'Featured'.
  */
 function origin_register_taxonomy_featured() {
@@ -304,6 +363,9 @@ function origin_register_taxonomy_featured() {
 }
 add_action( 'init', 'origin_register_taxonomy_featured', 0 );
 
+/**
+ * wp-login customizations.
+ */
 function origin_custom_login() {
 	echo '<style type="text/css">
 	  h1 a {

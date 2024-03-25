@@ -3,7 +3,6 @@ wp.domReady(function () {
   wp.blocks.unregisterBlockType("core/code");
   wp.blocks.unregisterBlockType("core/details");
   wp.blocks.unregisterBlockType("core/preformatted");
-  wp.blocks.unregisterBlockType("core/pullquote");
   wp.blocks.unregisterBlockType("core/verse");
   wp.blocks.unregisterBlockType("core/footnotes");
 

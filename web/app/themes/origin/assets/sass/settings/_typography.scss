@@ -155,7 +155,7 @@
 
 // keyline section heading
 @mixin keyline {
-  display: inline-block;
+  display: block;
   font-family: var(--wp--preset--font-family--plus-jakarta-sans);
   font-size: 1.6rem;
   font-weight: 500;
@@ -164,7 +164,9 @@
   padding: 1.6rem;
   text-transform: uppercase;
   margin-bottom: 0;
+  width: fit-content;
   z-index: 0;
+  max-width: 100% !important;
 
   @media only screen and (min-width: $desktop) {
     font-size: 1.8rem;

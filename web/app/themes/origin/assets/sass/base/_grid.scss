@@ -17,6 +17,18 @@ body
   }
 }
 
+body .single-template-padding {
+  padding: 0 var(--wp--custom--grid--gutter);
+
+  @media (min-width: $tablet) {
+    padding: 0 var(--wp--custom--grid--gutter-medium);
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 var(--wp--custom--grid--gutter-large);
+  }
+}
+
 // Full width container
 body .entry-content .is-full-width-container {
   @include container-full-width;

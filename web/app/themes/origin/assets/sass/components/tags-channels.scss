@@ -21,7 +21,7 @@ body .taxonomy-channels {
   &::before {
     content: "Channels";
     font-family: var(--wp--preset--font-family--plus-jakarta-sans);
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 
     @media only screen and (min-width: $tablet) {
       position: relative;
@@ -42,5 +42,188 @@ body .taxonomy-channels {
 
   span {
     display: none;
+  }
+}
+
+body .taxonomy-categories-insights {
+  display: inline-flex;
+  justify-content: end;
+  gap: 1rem;
+  margin-bottom: 7rem;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+
+  @media only screen and (min-width: $tablet) {
+    align-items: center;
+    margin-bottom: 10rem;
+    flex-direction: row;
+    max-width: 100% !important;
+  }
+
+  &::before {
+    content: "Categories";
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+    margin-bottom: 1rem;
+
+    @media only screen and (min-width: $tablet) {
+      position: relative;
+      top: unset;
+      left: unset;
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    @include label;
+    background-color: var(--wp--preset--color--lime);
+    border-radius: 6rem;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    pointer-events: none;
+  }
+
+  span {
+    display: none;
+  }
+}
+
+// post author
+body .wp-block-post-author {
+  display: inline-flex !important;
+  gap: 1rem;
+  width: fit-content;
+  padding-right: 5rem;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 4rem;
+
+  @media only screen and (min-width: $tablet) {
+    align-items: center;
+    margin-bottom: 10rem;
+    flex-direction: row;
+    max-width: 100% !important;
+  }
+
+  &::before {
+    content: "Author";
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+    margin-bottom: 1rem;
+
+    @media only screen and (min-width: $tablet) {
+      position: relative;
+      top: unset;
+      left: unset;
+      margin-bottom: 0;
+    }
+  }
+
+  &__name {
+    @include label;
+    background-color: var(--wp--preset--color--spruce);
+    color: var(--wp--preset--color--white);
+    border-radius: 6rem;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+  }
+}
+
+// post date
+body .wp-block-post-date {
+  display: inline-flex;
+  width: fit-content;
+  padding-right: 5rem;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 4rem;
+
+  @media only screen and (min-width: $tablet) {
+    align-items: center;
+    margin-bottom: 10rem;
+    flex-direction: row;
+    max-width: 100% !important;
+  }
+
+  &::before {
+    content: "Date";
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+    margin-bottom: 1rem;
+
+    @media only screen and (min-width: $tablet) {
+      position: relative;
+      top: unset;
+      left: unset;
+      margin-bottom: 0;
+    }
+  }
+
+  time {
+    @include label;
+    background-color: var(--wp--preset--color--lime);
+    color: var(--wp--preset--color--base);
+    border-radius: 6rem;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+
+    @media only screen and (min-width: $tablet) {
+      margin-left: 1rem;
+    }
+  }
+}
+
+// read time
+body .read-time {
+  display: inline-flex;
+  width: fit-content;
+  padding-right: 5rem;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 4rem;
+
+  @media only screen and (min-width: $tablet) {
+    align-items: center;
+    margin-bottom: 10rem;
+    flex-direction: row;
+    max-width: 100% !important;
+  }
+
+  &::before {
+    content: "Read Time";
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+    margin-bottom: 1rem;
+
+    @media only screen and (min-width: $tablet) {
+      position: relative;
+      top: unset;
+      left: unset;
+      margin-bottom: 0;
+    }
+  }
+
+  span {
+    @include label;
+    background-color: var(--wp--preset--color--lime);
+    color: var(--wp--preset--color--base);
+    border-radius: 6rem;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+
+    @media only screen and (min-width: $tablet) {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.is-style-post-details {
+  text-align: left;
+
+  @media only screen and (min-width: $tablet) {
+    text-align: right;
   }
 }
