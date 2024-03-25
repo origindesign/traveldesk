@@ -66,7 +66,7 @@
     z-index: 1;
     border-right: none;
     border-top-left-radius: $sign-up-btn-border-radius-desktop;
-    border-top-right-radius: 0.55rem;
+    border-top-right-radius: $sign-up-btn-border-radius-mob;
     background-color: var(--wp--preset--color--spruce);
 
     @media only screen and (min-width: $desktop) {
@@ -79,7 +79,7 @@
     left: unset;
     right: 0;
     bottom: 0;
-    border-top-left-radius: 0.55rem;
+    border-top-left-radius: $sign-up-btn-border-radius-mob;
     border-top-right-radius: $sign-up-btn-border-radius-desktop;
   }
 
@@ -105,8 +105,8 @@
       width: 34%;
       border: 1px solid var(--wp--preset--color--lime);
       border-left: none;
-      border-bottom-right-radius: 0.55rem;
-      border-bottom-left-radius: 0.55rem;
+      border-bottom-right-radius: $sign-up-btn-border-radius-mob;
+      border-bottom-left-radius: $sign-up-btn-border-radius-mob;
       background: var(--wp--preset--color--aqua);
       border: none;
 

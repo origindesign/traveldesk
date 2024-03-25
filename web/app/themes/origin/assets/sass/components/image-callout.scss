@@ -7,7 +7,7 @@
   background-color: var(--wp--preset--color--lime);
   padding: 5.2rem var(--wp--custom--grid--gutter);
   margin-bottom: 0;
-  column-gap: 1.5rem;
+  column-gap: var(--wp--preset--spacing--small);
 
   @media (min-width: $tablet) {
     padding: 5rem var(--wp--custom--grid--gutter-medium);
@@ -30,10 +30,6 @@
       border-radius: 0 29rem;
       grid-column: span 12;
       margin-bottom: 5rem;
-    }
-
-    img {
-      width: 100%;
     }
   }
 

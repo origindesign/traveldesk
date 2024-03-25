@@ -107,24 +107,6 @@ function origin_enqueue_specific_block_styles() {
 		'src'    => get_theme_file_uri( "assets/css/chunks/forms.min.css" ),
 		'path'   => get_theme_file_path( "assets/css/chunks/forms.min.css" ),
 	) );
-
-	// wp_enqueue_block_style( 'core/columns', array(
-	// 	'handle' => 'origin-office-cards',
-	// 	'src'    => get_theme_file_uri( "assets/css/chunks/card-office.min.css" ),
-	// 	'path'   => get_theme_file_path( "assets/css/chunks/card-office.min.css" ),
-	// ) );
-	// wp_enqueue_block_style( 'core/columns', array(
-	// 	'handle' => 'origin-team-cards',
-	// 	'src'    => get_theme_file_uri( "assets/css/chunks/team-cards.min.css" ),
-	// 	'path'   => get_theme_file_path( "assets/css/chunks/team-cards.min.css" ),
-	// ) );
-	// wp_enqueue_block_style( 'core/columns', array(
-	// 	'handle' => 'origin-stat-cards',
-	// 	'src'    => get_theme_file_uri( "assets/css/chunks/card-stat.min.css" ),
-	// 	'path'   => get_theme_file_path( "assets/css/chunks/card-stat.min.css" ),
-	// ) );
-
-
 }
 add_action( 'init', 'origin_enqueue_specific_block_styles' );
 
@@ -322,6 +304,18 @@ function origin_register_taxonomy_featured() {
 }
 add_action( 'init', 'origin_register_taxonomy_featured', 0 );
 
+function origin_custom_login() {
+	echo '<style type="text/css">
+	  h1 a {
+		background-image: url(' . get_template_directory_uri() . '/assets/images/traveldesk-red.svg) !important;
+		width: 300px !important;
+		background-size: contain !important;
+		background-position: center center !important;
+	  }
+	</style>';
+}
+add_action('login_head', 'origin_custom_login');
+  
 // Filters.
 require_once get_theme_file_path( 'inc/filters.php' );
 

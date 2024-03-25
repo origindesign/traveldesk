@@ -1,6 +1,7 @@
 @import "../base/settings";
 @import "../settings/grid";
 @import "../settings/typography";
+@import "../settings/imagery";
 
 .is-style-office-cards {
   .wp-block-heading {
@@ -101,12 +102,11 @@
     }
 
     img {
-      height: 22.1rem;
-      object-fit: cover;
-      width: 100%;
+      @include image-object-cover;
+      max-height: 22.1rem;
 
       @media only screen and (min-width: $desktop) {
-        height: 31rem;
+        max-height: 31rem;
       }
     }
 
@@ -114,7 +114,7 @@
       border: none;
       color: var(--wp--preset--color--white);
       padding: 0 1.2rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: var(--wp--preset--spacing--small);
       margin-top: 3rem;
       font-family: var(--wp--preset--font-family--plus-jakarta-sans);
       font-size: 2rem;

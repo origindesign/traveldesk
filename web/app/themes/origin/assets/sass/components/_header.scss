@@ -69,7 +69,7 @@ header {
       font-size: 1.6rem;
       font-weight: var(--wp--custom--typography--font-weight--bold);
       line-height: 100%;
-      padding: 1.5rem;
+      padding: var(--wp--preset--spacing--small);
 
       &:hover {
         text-decoration: none;
@@ -83,7 +83,7 @@ header {
           height: 0.2rem;
           position: absolute;
           top: 80%;
-          left: 1.5rem;
+          left: var(--wp--preset--spacing--small);
           background: var(--wp--preset--color--black);
           transition: 300ms;
         }
@@ -93,7 +93,7 @@ header {
         }
 
         &:not(:hover):after {
-          right: 1.5rem;
+          right: var(--wp--preset--spacing--small);
           left: auto;
         }
       }
@@ -137,7 +137,7 @@ header {
   height: 4rem;
   width: 4.2rem;
   padding: 0.5rem;
-  top: 1.5rem !important;
+  top: var(--wp--preset--spacing--small) !important;
   right: 2.5rem !important;
 
   &::before {
@@ -177,18 +177,18 @@ header {
   .wp-block-navigation {
     margin-top: 5.2rem;
     width: 100%;
-    gap: 1.5rem;
+    gap: var(--wp--preset--spacing--small);
 
     li {
       border: 1px solid var(--wp--preset--color--lime);
       border-left: none;
-      border-top-right-radius: 0.55rem;
-      border-bottom-right-radius: 0.55rem;
+      border-top-right-radius: $sign-up-btn-border-radius-mob;
+      border-bottom-right-radius: $sign-up-btn-border-radius-mob;
       width: 100%;
       max-width: 90%;
       margin: auto;
       position: relative;
-      margin-bottom: 1.5rem;
+      margin-bottom: var(--wp--preset--spacing--small);
 
       @media (min-width: $desktop) {
         max-width: 60rem;
@@ -260,8 +260,8 @@ header {
           width: 1.1rem;
           border: 1px solid var(--wp--preset--color--lime);
           border-left: none;
-          border-top-right-radius: 0.55rem;
-          border-bottom-right-radius: 0.55rem;
+          border-top-right-radius: $sign-up-btn-border-radius-mob;
+          border-bottom-right-radius: $sign-up-btn-border-radius-mob;
         }
 
         &::after {

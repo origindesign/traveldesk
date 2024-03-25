@@ -28,9 +28,9 @@
     h2 {
       color: var(--wp--preset--color--spruce);
       font-family: var(--wp--preset--font-family--plus-jakarta-sans);
-      font-weight: 800;
+      font-weight: var(--wp--custom--typography--font-weight--bold);
       text-transform: unset;
-      margin-bottom: 1.5rem;
+      margin-bottom: var(--wp--preset--spacing--small);
     }
 
     h3 {
@@ -103,7 +103,7 @@
     z-index: 1;
     border-right: none;
     border-top-left-radius: $sign-up-btn-border-radius-desktop;
-    border-bottom-left-radius: 0.55rem;
+    border-bottom-left-radius: $sign-up-btn-border-radius-mob;
     background-color: var(--wp--preset--color--lime);
 
     @media only screen and (min-width: $desktop) {
@@ -114,7 +114,7 @@
   &::after {
     top: 4.1rem;
     bottom: 0;
-    border-top-left-radius: 0.55rem;
+    border-top-left-radius: $sign-up-btn-border-radius-mob;
     border-bottom-left-radius: $sign-up-btn-border-radius-desktop;
 
     @media only screen and (min-width: $desktop) {
@@ -163,7 +163,8 @@
   font-weight: var(--wp--custom--typography--font-weight--bold);
   text-transform: uppercase;
   padding: 3.1rem 3.2rem 3.1rem 3rem;
-  border-radius: 0 1.1rem 1.1rem 0;
+  border-radius: 0 $sign-up-btn-border-radius-desktop
+    $sign-up-btn-border-radius-desktop 0;
   position: relative;
   height: 5.5rem;
   margin-bottom: 0;
@@ -198,8 +199,8 @@
     width: 2.7rem;
     border: 1px solid var(--wp--preset--color--lime);
     border-left: none;
-    border-top-right-radius: 0.55rem;
-    border-bottom-right-radius: 0.55rem;
+    border-top-right-radius: $sign-up-btn-border-radius-mob;
+    border-bottom-right-radius: $sign-up-btn-border-radius-mob;
     background: var(--wp--preset--color--aqua);
     border: none;
 

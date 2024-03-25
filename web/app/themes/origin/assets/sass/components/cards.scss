@@ -18,7 +18,7 @@
     font-family: var(--wp--preset--font-family--plus-jakarta-sans);
     font-weight: var(--wp--custom--typography--font-weight--bold);
     text-transform: unset;
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--wp--preset--spacing--small);
   }
 
   &.archive-cards {

@@ -1,6 +1,7 @@
 @import "../base/settings";
 @import "../settings/grid";
 @import "../settings/typography";
+@import "../settings/imagery";
 
 // Component: Hero Cover
 .is-style-hero-cover {
@@ -37,9 +38,7 @@
     }
 
     img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      @include image-object-cover;
     }
   }
 

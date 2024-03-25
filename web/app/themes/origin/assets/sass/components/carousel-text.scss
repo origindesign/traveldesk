@@ -1,6 +1,7 @@
 @import "../base/settings";
 @import "../settings/grid";
 @import "../settings/typography";
+@import "../settings/imagery";
 
 .is-style-carousel-text {
   background-color: var(--wp--preset--color--pine);
@@ -11,7 +12,7 @@
     width: 100% !important;
     max-width: var(--wp--style--global--wide-size);
     margin-bottom: 0;
-    column-gap: 1.5rem;
+    column-gap: var(--wp--preset--spacing--small);
 
     // left col
     .wp-block-column:first-of-type {
@@ -114,9 +115,7 @@
         }
 
         img {
-          object-fit: cover;
-          height: 100%;
-          width: 100%;
+          @include image-object-cover;
           object-position: right;
         }
       }
