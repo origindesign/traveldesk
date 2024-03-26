@@ -23,8 +23,8 @@
 		<!-- /wp:heading -->
 	</div>
 	<!-- /wp:group -->
-	<!-- wp:image {"id":243,"sizeSlug":"full","linkDestination":"none"} -->
-	<figure class="wp-block-image size-full"><img src="https://via.placeholder.com/1000x700" alt="" class="wp-image-243"/></figure>
+	<!-- wp:image {"sizeSlug":"full"} -->
+	<figure class="wp-block-image size-full"><img src="https://via.placeholder.com/1000x700" alt=""/></figure>
 	<!-- /wp:image -->
 </div>
 <!-- /wp:group -->

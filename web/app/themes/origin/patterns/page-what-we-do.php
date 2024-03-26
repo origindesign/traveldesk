@@ -23,8 +23,8 @@
 		<!-- /wp:heading -->
 	</div>
 	<!-- /wp:group -->
-	<!-- wp:image {"id":243,"sizeSlug":"full","linkDestination":"none"} -->
-	<figure class="wp-block-image size-full"><img src="https://via.placeholder.com/1000x700" alt="" class="wp-image-243"/></figure>
+	<!-- wp:image {"sizeSlug":"full"} -->
+	<figure class="wp-block-image size-full"><img src="https://via.placeholder.com/1000x700" alt=""/></figure>
 	<!-- /wp:image -->
 </div>
 <!-- /wp:group -->
@@ -61,8 +61,8 @@
 <!-- /wp:group -->
 <!-- wp:group {"templateLock":"contentOnly","className":"is-style-image-callout is-full-width-container fade-in","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-image-callout is-full-width-container fade-in">
-	<!-- wp:image {"id":320,"sizeSlug":"full","linkDestination":"none"} -->
-	<figure class="wp-block-image size-full"><img src="https://via.placeholder.com/1600x800" alt="" class="wp-image-320"/></figure>
+	<!-- wp:image {"sizeSlug":"full" -->
+	<figure class="wp-block-image size-full"><img src="https://via.placeholder.com/1600x800" alt=""/></figure>
 	<!-- /wp:image -->
 	<!-- wp:group {"className":"is-style-image-callout-internal","layout":{"type":"constrained"}} -->
 	<div class="wp-block-group is-style-image-callout-internal">

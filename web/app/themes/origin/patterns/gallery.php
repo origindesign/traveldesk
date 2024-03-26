@@ -17,11 +17,11 @@
 	<div class="wp-block-columns is-not-stacked-on-mobile">
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:image {"id":107,"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
-			<figure class="wp-block-image size-full"><img src="http://placehold.it/900x1000" alt="" class="wp-image-107" style="aspect-ratio:1;object-fit:cover"/></figure>
+			<!-- wp:image {aspectRatio":"1","scale":"cover","sizeSlug":"full" -->
+			<figure class="wp-block-image size-full"><img src="http://placehold.it/900x1000" alt="" style="aspect-ratio:1;object-fit:cover"/></figure>
 			<!-- /wp:image -->
-			<!-- wp:image {"id":108,"width":"318px","sizeSlug":"medium","linkDestination":"none"} -->
-			<figure class="wp-block-image size-medium is-resized"><img src="http://placehold.it/350x350" alt="" class="wp-image-108" style="width:318px"/></figure>
+			<!-- wp:image {"width":"318px","sizeSlug":"medium"} -->
+			<figure class="wp-block-image size-medium is-resized"><img src="http://placehold.it/350x350" alt="" style="width:318px"/></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->
@@ -30,8 +30,8 @@
 			<!-- wp:heading -->
 			<h2 class="wp-block-heading">Inside <sub>TravelDesk</sub></h2>
 			<!-- /wp:heading -->
-			<!-- wp:image {"id":109,"sizeSlug":"full","linkDestination":"none"} -->
-			<figure class="wp-block-image size-full"><img src="http://placehold.it/950x750" alt="" class="wp-image-109"/></figure>
+			<!-- wp:image {"sizeSlug":"full"} -->
+			<figure class="wp-block-image size-full"><img src="http://placehold.it/950x750" alt=""/></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->

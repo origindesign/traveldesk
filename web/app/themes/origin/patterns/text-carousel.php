@@ -54,8 +54,8 @@
 		<!-- /wp:column -->
 		<!-- wp:column {"templateLock":"contentOnly","width":"33.33%"} -->
 		<div class="wp-block-column" style="flex-basis:33.33%">
-			<!-- wp:image {"id":195,"sizeSlug":"full","linkDestination":"none"} -->
-			<figure class="wp-block-image size-full"><img src="http://placehold.it/730x900" alt="" class="wp-image-195"/></figure>
+			<!-- wp:image {sizeSlug":"full"} -->
+			<figure class="wp-block-image size-full"><img src="http://placehold.it/730x900" alt=""/></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->

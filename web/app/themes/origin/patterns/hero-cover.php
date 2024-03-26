@@ -16,8 +16,8 @@
 	<!-- wp:heading {"level":1,"className":"is-style-hero-heading"} -->
 	<h1 class="wp-block-heading is-style-hero-heading">TRAVEL <strong>CONNECTS </strong><sub><strong>US ALL</strong></sub></h1>
 	<!-- /wp:heading -->
-	<!-- wp:image {"id":43,"sizeSlug":"large","linkDestination":"none"} -->
-	<figure class="wp-block-image size-large"><img src="http://placehold.it/1100x700" alt="" class="wp-image-43"/></figure>
+	<!-- wp:image {"sizeSlug":"large"} -->
+	<figure class="wp-block-image size-large"><img src="http://placehold.it/1100x700" alt=""/></figure>
 	<!-- /wp:image -->
 </div>
 <!-- /wp:group -->
