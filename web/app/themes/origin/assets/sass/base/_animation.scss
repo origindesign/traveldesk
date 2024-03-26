@@ -1,3 +1,34 @@
+// main nav logo color change
+@keyframes logoColor {
+  0% {
+    fill: var(--wp--preset--color--strawberry);
+  }
+  20% {
+    fill: var(--wp--preset--color--coral);
+  }
+  40% {
+    fill: var(--wp--preset--color--lime);
+  }
+  60% {
+    fill: var(--wp--preset--color--spruce);
+  }
+  80% {
+    fill: var(--wp--preset--color--pine);
+  }
+  100% {
+    fill: var(--wp--preset--color--strawberry);
+  }
+}
+
+.logo-color-change {
+  fill: var(--wp--preset--color--strawberry);
+  animation-name: logoColor;
+  animation-delay: 1s;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
 // animation - target front end only
 .wp-site-blocks {
   .fade-in {

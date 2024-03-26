@@ -1,32 +1,9 @@
-@keyframes logoColor {
-  0% {
-    fill: var(--wp--preset--color--strawberry);
-  }
-  20% {
-    fill: var(--wp--preset--color--coral);
-  }
-  40% {
-    fill: var(--wp--preset--color--lime);
-  }
-  60% {
-    fill: var(--wp--preset--color--spruce);
-  }
-  80% {
-    fill: var(--wp--preset--color--pine);
-  }
-  100% {
-    fill: var(--wp--preset--color--strawberry);
-  }
-}
-
-.change {
-  fill: var(--wp--preset--color--strawberry);
-  animation-name: logoColor;
-  animation-delay: 1s;
-  animation-duration: 16s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
+/**
+ * Header & Navigation
+ *
+ * We use the gutenberg navigation block for main navigation construction, and style from there.
+ * More info here - https://wordpress.org/documentation/article/navigation-block/
+ */
 
 .hide-nav header {
   transform: translateY(-150%);
@@ -101,7 +78,9 @@ header {
   }
 }
 
-// mobile overlay
+/**
+ * Mobile overlay styling.
+ */
 
 // hamburger
 .wp-block-navigation__responsive-container-open {
@@ -286,6 +265,64 @@ header {
             position: absolute !important;
             right: 1.4rem !important;
             left: unset !important;
+          }
+        }
+      }
+
+      // mobile nav items with icon
+      &[class*="menu-item-icon-"] {
+        .wp-block-navigation-item__label {
+          display: flex;
+          align-items: center;
+
+          &::before {
+            font-family: "icomoon";
+            font-size: 2.8rem;
+            font-weight: var(--wp--custom--typography--font-weight--light);
+            text-align: center;
+            line-height: 90%;
+            margin-right: 1.2rem;
+            left: 2.4rem;
+            height: 2.2rem;
+            width: 3rem;
+          }
+        }
+        a {
+          padding-left: 2.4rem !important;
+        }
+      }
+      &.menu-item-icon-tools {
+        .wp-block-navigation-item__label {
+          &::before {
+            content: "\e90a";
+          }
+        }
+      }
+      &.menu-item-icon-target {
+        .wp-block-navigation-item__label {
+          &::before {
+            content: "\e90e";
+          }
+        }
+      }
+      &.menu-item-icon-bulb {
+        .wp-block-navigation-item__label {
+          &::before {
+            content: "\e90b";
+          }
+        }
+      }
+      &.menu-item-icon-smiley {
+        .wp-block-navigation-item__label {
+          &::before {
+            content: "\e90d";
+          }
+        }
+      }
+      &.menu-item-icon-speech {
+        .wp-block-navigation-item__label {
+          &::before {
+            content: "\e90c";
           }
         }
       }

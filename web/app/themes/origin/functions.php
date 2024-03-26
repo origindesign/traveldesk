@@ -156,7 +156,7 @@ add_action( 'admin_init', 'origin_remove_admin_menus' );
  * Enqueue remote assets.
  */
 function origin_theme_assets() {
-	wp_enqueue_style( 'style-name', 'https://cdn.icomoon.io/42560/TravelDesk/style.css?l5ffji' );
+	wp_enqueue_style( 'style-name', 'https://cdn.icomoon.io/42560/TravelDesk/style.css?gcdqv7' );
 }
 add_action( 'wp_enqueue_scripts', 'origin_theme_assets' );
 
