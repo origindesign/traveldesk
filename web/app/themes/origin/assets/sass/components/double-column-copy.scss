@@ -48,4 +48,12 @@
       grid-column: 6 / span 5;
     }
   }
+
+  ~ .is-style-body-text-right {
+    padding-top: 3rem;
+
+    @media only screen and (min-width: $desktop) {
+      padding-top: 12rem;
+    }
+  }
 }

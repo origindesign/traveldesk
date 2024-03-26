@@ -11,7 +11,6 @@
 
 ?>
 
-<!-- wp:post-terms {"term":"channels", "className":"fade-in"} /-->
 <!-- wp:group {"className":"is-style-single-column-copy fade-in","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-single-column-copy fade-in">
 	<!-- wp:heading -->
@@ -59,6 +58,10 @@
 <!-- /wp:group -->
 <!-- wp:columns {"className":"is-style-card-stat-columns"} -->
 <div class="wp-block-columns is-style-card-stat-columns">
+	<!-- wp:column -->
+	<div class="wp-block-column">
+	</div>
+	<!-- /wp:column -->
 	<!-- wp:column -->
 	<div class="wp-block-column">
 		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-card-stat is-style-card-stat-number fade-in","layout":{"type":"constrained"}} -->

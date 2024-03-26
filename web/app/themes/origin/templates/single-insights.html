@@ -3,56 +3,56 @@
 <!-- wp:group {"tagName":"main","layout":{"type":"default"}} -->
 <main class="wp-block-group">
 
-		<!-- wp:group {"className":"is-style-banner-image single-template-padding fade-in","layout":{"type":"constrained"}} -->
-		<div class="wp-block-group is-style-banner-image single-template-padding fade-in">
-			<!-- wp:group {"className":"is-style-banner-image-internal","layout":{"type":"constrained"}} -->
-			<div class="wp-block-group is-style-banner-image-internal">
-				<!-- wp:paragraph {"className":"h4"} -->
-				<!-- wp:post-terms {"term":"clients", "className":"h4"} /-->
-				<!-- /wp:paragraph -->
-				<!-- wp:heading {"level":1} -->
-				<!-- wp:post-title {"level":1} /-->
-				<!-- /wp:heading -->
+	<!-- wp:group {"className":"is-style-banner-image single-template-padding fade-in","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group is-style-banner-image single-template-padding fade-in">
+		<!-- wp:group {"className":"is-style-banner-image-internal","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group is-style-banner-image-internal">
+			<!-- wp:paragraph {"className":"h4"} -->
+			<!-- wp:post-terms {"term":"clients", "className":"h4"} /-->
+			<!-- /wp:paragraph -->
+			<!-- wp:heading {"level":1} -->
+			<!-- wp:post-title {"level":1} /-->
+			<!-- /wp:heading -->
+		</div>
+		<!-- /wp:group -->
+		<!-- wp:post-featured-image /-->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"className":"is-style-post-details single-template-padding","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group is-style-post-details single-template-padding">
+		<!-- wp:post-author {"showAvatar":false} /-->
+		<!-- wp:post-date {"format":"M j, Y"} /-->
+		<!-- wp:shortcode -->
+		[reading_duration]
+		<!-- /wp:shortcode -->
+		<!-- wp:post-terms {"term":"categories-insights"} /-->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:post-content {"align":"full","layout":{"type":"constrained"}} /-->
+
+	<!-- wp:group {"templateLock":"contentOnly","className":"is-style-cards single-template-padding fade-in","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group is-style-cards single-template-padding fade-in">
+		<!-- wp:heading {"className":"h4"} -->
+		<h2 class="wp-block-heading">Related Insights</h2>
+		<!-- /wp:heading -->
+		<!-- wp:query {"queryId":6,"query":{"perPage":3,"pages":"3","offset":0,"postType":"insights","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]}} -->
+		<div class="wp-block-query">
+			<!-- wp:post-template -->
+			<!-- wp:post-featured-image /-->
+			<!-- wp:group {"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group">
+				<!-- wp:post-terms {"term":"clients"} /-->
+				<!-- wp:post-title {"level":4} /-->
+				<!-- wp:post-excerpt {"moreText":"More","excerptLength":10} /-->
 			</div>
 			<!-- /wp:group -->
-			<!-- wp:post-featured-image /-->
+			<!-- /wp:post-template -->
 		</div>
-		<!-- /wp:group -->
-
-		<!-- wp:group {"className":"is-style-post-details single-template-padding","layout":{"type":"constrained"}} -->
-		<div class="wp-block-group is-style-post-details single-template-padding">
-			<!-- wp:post-author {"showAvatar":false} /-->
-			<!-- wp:post-date {"format":"M j, Y"} /-->
-			<!-- wp:shortcode -->
-			[reading_duration]
-			<!-- /wp:shortcode -->
-			<!-- wp:post-terms {"term":"categories-insights"} /-->
-		</div>
-		<!-- /wp:group -->
-
-		<!-- wp:post-content {"align":"full","layout":{"type":"constrained"}} /-->
-
-		<!-- wp:group {"templateLock":"contentOnly","className":"is-style-cards single-template-padding fade-in","layout":{"type":"constrained"}} -->
-		<div class="wp-block-group is-style-cards single-template-padding fade-in">
-			<!-- wp:heading {"className":"h4"} -->
-			<h2 class="wp-block-heading">Related Insights</h2>
-			<!-- /wp:heading -->
-			<!-- wp:query {"queryId":6,"query":{"perPage":3,"pages":"3","offset":0,"postType":"insights","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]}} -->
-			<div class="wp-block-query">
-				<!-- wp:post-template -->
-				<!-- wp:post-featured-image /-->
-				<!-- wp:group {"layout":{"type":"constrained"}} -->
-				<div class="wp-block-group">
-					<!-- wp:post-terms {"term":"clients"} /-->
-					<!-- wp:post-title {"level":4} /-->
-					<!-- wp:post-excerpt {"moreText":"More","excerptLength":10} /-->
-				</div>
-				<!-- /wp:group -->
-				<!-- /wp:post-template -->
-			</div>
-			<!-- /wp:query -->
-		</div>
-		<!-- /wp:group -->
+		<!-- /wp:query -->
+	</div>
+	<!-- /wp:group -->
 
 </main>
 <!-- /wp:group -->

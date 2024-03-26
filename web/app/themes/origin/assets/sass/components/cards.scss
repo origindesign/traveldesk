@@ -323,6 +323,10 @@
   }
 }
 
+.wp-block-post-content ~ .is-style-cards {
+  padding-top: 6rem;
+}
+
 /* Block Editor styling */
 .editor-styles-wrapper {
   .is-style-cards {

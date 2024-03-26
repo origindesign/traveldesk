@@ -141,8 +141,15 @@ function origin_reading_duration_shortcode( $atts, $content = null ) {
 
 	return $totalreadingtime;
 }
-
 add_shortcode("reading_duration", "origin_reading_duration_shortcode");
+
+/**
+ * Remove comments from admin menu.
+*/
+function origin_remove_admin_menus() {
+	remove_menu_page( 'edit-comments.php' );
+}
+add_action( 'admin_init', 'origin_remove_admin_menus' );
 
 
 /**
