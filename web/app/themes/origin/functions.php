@@ -156,7 +156,7 @@ add_action( 'admin_init', 'origin_remove_admin_menus' );
  * Enqueue remote assets.
  */
 function origin_theme_assets() {
-	wp_enqueue_style( 'style-name', 'https://cdn.icomoon.io/42560/TravelDesk/style.css?gcdqv7' );
+	wp_enqueue_style( 'icomoon', 'https://cdn.icomoon.io/42560/TravelDesk/style.css?gcdqv7' );
 }
 add_action( 'wp_enqueue_scripts', 'origin_theme_assets' );
 
@@ -391,6 +391,18 @@ function origin_custom_login() {
 	</style>';
 }
 add_action('login_head', 'origin_custom_login');
+
+/**
+ * Add print attr in order to defer the resource until page load.
+ */
+function origin_defer_css( $html, $handle ) {
+	$handles = array( 'icomoon' );
+	if ( in_array( $handle, $handles ) ) {
+	  $html = str_replace( 'media=\'all\'', 'media=\'print\' onload="this.onload=null;this.media=\'all\'"', $html );
+	}
+	return $html;
+}
+add_filter( 'style_loader_tag', 'origin_defer_css', 10, 2 );
   
 // Filters.
 require_once get_theme_file_path( 'inc/filters.php' );

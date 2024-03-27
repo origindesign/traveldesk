@@ -65,7 +65,6 @@ function clientScroll() {
     let clientController = new ScrollMagic.Controller();
     let clientTrigger = document.querySelector(".clients-internal");
     let offset = clientTrigger.clientWidth;
-    console.log(offset);
 
     let clientTween = new TweenMax(clientTrigger, 1, {
       css: { transform: "translate3d(-" + offset / 2 + "px, 0, 0)" },
