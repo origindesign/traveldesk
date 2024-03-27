@@ -58,9 +58,36 @@ function yoastFAQUI() {
 }
 
 /*
+ * Client logo horixontal scroll - https://scrollmagic.io
+ */
+function clientScroll() {
+  if (document.querySelector(".clients-internal")) {
+    let clientController = new ScrollMagic.Controller();
+    let clientTrigger = document.querySelector(".clients-internal");
+    let offset = clientTrigger.clientWidth;
+    console.log(offset);
+
+    let clientTween = new TweenMax(clientTrigger, 1, {
+      css: { transform: "translate3d(-" + offset / 2 + "px, 0, 0)" },
+      ease: Linear.easeNone,
+    });
+
+    new ScrollMagic.Scene({
+      triggerElement: clientTrigger,
+      triggerHook: "onEnter",
+      offset: 40,
+      duration: "150%",
+    })
+      .setTween(clientTween)
+      .addTo(clientController);
+  }
+}
+
+/*
  * Sequentially run our on-load functions.
  */
 (function () {
   elementFadeIn();
   yoastFAQUI();
+  clientScroll();
 })();

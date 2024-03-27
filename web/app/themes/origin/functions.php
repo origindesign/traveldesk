@@ -178,6 +178,13 @@ function origin_theme_js() {
 		ORIGIN_VERSION,
 		true
 	);
+
+	wp_enqueue_script(
+		'scroll-magic',
+		'https://cdn.jsdelivr.net/combine/npm/gsap@3.11.4/dist/gsap.min.js,npm/scrollmagic@2.0.8/scrollmagic/uncompressed/ScrollMagic.min.js,npm/scrollmagic@2.0.8/scrollmagic/minified/plugins/animation.gsap.min.js',
+		ORIGIN_VERSION,
+		true
+	);
 }
 add_action( 'enqueue_block_assets', 'origin_theme_js' );
 
