@@ -90,6 +90,7 @@ web/app/mu-plugins/*/
 web/app/plugins/*
 !web/app/plugins/.gitkeep
 !web/app/plugins/splide-carousel
+!web/app/plugins/bugherd
 jetpack_vendor
 
 # Themes
