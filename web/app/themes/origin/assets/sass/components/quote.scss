@@ -1,100 +1,93 @@
+@import "../base/settings";
+@import "../settings/grid";
+@import "../settings/typography";
+
 .wp-block-quote {
   padding: 9.3rem 0;
   margin-top: 0;
   margin-bottom: 0;
-}
 
-@media only screen and (min-width: 1200px) {
-  .wp-block-quote {
+  @media only screen and (min-width: $desktop) {
     padding: 21.7rem 0;
   }
-}
 
-.wp-block-quote p::before {
-  content: "“";
-  font-family: var(--wp--preset--font-family--plus-jakarta-sans);
-  font-size: 3.5rem;
-  font-style: normal;
-  font-weight: var(--wp--custom--typography--font-weight--bold);
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  vertical-align: top;
-}
+  p {
+    color: var(--wp--preset--color--spruce);
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: var(--wp--custom--typography--font-weight--normal);
+    line-height: 4rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    margin-top: 9.3rem;
+    position: relative;
 
-@media only screen and (min-width: 1200px) {
-  .wp-block-quote p::before {
+    @media only screen and (min-width: $desktop) {
+      font-size: 8rem;
+      line-height: 9rem;
+      letter-spacing: 0.5rem;
+      margin-bottom: 8.2rem;
+    }
+
+    strong {
+      font-family: var(--wp--preset--font-family--prompt);
+      font-size: 3.5rem;
+      font-weight: var(--wp--custom--typography--font-weight--bold);
+      display: block;
+
+      @media only screen and (min-width: $desktop) {
+        font-size: 8rem;
+        text-align: right;
+      }
+    }
+  }
+
+  p::before {
+    content: "“";
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: var(--wp--custom--typography--font-weight--bold);
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    vertical-align: top;
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 8rem;
+    }
+  }
+
+  p strong::after {
+    content: "”";
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: var(--wp--custom--typography--font-weight--bold);
+    line-height: 110%;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    vertical-align: top;
+  }
+
+  @media only screen and (min-width: $desktop) {
     font-size: 8rem;
   }
-}
 
-.wp-block-quote p strong::after {
-  content: "”";
-  font-family: var(--wp--preset--font-family--plus-jakarta-sans);
-  font-size: 3.5rem;
-  font-style: normal;
-  font-weight: var(--wp--custom--typography--font-weight--bold);
-  line-height: 110%;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  vertical-align: top;
-}
-
-@media only screen and (min-width: 1200px) {
-  .wp-block-quote p strong::after {
-    font-size: 8rem;
+  cite {
+    color: var(--wp--preset--color--spruce);
+    font-family: var(--wp--preset--font-family--prompt);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: var(--wp--custom--typography--font-weight--bold);
+    line-height: 100%;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin-left: 12vw;
   }
-}
 
-.wp-block-quote p {
-  color: var(--wp--preset--color--spruce);
-  font-family: var(--wp--preset--font-family--plus-jakarta-sans);
-  font-size: 3.5rem;
-  font-style: normal;
-  font-weight: var(--wp--custom--typography--font-weight--normal);
-  line-height: 4rem;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  margin-bottom: 4rem;
-  position: relative;
-}
-
-@media only screen and (min-width: 1200px) {
-  .wp-block-quote p {
-    font-size: 8rem;
-    line-height: 9rem;
-    letter-spacing: 0.5rem;
-    margin-bottom: 8.2rem;
-  }
-}
-
-.wp-block-quote p strong {
-  font-family: var(--wp--preset--font-family--prompt);
-  font-size: 3.5rem;
-  font-weight: var(--wp--custom--typography--font-weight--bold);
-  display: block;
-}
-
-@media only screen and (min-width: 1200px) {
-  .wp-block-quote p strong {
-    font-size: 8rem;
-    text-align: right;
-  }
-}
-
-.wp-block-quote cite {
-  color: var(--wp--preset--color--spruce);
-  font-family: var(--wp--preset--font-family--prompt);
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: var(--wp--custom--typography--font-weight--bold);
-  line-height: 100%;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  margin-left: 12vw;
-}
-
-@media only screen and (min-width: 1200px) {
-  .wp-block-quote cite {
+  @media only screen and (min-width: $desktop) {
     font-size: 2.5rem;
   }
 }

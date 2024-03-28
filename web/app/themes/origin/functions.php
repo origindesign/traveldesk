@@ -61,7 +61,7 @@ add_action( 'customize_register', '__return_true' );
  */
 function origin_enqueue_specific_block_styles() {
 	wp_enqueue_block_style( 'core/pullquote', array(
-		'handle' => 'origin-quote',
+		'handle' => 'origin-pullquote',
 		'src'    => get_theme_file_uri( "assets/css/chunks/pullquote.min.css" ),
 		'path'   => get_theme_file_path( "assets/css/chunks/pullquote.min.css" ),
 	) );
