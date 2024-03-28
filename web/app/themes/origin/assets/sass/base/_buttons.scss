@@ -38,13 +38,17 @@
       color: var(--wp--preset--color--white);
 
       &::after {
-        color: var(--wp--preset--color--base);
+        color: var(--wp--preset--color--white);
       }
 
       &:hover {
         background-color: var(--wp--preset--color--white);
         color: var(--wp--preset--color--base);
         text-decoration: none;
+
+        &::after {
+          color: var(--wp--preset--color--base);
+        }
       }
     }
   }

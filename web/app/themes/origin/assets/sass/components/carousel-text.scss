@@ -217,6 +217,7 @@
 
       &::before {
         content: "\e901";
+        color: var(--wp--preset--color--white);
         font-family: "icomoon";
         display: block;
         position: absolute;

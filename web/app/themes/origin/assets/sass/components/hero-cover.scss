@@ -34,6 +34,10 @@
       height: 79rem;
       border-top-right-radius: 41.6rem;
       border-bottom-left-radius: 41.6rem;
+      margin-top: -12rem;
+    }
+
+    @media only screen and (min-width: $desktop) {
       margin-top: -16.5rem;
     }
 
