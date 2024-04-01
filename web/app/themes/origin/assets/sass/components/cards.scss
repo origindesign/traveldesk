@@ -1,6 +1,7 @@
 @import "../base/settings";
 @import "../settings/grid";
 @import "../settings/typography";
+@import "../settings/buttons";
 
 .is-style-cards:not(.featured-cards) {
   .wp-block-heading {
@@ -141,12 +142,12 @@
             &::after {
               border: 1px solid var(--wp--preset--color--base);
               color: var(--wp--preset--color--base);
+            }
 
-              @media only screen and (min-width: $tablet) {
-                font-size: 2.75rem;
-                width: 3.6rem;
-                height: 3rem;
-                line-height: 115%;
+            &:hover {
+              &::after {
+                background: var(--wp--preset--color--base);
+                color: var(--wp--preset--color--white);
               }
             }
           }
@@ -169,6 +170,7 @@
   }
 }
 
+// query block defaults.
 .wp-block-query {
   padding: 5rem 0 7rem 0;
   border-top: 1px solid var(--wp--preset--color--spruce);
@@ -209,6 +211,12 @@
 
       &:hover {
         transform: scale(1.02);
+
+        .wp-block-post-excerpt__more-text {
+          &::after {
+            font-size: 3.3rem;
+          }
+        }
       }
 
       &:nth-child(3n + 1) {
@@ -228,6 +236,15 @@
           &::after {
             border: 1px solid var(--wp--preset--color--base);
             color: var(--wp--preset--color--base);
+          }
+        }
+
+        &:hover {
+          .wp-block-post-excerpt__more-text {
+            &::after {
+              background: var(--wp--preset--color--base);
+              color: var(--wp--preset--color--white);
+            }
           }
         }
       }
@@ -300,18 +317,14 @@
 
       .wp-block-post-excerpt__more-text {
         &::after {
-          content: "\e901";
-          color: var(--wp--preset--color--white);
-          font-family: "icomoon";
-          font-size: 1.7rem;
-          text-align: center;
-          line-height: 130%;
-          height: 2.2rem;
-          width: 3.6rem;
+          @include button-arrow;
           border: 1px solid var(--wp--preset--color--white);
-          padding: 0.2rem 2rem;
-          border-radius: 2rem;
-          display: block;
+        }
+        &:hover {
+          &::after {
+            background: var(--wp--preset--color--white);
+            color: var(--wp--preset--color--base);
+          }
         }
       }
 

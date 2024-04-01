@@ -2,6 +2,7 @@
 @import "../settings/grid";
 @import "../settings/typography";
 @import "../settings/imagery";
+@import "../settings/buttons";
 
 .is-style-gallery {
   background-color: var(--wp--preset--color--spruce);
@@ -271,35 +272,22 @@
       align-items: center;
       color: var(--wp--preset--color--white);
 
-      &:hover {
-        text-decoration: none;
-        background-color: var(--wp--preset--color--coral);
-
-        &::after {
-          border: 1px solid var(--wp--preset--color--base);
-        }
+      &::after {
+        @include button-arrow;
+        border: 1px solid var(--wp--preset--color--coral);
+        margin-left: 1.6rem;
       }
 
-      &::after {
-        content: "\e901";
-        color: var(--wp--preset--color--white);
-        font-family: "icomoon";
-        font-size: 1.7rem;
-        text-align: center;
-        line-height: 130%;
-        height: 2.2rem;
-        width: 3.6rem;
-        border: 1px solid var(--wp--preset--color--coral);
-        padding: 0.2rem 2rem;
-        border-radius: 2rem;
-        margin-left: 1.6rem;
+      &:hover {
+        background: none;
+        text-decoration: none;
 
-        @media (min-width: $desktop) {
-          height: 3.5rem;
-          width: 7.5rem;
-          font-size: 2.6rem;
-          text-align: center;
-          line-height: 3.5rem;
+        &::after {
+          background-color: var(--wp--preset--color--coral);
+
+          @media (min-width: $desktop) {
+            font-size: 3.3rem;
+          }
         }
       }
     }
