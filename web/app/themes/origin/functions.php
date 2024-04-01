@@ -378,6 +378,25 @@ function origin_register_taxonomy_featured() {
 add_action( 'init', 'origin_register_taxonomy_featured', 0 );
 
 /**
+ * Set default featured taxonomy. This is then used as part of the 'featured' post display logic.
+ */
+function origin_set_default_featured( $post_id, $post ) {
+	if ( 'publish' === $post->post_status ) {
+		$defaults = array(
+			'featured' => array( 'standard' ),
+			);
+		$taxonomies = get_object_taxonomies( $post->post_type );
+		foreach ( (array) $taxonomies as $taxonomy ) {
+			$terms = wp_get_post_terms( $post_id, $taxonomy );
+			if ( empty( $terms ) && array_key_exists( $taxonomy, $defaults ) ) {
+				wp_set_object_terms( $post_id, $defaults[$taxonomy], $taxonomy );
+			}
+		}
+	}
+}
+add_action( 'save_post', 'origin_set_default_featured', 100, 2 );
+
+/**
  * wp-login customizations.
  */
 function origin_custom_login() {
