@@ -4,6 +4,12 @@
 @import "../settings/imagery";
 
 .is-style-office-cards {
+  margin-bottom: 8rem;
+
+  @media only screen and (min-width: $tablet) {
+    margin-bottom: 16rem;
+  }
+
   .wp-block-heading {
     border-bottom: 1px solid var(--wp--preset--color--spruce);
     margin-bottom: 2rem;

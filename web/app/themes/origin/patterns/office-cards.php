@@ -29,16 +29,7 @@
 				<h3 class="wp-block-heading">London</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph -->
-				<p>1234 Smith Street,</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:paragraph -->
-				<p>London,</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:paragraph -->
-				<p>GB1 UK2,</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:paragraph -->
-				<p>United Kingdom</p>
+				<p>1234 Smith Street,<br>London,<br>GB1 UK2,<br>United Kingdom</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -55,16 +46,7 @@
 				<h3 class="wp-block-heading">Kansas City</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph -->
-				<p>7309 W 80th St #400,</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:paragraph -->
-				<p>Overland Park,</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:paragraph -->
-				<p>KS 66204,</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:paragraph -->
-				<p>United States</p>
+				<p>7309 W 80th St #400,<br>Overland Park,<br>KS 66204,<br>United States</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -81,16 +63,7 @@
 				<h3 class="wp-block-heading">Berlin</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph -->
-				<p>Berlinstraße,</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:paragraph -->
-				<p>1234 109876,</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:paragraph -->
-				<p>Berlin,</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:paragraph -->
-				<p>Germany</p>
+				<p>Remote</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
