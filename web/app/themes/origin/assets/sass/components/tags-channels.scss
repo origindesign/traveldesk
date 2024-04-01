@@ -207,8 +207,8 @@ body .read-time {
 
   span {
     @include label;
-    background-color: var(--wp--preset--color--lime);
-    color: var(--wp--preset--color--base);
+    background-color: var(--wp--preset--color--spruce);
+    color: var(--wp--preset--color--white);
     border-radius: 6rem;
     display: inline-block;
     padding: 1rem 2.5rem;
