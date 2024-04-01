@@ -130,6 +130,13 @@
             &::after {
               border: 1px solid var(--wp--preset--color--base);
               color: var(--wp--preset--color--base);
+
+              @media only screen and (min-width: $tablet) {
+                font-size: 2.75rem;
+                width: 3.6rem;
+                height: 3rem;
+                line-height: 115%;
+              }
             }
           }
         }
