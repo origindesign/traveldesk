@@ -5,10 +5,12 @@
 .is-style-team-cards {
   @include grid-container;
   row-gap: 5rem;
+  margin-bottom: 5rem;
 
   @media only screen and (min-width: $tablet) {
     column-gap: 4rem;
     row-gap: 4rem;
+    margin-bottom: 4rem;
   }
 
   @media only screen and (min-width: $desktop) {
