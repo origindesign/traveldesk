@@ -1,0 +1,13 @@
+@mixin button-arrow {
+  content: "\e901";
+  color: var(--wp--preset--color--white);
+  font-family: "icomoon";
+  font-size: 2.4rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 7.5rem;
+  transition: 0.2s ease-in-out;
+}
