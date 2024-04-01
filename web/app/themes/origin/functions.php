@@ -111,7 +111,6 @@ function origin_enqueue_specific_block_styles() {
 }
 add_action( 'init', 'origin_enqueue_specific_block_styles' );
 
-
 // Allow SVG's.
 function origin_mime_types($mimes) {
 	$mimes['svg'] = 'image/svg+xml';
@@ -128,15 +127,24 @@ function origin_reading_duration_shortcode( $atts, $content = null ) {
 	$readingtime = ceil($word_count / 200);
 
 	if ($readingtime == 1) {
-	$timer = " min";
+		$timer = " min";
 	} else {
-	$timer = " mins";
+		$timer = " mins";
 	}
 	$totalreadingtime = '<div class="read-time">' . '<span>' . $readingtime . $timer . '</span></div>';
 
 	return $totalreadingtime;
 }
 add_shortcode("reading_duration", "origin_reading_duration_shortcode");
+
+/**
+ * Current year dynamic shortcode
+ */
+function footer_copyright() {
+	$year = date_i18n ('Y');
+	return '<p>© 2000 - ' . $year . ' MMGY Roam, LLC d/b/a TravelDesk is a wholly owned subsidiary of MMGY Global, LLC.</p>';
+}
+add_shortcode ('footer_copyright', 'footer_copyright');
 
 /**
  * Remove comments from admin menu.

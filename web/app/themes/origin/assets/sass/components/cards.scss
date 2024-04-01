@@ -52,6 +52,13 @@
           object-fit: cover;
         }
       }
+
+      .wp-block-post-title {
+        @media only screen and (min-width: $desktop) {
+          font-size: 33px;
+          line-height: 100%;
+        }
+      }
     }
   }
 

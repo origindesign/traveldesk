@@ -55,4 +55,26 @@ form.contact-form {
   button {
     margin-top: 1rem;
   }
+
+  .contact-form__error {
+    border-radius: 2rem;
+    padding: 3rem 2rem;
+    font-size: 1.4rem;
+    background-color: var(--wp--preset--color--strawberry);
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+    letter-spacing: 0.08rem;
+    margin-bottom: 2rem;
+
+    .contact-form__warning-icon {
+      display: none;
+    }
+  }
+}
+
+.contact-form-submission {
+  grid-column: span 8;
+
+  @media only screen and (min-width: $desktop) {
+    grid-column: span 12;
+  }
 }
