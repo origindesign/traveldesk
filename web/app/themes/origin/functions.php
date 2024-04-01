@@ -60,18 +60,6 @@ add_action( 'customize_register', '__return_true' );
  * Enqeueue specific block styles if block is present on page.
  */
 function origin_enqueue_specific_block_styles() {
-	wp_enqueue_block_style( 'core/pullquote', array(
-		'handle' => 'origin-pullquote',
-		'src'    => get_theme_file_uri( "assets/css/chunks/pullquote.min.css" ),
-		'path'   => get_theme_file_path( "assets/css/chunks/pullquote.min.css" ),
-	) );
-
-	wp_enqueue_block_style( 'core/quote', array(
-		'handle' => 'origin-quote',
-		'src'    => get_theme_file_uri( "assets/css/chunks/quote.min.css" ),
-		'path'   => get_theme_file_path( "assets/css/chunks/quote.min.css" ),
-	) );
-
 	wp_enqueue_block_style( 'core/query-pagination', array(
 		'handle' => 'origin-pagination',
 		'src'    => get_theme_file_uri( "assets/css/chunks/pagination.min.css" ),
@@ -113,6 +101,13 @@ function origin_enqueue_specific_block_styles() {
 		'src'    => get_theme_file_uri( "assets/css/chunks/forms.min.css" ),
 		'path'   => get_theme_file_path( "assets/css/chunks/forms.min.css" ),
 	) );
+
+	wp_enqueue_block_style( 'core/pullquote', array(
+		'handle' => 'origin-pullquote',
+		'src'    => get_theme_file_uri( "assets/css/chunks/pullquote.min.css" ),
+		'path'   => get_theme_file_path( "assets/css/chunks/pullquote.min.css" ),
+	) );
+
 }
 add_action( 'init', 'origin_enqueue_specific_block_styles' );
 

@@ -21,7 +21,6 @@
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     margin-bottom: 4rem;
-    margin-top: 9.3rem;
     position: relative;
 
     @media only screen and (min-width: $desktop) {
@@ -69,10 +68,10 @@
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     vertical-align: top;
-  }
 
-  @media only screen and (min-width: $desktop) {
-    font-size: 8rem;
+    @media only screen and (min-width: $desktop) {
+      font-size: 8rem;
+    }
   }
 
   cite {
