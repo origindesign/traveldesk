@@ -26,12 +26,6 @@
     }
   }
 
-  .wp-block-group {
-    @media only screen and (min-width: $tablet) {
-      // max-height: 29rem; TODO
-    }
-  }
-
   &.archive-cards {
     .wp-block-post:first-of-type,
     .wp-block-post:nth-of-type(2) {
@@ -48,6 +42,7 @@
 
       img {
         @media only screen and (min-width: $tablet) {
+          max-height: initial;
           height: 47rem;
           object-fit: cover;
         }
@@ -164,6 +159,7 @@
           border-bottom-left-radius: 0;
 
           img {
+            max-height: initial;
             height: 30rem;
             object-fit: cover;
 
@@ -202,11 +198,12 @@
       grid-column: span 8;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       position: relative;
       border-radius: 0 2.5rem 2.5rem 2.5rem;
       overflow: hidden;
       transition: 0.2s ease-in-out;
-      height: fit-content;
+      height: 100%;
 
       @media only screen and (min-width: $tablet) {
         grid-column: span 4;
@@ -260,6 +257,10 @@
         margin: 0;
         border-bottom-left-radius: 2.5rem;
         overflow: hidden;
+
+        img {
+          max-height: 31rem;
+        }
       }
 
       .taxonomy-clients {
@@ -279,7 +280,7 @@
         padding: 3rem 2rem;
 
         @media only screen and (min-width: $desktop) {
-          padding: 10.5rem 2.5rem 4rem 2.5rem;
+          padding: 7.5rem 2.5rem 4rem 2.5rem;
         }
       }
 
@@ -354,7 +355,7 @@
           }
 
           .wp-block-group {
-            padding: 4rem 2.5rem 10.5rem 2.5rem;
+            padding: 4rem 2.5rem 7.5rem 2.5rem;
           }
         }
       }
