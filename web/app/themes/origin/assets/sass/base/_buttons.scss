@@ -16,17 +16,32 @@
     &:hover {
       background-color: var(--wp--preset--color--white);
       text-decoration: none;
+
+      &:hover {
+        &::after {
+          @media (min-width: $desktop) {
+            font-size: 3.3rem;
+          }
+        }
+      }
     }
 
     &::after {
       content: "\e901";
       font-family: "icomoon";
-      font-size: 2.8rem;
+      font-size: 2.4rem;
       font-weight: var(--wp--custom--typography--font-weight--light);
       text-align: center;
       border-radius: 2rem;
       margin-left: 0.6rem;
       margin-bottom: -0.3rem;
+      transition: 0.2s ease-in-out;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 3.5rem;
+      width: 7.5rem;
     }
   }
 
@@ -54,6 +69,7 @@
   }
 }
 
+// newsletter sign up in footer
 .wp-block-buttons.sign-up-wrapper {
   border: 1px solid var(--wp--preset--color--lime);
   border-left: none;
@@ -202,24 +218,15 @@
 
     &::after {
       content: "\e901";
-      font-family: "icomoon";
-      font-size: 1.7rem;
-      text-align: center;
-      line-height: 130%;
       right: 1.4rem;
-      height: 2.2rem;
-      width: 3.6rem;
       border: 1px solid var(--wp--preset--color--lime);
-      padding: 0 0.5rem;
-      border-radius: 2rem;
+      width: 4rem;
+      height: 2.5rem;
 
       @media (min-width: $desktop) {
-        height: 3rem;
-        width: 5.8rem;
         right: 3.5rem;
-        font-size: 2.6rem;
-        text-align: center;
-        line-height: 120%;
+        height: 3.5rem;
+        width: 7.5rem;
       }
     }
   }

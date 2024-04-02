@@ -54,6 +54,10 @@ form.contact-form {
 
   button {
     margin-top: 1rem;
+
+    &.wp-block-button__link::after {
+      width: 3.2rem;
+    }
   }
 
   .contact-form__error {

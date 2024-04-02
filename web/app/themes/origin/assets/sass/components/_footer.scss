@@ -161,6 +161,12 @@
 
     .wp-block-button {
       margin: 4rem auto 0 auto;
+
+      .wp-block-button__link {
+        &::after {
+          width: 3.2rem;
+        }
+      }
     }
   }
 }
