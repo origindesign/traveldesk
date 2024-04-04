@@ -19,6 +19,24 @@
     margin-bottom: 3rem;
   }
 
+  &.no-text {
+    background-color: var(--wp--preset--color--strawberry);
+    margin-bottom: 7rem;
+
+    @media (min-width: $tablet) {
+      padding: 2rem;
+    }
+
+    @media (min-width: $desktop) {
+      padding: var(--wp--custom--grid--gutter-large);
+      margin-bottom: 16rem;
+    }
+
+    figure {
+      margin-bottom: 0;
+    }
+  }
+
   figure {
     grid-column: span 8;
     width: 100%;
