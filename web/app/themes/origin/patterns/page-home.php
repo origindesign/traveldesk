@@ -3,7 +3,7 @@
  * Title: Home page template
  * Slug: origin/home-page-template
  * Block Types: core/post-content
- * Post Types: page
+ * Post Types: TBC
  *
  * @package origin
  * @since 1.0.0

@@ -3,7 +3,7 @@
  * Title: What we do page template
  * Slug: origin/what-we-do-page-template
  * Block Types: core/post-content
- * Post Types: page
+ * Post Types: TBC
  *
  * @package origin
  * @since 1.0.0

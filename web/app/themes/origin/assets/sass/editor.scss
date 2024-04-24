@@ -1,16 +1,4 @@
-.editor-styles-wrapper {
-  font-size: 62.5% !important;
-  background-color: var(--wp--preset--color--aqua);
-
-  .wp-block-post-title {
-    font-size: 3rem;
-    letter-spacing: 2px;
-    text-transform: capitalize;
-    font-family: "Plus Jakarta Sans";
-    border-bottom: 2px solid;
-    max-width: 90% !important;
-  }
-}
+@import "site-editor";
 
 @import "https://cdn.icomoon.io/42560/TravelDesk/style.css?51yfns";
 
@@ -51,5 +39,3 @@
 
 @import "components/social-links";
 @import "components/navigation";
-
-@import "site-editor";

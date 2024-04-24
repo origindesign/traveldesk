@@ -1,4 +1,20 @@
 .editor-styles-wrapper {
+  font-size: 62.5% !important;
+  background-color: var(--wp--preset--color--aqua);
+
+  .wp-block-post-title {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-family: "Plus Jakarta Sans";
+    border-bottom: 2px solid;
+    max-width: 95% !important;
+  }
+
+  .is-root-container {
+    max-width: 95% !important;
+  }
+
   .is-navigation-block {
     .wp-block-navigation-item {
       font-family: var(--wp--preset--font-family--plus-jakarta-sans);

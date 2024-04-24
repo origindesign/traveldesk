@@ -98,6 +98,8 @@
   .block-editor-block-list__layout.is-root-container > {
     .is-style-stat-list-ticket {
       margin-left: 4rem !important;
+      padding-left: 4rem;
+      padding-right: 4rem;
 
       &::before,
       &::after {

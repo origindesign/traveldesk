@@ -240,10 +240,12 @@
   .schema-faq-answer {
     display: block;
     max-height: none;
+    padding: 3rem 6rem;
   }
 
   .schema-faq-section {
     padding: inherit;
+    margin-bottom: 3rem;
 
     &:hover {
       transform: none;
