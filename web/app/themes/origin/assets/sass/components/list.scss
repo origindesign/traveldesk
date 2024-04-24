@@ -1,0 +1,33 @@
+ul,
+ol {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+
+  li {
+    margin-bottom: 0.1em;
+  }
+}
+
+ul {
+  li {
+    padding-left: 1rem;
+    line-height: 1.5em;
+  }
+
+  li::marker {
+    color: var(--wp--preset--color--strawberry);
+    font-size: 1.5em;
+  }
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
+
+  li {
+    padding-left: 1rem;
+  }
+
+  li::marker {
+    color: var(--wp--preset--color--strawberry);
+  }
+}

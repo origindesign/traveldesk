@@ -17,8 +17,8 @@
 	<div class="wp-block-columns is-not-stacked-on-mobile">
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:image {aspectRatio":"1","scale":"cover","sizeSlug":"full" -->
-			<figure class="wp-block-image size-full"><img src="http://placehold.it/900x1000" alt="" style="aspect-ratio:1;object-fit:cover"/></figure>
+			<!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"full"} -->
+			<figure class="wp-block-image size-full"><img src="http://placehold.it/500x500" alt="" style="aspect-ratio:1;object-fit:cover"/></figure>
 			<!-- /wp:image -->
 			<!-- wp:image {"width":"318px","sizeSlug":"medium"} -->
 			<figure class="wp-block-image size-medium is-resized"><img src="http://placehold.it/350x350" alt="" style="width:318px"/></figure>

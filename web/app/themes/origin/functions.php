@@ -108,6 +108,11 @@ function origin_enqueue_specific_block_styles() {
 		'path'   => get_theme_file_path( "assets/css/chunks/pullquote.min.css" ),
 	) );
 
+	wp_enqueue_block_style( 'core/list', array(
+		'handle' => 'origin-list',
+		'src'    => get_theme_file_uri( "assets/css/chunks/list.min.css" ),
+		'path'   => get_theme_file_path( "assets/css/chunks/list.min.css" ),
+	) );
 }
 add_action( 'init', 'origin_enqueue_specific_block_styles' );
 

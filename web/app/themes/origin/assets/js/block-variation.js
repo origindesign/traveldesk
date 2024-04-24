@@ -1,5 +1,4 @@
 wp.domReady(function () {
-  wp.blocks.unregisterBlockType("core/list");
   wp.blocks.unregisterBlockType("core/code");
   wp.blocks.unregisterBlockType("core/details");
   wp.blocks.unregisterBlockType("core/preformatted");
