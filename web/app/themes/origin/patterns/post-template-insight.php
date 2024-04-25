@@ -14,17 +14,17 @@
 <!-- wp:group {"className":"is-style-single-column-copy fade-in","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-single-column-copy fade-in">
 	<!-- wp:paragraph -->
-	<p>As part of an ongoing commitment to evolution and innovation, TravelDesk partnered with trivago to activate their search data, powering TravelDesk audience targeting across multi channel campaigns for DMOs, hotels and airline clients.</p>
+	<p>Bro ipsum dolor sit amet bunny slope ride death cookies endo, roadie bail chillax hero shred dope travel presta. Grip tape Bike bear trap skid lid presta washboard giblets bonk. Sucker hole brain bucket fatty ACL sucker hole dope face plant. Chain ring park heli skid lid line bail. Epic shuttle ollie carve grunt, air yard sale Snowboard cornice pow pow bail beater Whistler switch.</p>
 	<!-- /wp:paragraph -->
 	<!-- wp:paragraph -->
-	<p><br>As the in-house programmatic media partner for MMGY Global, TravelDesk launched this new to market solution exclusively across a selection of MMGY Global clients who saw a lift in campaign results almost instantly.</p>
+	<p>Bro ipsum dolor sit amet bunny slope ride death cookies endo, roadie bail chillax hero shred dope travel presta. Grip tape Bike bear trap skid lid presta washboard giblets bonk. Sucker hole brain bucket fatty ACL sucker hole dope face plant. Chain ring park heli skid lid line bail. Epic shuttle ollie carve grunt, air yard sale Snowboard cornice pow pow bail beater Whistler switch.</p>
 	<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 <!-- wp:pullquote -->
 <figure class="wp-block-pullquote">
 	<blockquote>
-		<p>This campaign exceeded expectations, delivering an ROAS of 12:1, over 20,000 inquiries and over 100 bookings</p>
+		<p>Bro ipsum dolor sit amet bunny slope ride death cookies endo, roadie bail chillax hero shred dope travel presta.</p>
 	</blockquote>
 </figure>
 <!-- /wp:pullquote -->
@@ -35,20 +35,20 @@
 		<!-- wp:group {"className":"is-style-double-column-copy-col fade-in","layout":{"type":"constrained"}} -->
 		<div class="wp-block-group is-style-double-column-copy-col fade-in">
 			<!-- wp:paragraph -->
-			<p>Turtle Bay Resorts was one such client whose 2023 leisure campaign aimed to build and maintain brand awareness across a selection of audience personas, while promoting Hawaii as an incredibly rich and varied destination for US travellers. The campaign generated website engagements, inquiries, bookings, and revenue through a combination of targeting tactics and beautiful digital assets which aimed to showcase the incredible History &amp; Culture of Hawaii. It was important that the marketing be positioned to sell the destination, as much as the property itself.</p>
+			<p>Bro ipsum dolor sit amet bunny slope ride death cookies endo, roadie bail chillax hero shred dope travel presta. Grip tape Bike bear trap skid lid presta washboard giblets bonk. Sucker hole brain bucket fatty ACL sucker hole dope face plant. Chain ring park heli skid lid line bail. Epic shuttle ollie carve grunt, air yard sale Snowboard cornice pow pow bail beater Whistler switch.</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph -->
-			<p>The target audiences included ‘Luxury Nomads’, ‘Young Families’, ‘Active Families’, ‘Roaming Romantics’, ‘Laidback Locals’ and ‘Wave Followers’ but the challenge was to ensure targeting maintained a healthy balance between influencing and inspiring new audiences to travel to Hawaii, while also identifying and converting audiences who were already showing signals of intent for travel to Hawaii or stays at competitor 5-star hotels.</p>
+			<p>Bro ipsum dolor sit amet bunny slope ride death cookies endo, roadie bail chillax hero shred dope travel presta. Grip tape Bike bear trap skid lid presta washboard giblets bonk. Sucker hole brain bucket fatty ACL sucker hole dope face plant. Chain ring park heli skid lid line bail. Epic shuttle ollie carve grunt, air yard sale Snowboard cornice pow pow bail beater Whistler switch.</p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
 		<!-- wp:group {"className":"is-style-double-column-copy-col fade-in","layout":{"type":"constrained"}} -->
 		<div class="wp-block-group is-style-double-column-copy-col fade-in">
 			<!-- wp:paragraph -->
-			<p>In addition to activating trivago search data, CRM data was activated via The Trade Desk’s UID2 - matching and scaling highly relevant audiences who had already stayed at Turtle Bay Resorts and who might want to return.</p>
+			<p>Bro ipsum dolor sit amet bunny slope ride death cookies endo, roadie bail chillax hero shred dope travel presta. Grip tape Bike bear trap skid lid presta washboard giblets bonk. Sucker hole brain bucket fatty ACL sucker hole dope face plant. Chain ring park heli skid lid line bail.</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph -->
-			<p>This campaign exceeded expectations, delivering an ROAS of 12:1, over 20,000 inquiries and over 100 bookings. Audience targeting powered by trivago data drove more engagements than all the other prospecting audiences combined, and the CRM activation using UID2 drove a considerable number of inquiries and engagements too.</p>
+			<p>Bro ipsum dolor sit amet bunny slope ride death cookies endo, roadie bail chillax hero shred dope travel presta. Grip tape Bike bear trap skid lid presta washboard giblets bonk.</p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->

@@ -16,7 +16,7 @@
 	<!-- wp:quote {"templateLock":"contentOnly"} -->
 	<blockquote class="wp-block-quote">
 		<!-- wp:paragraph -->
-		<p>Lorem ipsum dolor, <strong>sit amet, consectetur</strong></p>
+		<p>Bro ipsum dolor, <strong>sit amet, consectetur</strong></p>
 		<!-- /wp:paragraph --><cite>CITATION</cite>
 	</blockquote>
 	<!-- /wp:quote -->

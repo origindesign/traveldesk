@@ -124,6 +124,15 @@ function origin_mime_types($mimes) {
 add_filter('upload_mimes', 'origin_mime_types');
 
 /**
+ * Add custom dashboard documentation link
+ */
+function origin_add_documentation_link() {
+    add_menu_page('website_docs', 'Website Docs', 'read', 'https://docs.google.com/document/d/1WX7nP1JSFrMZEIfur7EpDhiqONhT-UD6HpgqolIYG9c/edit?usp=sharing', '', 'dashicons-text', 1);
+}
+add_action('admin_menu', 'origin_add_documentation_link');
+
+
+/**
  * Add post 'read time' shortcode.
 */
 function origin_reading_duration_shortcode( $atts, $content = null ) {

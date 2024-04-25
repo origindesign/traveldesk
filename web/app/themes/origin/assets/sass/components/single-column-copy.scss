@@ -5,6 +5,11 @@
 // Component: Single Column Copy
 .is-style-single-column-copy {
   @include grid-container;
+  padding-bottom: 7rem;
+
+  @media only screen and (min-width: $desktop) {
+    padding-bottom: 16rem;
+  }
 
   h2 {
     grid-column: span 8;
@@ -15,19 +20,7 @@
     }
   }
 
-  p:last-of-type {
-    margin-bottom: 7rem;
-
-    @media only screen and (min-width: $desktop) {
-      margin-bottom: 16rem;
-    }
-  }
-
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
+  * {
     width: 100%;
     grid-column: span 8;
 
