@@ -311,6 +311,12 @@
 
     .wp-block-button__link {
       background: none;
+      border: none;
+      color: var(--wp--preset--color--white);
+
+      &:hover {
+        background-color: inherit;
+      }
     }
   }
 }
