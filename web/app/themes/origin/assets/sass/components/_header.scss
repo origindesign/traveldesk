@@ -29,7 +29,7 @@ header {
 
   .site-logo {
     width: 12rem;
-    transition: 0.2s ease-in-out;
+    transition: $transition-ui;
 
     @media (min-width: $desktop) {
       width: 19rem;
@@ -244,20 +244,16 @@ header {
         }
 
         &::after {
-          content: "\e901";
-          font-family: "icomoon";
+          @include pseudo-icon("\e901", absolute, unset, 1.4rem, "", "");
           font-size: 1.7rem;
           text-align: center;
           line-height: 130%;
-          right: 1.4rem;
           height: 2.2rem;
           width: 3.6rem;
           border: 1px solid var(--wp--preset--color--lime);
           padding: 0 0.5rem;
           border-radius: 2rem;
-          position: absolute;
           background: none !important;
-          top: unset;
         }
 
         &:hover {

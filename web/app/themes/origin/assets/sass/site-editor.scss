@@ -4,10 +4,10 @@
 
   .wp-block-post-title {
     font-size: 3rem;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
     text-transform: capitalize;
-    font-family: "Plus Jakarta Sans";
-    border-bottom: 2px solid;
+    font-family: var(--wp--preset--font-family--plus-jakarta-sans);
+    border-bottom: 0.2rem solid;
     max-width: 95% !important;
   }
 

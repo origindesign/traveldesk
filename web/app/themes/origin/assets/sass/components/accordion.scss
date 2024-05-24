@@ -1,6 +1,7 @@
 @import "../base/settings";
 @import "../settings/grid";
 @import "../settings/typography";
+@import "../settings/imagery";
 
 .is-style-accordion {
   @include grid-container;
@@ -87,7 +88,7 @@
 .schema-faq-section {
   margin: 1rem 0;
   position: relative;
-  transition: 0.2s ease-in-out;
+  transition: $transition-ui;
 
   // ticket notches
   &::before,
@@ -174,17 +175,14 @@
 
   // open / close icon
   &:before {
-    content: "\e902";
-    position: relative;
-    font-family: "icomoon";
+    @include pseudo-icon("\e902", relative, "", "", "", 0);
     height: auto;
     width: auto;
-    left: 0;
     align-items: center;
     margin-right: 2.2rem;
     font-size: 3rem;
     transform: rotate(45deg);
-    transition: 0.2s ease-in-out;
+    transition: $transition-ui;
   }
 
   // middle cutaway

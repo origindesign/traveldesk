@@ -33,6 +33,18 @@ main {
   }
 }
 
+// accessibility consideration
+* {
+  box-sizing: border-box;
+
+  &:focus {
+    outline: 2px dotted;
+  }
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
 // gutenberg resets
 .has-global-padding {
   padding-left: 0;

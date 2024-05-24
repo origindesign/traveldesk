@@ -2,3 +2,33 @@
   height: 100%;
   object-fit: cover;
 }
+
+@mixin pseudo-icon(
+  $content: "",
+  $position: absolute,
+  $top: "",
+  $right: "",
+  $bottom: "",
+  $left: ""
+) {
+  position: $position;
+  content: $content;
+  font-family: "icomoon" !important;
+  font-style: normal;
+  speak: none;
+  display: block;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  @if $top != "" and $top != "auto" {
+    top: $top;
+  }
+  @if $left != "" and $left != "auto" {
+    left: $left;
+  }
+  @if $right != "" and $right != "auto" {
+    right: $right;
+  }
+  @if $bottom != "" and $bottom != "auto" {
+    bottom: $bottom;
+  }
+}

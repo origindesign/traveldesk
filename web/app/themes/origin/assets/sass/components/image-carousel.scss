@@ -1,6 +1,7 @@
 @import "../base/settings";
 @import "../settings/grid";
 @import "../settings/typography";
+@import "../settings/imagery";
 
 .is-style-image-carousel {
   background-color: var(--wp--preset--color--pine);
@@ -36,10 +37,7 @@
     }
 
     &::before {
-      content: "\e901";
-      font-family: "icomoon";
-      display: block;
-      position: absolute;
+      @include pseudo-icon("\e901", absolute, "", "", "", "");
       font-size: 2.3rem;
       transform: rotate(45deg);
     }

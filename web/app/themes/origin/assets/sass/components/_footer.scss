@@ -65,15 +65,11 @@
       }
 
       &::before {
-        content: "\e909";
-        display: block;
-        font-family: "icomoon";
+        @include pseudo-icon("\e909", relative, "", "", "", "");
         font-size: 2.6rem;
-        position: absolute;
         line-height: 0;
         color: var(--wp--preset--color--base);
         font-weight: 100;
-        position: relative;
         letter-spacing: 0;
 
         @media (min-width: $footer-desktop) {

@@ -202,7 +202,7 @@
       position: relative;
       border-radius: 0 2.5rem 2.5rem 2.5rem;
       overflow: hidden;
-      transition: 0.2s ease-in-out;
+      transition: $transition-ui;
       height: 100%;
 
       @media only screen and (min-width: $tablet) {
