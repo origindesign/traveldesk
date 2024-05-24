@@ -41,8 +41,7 @@
     color: var(--wp--preset--color--strawberry);
     margin-top: var(--wp--preset--spacing--small);
     margin-bottom: 0;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    @include margin-horizontal-reset;
     z-index: 1;
     width: 100%;
 

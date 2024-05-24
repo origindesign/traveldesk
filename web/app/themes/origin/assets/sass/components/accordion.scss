@@ -54,8 +54,7 @@
 
   .wp-block-yoast-faq-block {
     grid-column: span 8;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    @include margin-horizontal-reset;
 
     @media only screen and (min-width: $tablet) {
       grid-column: 2 / span 7;
@@ -74,8 +73,7 @@
 
 .wp-block-yoast-faq-block {
   grid-column: span 8;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+  @include margin-horizontal-reset;
 
   @media only screen and (min-width: $tablet) {
     grid-column: 2 / span 7;

@@ -39,3 +39,8 @@
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 }
+
+@mixin margin-horizontal-reset {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}

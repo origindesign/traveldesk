@@ -26,7 +26,11 @@
 
     @media only screen and (min-width: $desktop) {
       grid-column: span 5;
-      width: 135%;
+      width: 180%;
+    }
+
+    @media only screen and (min-width: $desktop-lg) {
+      width: 150%;
     }
   }
 

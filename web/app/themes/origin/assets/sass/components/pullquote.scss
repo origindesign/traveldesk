@@ -29,8 +29,7 @@
     line-height: 120%;
     letter-spacing: 0.5px;
     margin: 0;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    @include margin-horizontal-reset;
     width: 100%;
     text-align: left;
 

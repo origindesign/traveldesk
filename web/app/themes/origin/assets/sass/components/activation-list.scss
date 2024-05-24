@@ -10,8 +10,7 @@
       }
       p:nth-child(odd),
       p:nth-child(even) {
-        margin-right: 0 !important;
-        margin-left: 0 !important;
+        @include margin-horizontal-reset;
       }
     }
   }
