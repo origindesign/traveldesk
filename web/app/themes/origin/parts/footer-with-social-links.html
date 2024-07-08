@@ -21,8 +21,15 @@
 <!-- wp:columns -->
 <div class="wp-block-columns">
 	<!-- wp:column {"width":"20%"} -->
-	<div class="wp-block-column" style="flex-basis:20%; height: 14rem;">
-		<!-- this empty div is kept as a placeholder for the social icons block. See footer-with-social-links.html template part for reference -->
+	<div class="wp-block-column" style="flex-basis:20%">
+		<!-- wp:social-links {"className":"is-style-logos-only","layout":{"type":"flex","orientation":"vertical","justifyContent":"left"}} -->
+		<ul class="wp-block-social-links is-style-logos-only">
+			<!-- wp:social-link {"url":"https:www.google.com","service":"facebook"} /-->
+			<!-- wp:social-link {"url":"https:www.google.com","service":"x"} /-->
+			<!-- wp:social-link {"url":"https:www.google.com","service":"instagram"} /-->
+			<!-- wp:social-link {"url":"https:www.google.com","service":"linkedin"} /-->
+		</ul>
+		<!-- /wp:social-links -->
 	</div>
 	<!-- /wp:column -->
 	<!-- wp:column {"width":"80%"} -->
