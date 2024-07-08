@@ -157,6 +157,7 @@
 
         figure {
           border-bottom-left-radius: 0;
+          border-top-left-radius: inherit;
 
           img {
             max-height: initial;
@@ -201,7 +202,7 @@
       justify-content: space-between;
       position: relative;
       border-radius: 0 2.5rem 2.5rem 2.5rem;
-      overflow: hidden;
+      // overflow: hidden;
       transition: $transition-ui;
       height: 100%;
 
@@ -256,6 +257,7 @@
       figure {
         margin: 0;
         border-bottom-left-radius: 2.5rem;
+        border-top-right-radius: inherit;
         overflow: hidden;
 
         img {
@@ -343,6 +345,10 @@
         top: 0;
         left: 0;
         font-size: 0;
+
+        &:focus {
+          outline: 2px dotted var(--wp--preset--color--black);
+        }
       }
 
       // swap image and media on even elements
