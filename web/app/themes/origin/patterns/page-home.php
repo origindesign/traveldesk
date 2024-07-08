@@ -132,7 +132,8 @@
 		<div class="wp-block-group">
 			<!-- wp:post-terms {"term":"clients"} /-->
 			<!-- wp:post-title {"level":4} /-->
-			<!-- wp:post-excerpt {"moreText":"More","excerptLength":10} /-->
+			<!-- wp:post-excerpt {"excerptLength":10} /-->
+			<!-- wp:read-more /-->
 		</div>
 		<!-- /wp:group -->
 		<!-- /wp:post-template -->
