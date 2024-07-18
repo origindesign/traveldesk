@@ -11,9 +11,9 @@
 
 ?>
 
-<!-- wp:columns {"templateLock":"contentOnly","className":"is-style-team-cards fade-in"} -->
+<!-- wp:columns {"className":"is-style-team-cards fade-in"} -->
 <div class="wp-block-columns is-style-team-cards fade-in">
-	<!-- wp:column -->
+	<!-- wp:column {"templateLock":"contentOnly"} -->
 	<div class="wp-block-column">
 		<!-- wp:group {"className":"team-card","layout":{"type":"constrained"}} -->
 		<div class="wp-block-group team-card">
