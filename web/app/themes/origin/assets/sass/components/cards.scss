@@ -205,6 +205,7 @@
       // overflow: hidden;
       transition: $transition-ui;
       height: 100%;
+      padding-left: 0;
 
       @media only screen and (min-width: $tablet) {
         grid-column: span 4;
