@@ -33,7 +33,7 @@ window.addEventListener(
     }
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
   },
-  false,
+  false
 );
 
 /*
@@ -45,7 +45,9 @@ function yoastFAQUI() {
   if (!yoastBlock) return;
 
   yoastBlock.forEach(function (el) {
+    el.setAttribute("aria-expanded", false);
     el.addEventListener("click", function () {
+      el.ariaExpanded = el.ariaExpanded !== "true";
       el.classList.toggle("in");
 
       let yoastAnswer = el.querySelector(".schema-faq-answer");
