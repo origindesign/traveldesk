@@ -91,6 +91,7 @@ web/app/plugins/*
 !web/app/plugins/.gitkeep
 !web/app/plugins/splide-carousel
 !web/app/plugins/bugherd
+!web/app/plugins/wpe-site-migration
 jetpack_vendor
 
 # Themes
